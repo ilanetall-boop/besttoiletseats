@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All Articles - Best Toilet Seats Guide 2026</title>
+  <meta name="description" content="Browse all 17 expert toilet seat guides, reviews, and comparisons. Find the perfect toilet seat for your bathroom with our comprehensive articles.">
+  <meta property="og:title" content="All Articles - Best Toilet Seats Guide 2026">
+  <meta property="og:description" content="Browse all our expert toilet seat guides, reviews, and comparisons.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.besttoiletseats.com/articles">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://www.besttoiletseats.com/articles">
+  <script src="components/site-config.js"></script>
+  <link rel="preload" href="articles.json" as="fetch" crossorigin>
+  <style>
+    :root {
+      --chocolate: #5D4037;
+      --chocolate-light: #8D6E63;
+      --chocolate-dark: #3E2723;
+      --accent: #FF7043;
+      --accent-dark: #E64A19;
+      --bg-light: #F5F5F5;
+      --text: #3e3e3e;
+      --text-light: #666;
+      --border: #e5e5e5;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      line-height: 1.6;
+      color: var(--text);
+      background: #fff;
+    }
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 1rem; }
+
+    /* Hero */
+    .hero {
+      background: linear-gradient(135deg, var(--chocolate) 0%, var(--chocolate-light) 100%);
+      color: #fff;
+      padding: 3rem 0;
+    }
+    .hero h1 { font-size: 2.5rem; font-weight: 800; margin-bottom: 0.5rem; }
+    .hero p { font-size: 1.1rem; opacity: 0.9; }
+
+    /* Filters */
+    .filters {
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+      margin: 2rem 0;
+    }
+    .filter-btn {
+      padding: 0.5rem 1.25rem;
+      border: 2px solid var(--border);
+      border-radius: 2rem;
+      background: #fff;
+      color: var(--text-light);
+      cursor: pointer;
+      font-size: 0.9rem;
+      font-weight: 600;
+      transition: all 0.2s;
+    }
+    .filter-btn:hover { border-color: var(--accent); color: var(--accent); }
+    .filter-btn.active {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: #fff;
+    }
+
+    /* Stats bar */
+    .stats-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1.5rem;
+      color: var(--text-light);
+      font-size: 0.9rem;
+    }
+
+    /* Articles Grid */
+    .articles-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+      gap: 1.5rem;
+    }
+
+    /* Article Card */
+    .article-card {
+      background: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      transition: transform 0.2s, box-shadow 0.2s;
+      display: flex;
+      flex-direction: column;
+    }
+    .article-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+    }
+    .article-card a { text-decoration: none; color: inherit; }
+    .article-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      display: block;
+    }
+    .card-body {
+      padding: 1.25rem;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+    .card-meta {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin-bottom: 0.75rem;
+    }
+    .tag {
+      font-size: 0.7rem;
+      padding: 0.25rem 0.6rem;
+      border-radius: 1rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+    }
+    .tag-reviews { background: #FFF3E0; color: #E65100; }
+    .tag-guides { background: #E8F5E9; color: #2E7D32; }
+    .tag-comparisons { background: #E3F2FD; color: #1565C0; }
+    .card-date { font-size: 0.8rem; color: var(--text-light); }
+    .card-body h2 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--chocolate);
+      margin-bottom: 0.5rem;
+      line-height: 1.4;
+    }
+    .card-body h2:hover { color: var(--accent); }
+    .card-body p {
+      font-size: 0.9rem;
+      color: var(--text-light);
+      flex: 1;
+      margin-bottom: 1rem;
+    }
+    .read-more {
+      color: var(--accent);
+      font-weight: 600;
+      font-size: 0.9rem;
+      text-decoration: none;
+    }
+    .read-more:hover { text-decoration: underline; }
+
+    /* Newsletter */
+    .newsletter {
+      margin: 3rem 0;
+      background: linear-gradient(135deg, var(--chocolate) 0%, var(--chocolate-light) 100%);
+      border-radius: 1rem;
+      padding: 2.5rem;
+      text-align: center;
+      color: #fff;
+    }
+    .newsletter h3 { font-size: 1.5rem; font-weight: 700; margin-bottom: 0.5rem; }
+    .newsletter p { opacity: 0.9; margin-bottom: 1.5rem; }
+    .newsletter-form {
+      display: flex;
+      gap: 0.75rem;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+    .newsletter-form input {
+      flex: 1;
+      padding: 0.75rem 1rem;
+      border: none;
+      border-radius: 0.5rem;
+      font-size: 1rem;
+    }
+    .newsletter-form button {
+      padding: 0.75rem 1.5rem;
+      background: var(--accent);
+      color: #fff;
+      border: none;
+      border-radius: 0.5rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .newsletter-form button:hover { background: var(--accent-dark); }
+
+    .no-results {
+      text-align: center;
+      padding: 3rem;
+      color: var(--text-light);
+      grid-column: 1 / -1;
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 { font-size: 1.75rem; }
+      .articles-grid { grid-template-columns: 1fr; }
+      .newsletter-form { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+  <header id="site-header"></header>
+
+  <section class="hero">
+    <div class="container">
+      <h1>All Articles</h1>
+      <p>Expert guides, reviews, and comparisons to help you find the perfect toilet seat</p>
+    </div>
+  </section>
+
+  <main class="container" style="padding-top: 1rem; padding-bottom: 2rem;">
+    <div class="filters">
+      <button class="filter-btn active" data-category="all">All</button>
+      <button class="filter-btn" data-category="Reviews">Reviews</button>
+      <button class="filter-btn" data-category="Guides">Guides</button>
+      <button class="filter-btn" data-category="Comparisons">Comparisons</button>
+    </div>
+
+    <div class="stats-bar">
+      <span id="results-count">Loading articles...</span>
+    </div>
+
+    <div class="articles-grid" id="articles-grid">
+      <div class="no-results">Loading articles...</div>
+    </div>
+
+    <div class="newsletter">
+      <h3>Get New Articles in Your Inbox</h3>
+      <p>Join 5,000+ readers who get our weekly toilet seat tips and exclusive deals.</p>
+      <form class="newsletter-form" onsubmit="handleNewsletter(event)">
+        <input type="email" placeholder="Enter your email" required>
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+  </main>
+
+  <footer id="site-footer"></footer>
+  <script src="components/site-components.js"></script>
+  <script>
+    let allArticles = [];
+
+    function formatDate(dateStr) {
+      const d = new Date(dateStr);
+      return d.toLocaleDateString('en-US', { month: 'short', year: 'numeric' });
+    }
+
+    function renderArticles(category) {
+      const grid = document.getElementById('articles-grid');
+      const filtered = category === 'all'
+        ? allArticles
+        : allArticles.filter(a => a.category === category);
+
+      document.getElementById('results-count').textContent =
+        filtered.length + ' article' + (filtered.length !== 1 ? 's' : '') +
+        (category !== 'all' ? ' in ' + category : '');
+
+      if (filtered.length === 0) {
+        grid.innerHTML = '<div class="no-results"><p>No articles found in this category.</p></div>';
+        return;
+      }
+
+      grid.innerHTML = filtered.map(article => {
+        const tagClass = 'tag-' + article.category.toLowerCase();
+        return `
+          <article class="article-card">
+            <a href="${article.slug}">
+              <img src="${article.image}" alt="${article.title}" loading="lazy"
+                   onerror="this.src='images/placeholder-top-rugs.webp'">
+            </a>
+            <div class="card-body">
+              <div class="card-meta">
+                <span class="tag ${tagClass}">${article.category}</span>
+                <span class="card-date">${formatDate(article.publishDate)}</span>
+              </div>
+              <a href="${article.slug}">
+                <h2>${article.title}</h2>
+              </a>
+              <p>${article.summary}</p>
+              <a href="${article.slug}" class="read-more">Read article &rarr;</a>
+            </div>
+          </article>`;
+      }).join('');
+    }
+
+    function setupFilters() {
+      document.querySelectorAll('.filter-btn').forEach(btn => {
+        btn.addEventListener('click', function() {
+          document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+          this.classList.add('active');
+          renderArticles(this.dataset.category);
+        });
+      });
+    }
+
+    fetch('articles.json')
+      .then(r => r.json())
+      .then(articles => {
+        articles.sort((a, b) => new Date(b.publishDate) - new Date(a.publishDate));
+        allArticles = articles;
+        renderArticles('all');
+        setupFilters();
+      })
+      .catch(() => {
+        document.getElementById('articles-grid').innerHTML =
+          '<div class="no-results"><p>Unable to load articles. Please refresh the page.</p></div>';
+      });
+
+    function handleNewsletter(event) {
+      event.preventDefault();
+      const email = event.target.querySelector('input[type="email"]').value;
+      const button = event.target.querySelector('button');
+      if (!email || !email.includes('@')) { alert('Please enter a valid email address'); return; }
+      button.textContent = 'Subscribing...';
+      button.disabled = true;
+      setTimeout(() => {
+        alert('Thank you for subscribing!');
+        event.target.reset();
+        button.textContent = 'Subscribe';
+        button.disabled = false;
+      }, 1200);
+    }
+
+    // Deferred analytics
+    window.addEventListener('load', function() {
+      if (!localStorage.getItem('analytics-disabled')) {
+        const s = document.createElement('script');
+        s.async = true;
+        s.src = 'https://www.googletagmanager.com/gtag/js?id=G-ZQGHN8Y56N';
+        document.head.appendChild(s);
+        s.onload = function() {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-ZQGHN8Y56N');
+        };
+      }
+    });
+  </script>
+</body>
+</html>
