@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Ilane Tall - Best Toilet Seats</title>
+  <meta name="description" content="Meet Ilane Tall, Product Researcher specializing in bathroom products. Helping families find the perfect toilet seat for comfort and hygiene.">
+  <meta property="og:title" content="About Ilane Tall - Best Toilet Seats">
+  <meta property="og:description" content="Meet Ilane Tall, Product Researcher specializing in bathroom products.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.besttoiletseats.com/about">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://www.besttoiletseats.com/about">
+  <script src="components/site-config.js"></script>
+  <style>
+    :root {
+      --primary: #1565C0;
+      --primary-light: #42A5F5;
+      --primary-dark: #0D47A1;
+      --accent: #FFB300;
+      --accent-dark: #FF8F00;
+      --bg-light: #F5F5F5;
+      --text: #3e3e3e;
+      --text-light: #666;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; color: var(--text); background: #F9FAFB; }
+    .container { max-width: 900px; margin: 0 auto; padding: 0 1.5rem; }
+
+    .hero-about {
+      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+      color: #fff;
+      padding: 4rem 0;
+    }
+    .hero-about-inner {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+    }
+    .author-photo {
+      width: 12rem;
+      height: 12rem;
+      border-radius: 50%;
+      border: 4px solid #fff;
+      box-shadow: 0 8px 24px rgba(0,0,0,.2);
+      overflow: hidden;
+    }
+    .author-photo img { width: 100%; height: 100%; object-fit: cover; }
+    .hero-about-text { text-align: center; }
+    .hero-about-text h1 { font-size: 2.5rem; font-weight: 800; margin-bottom: .5rem; }
+    .hero-about-text p.subtitle { font-size: 1.15rem; opacity: .85; }
+    .hero-about-text p.quote { font-style: italic; opacity: .9; margin-top: .75rem; font-size: 1.05rem; }
+    .social-links { display: flex; justify-content: center; gap: 1rem; margin-top: 1.5rem; }
+    .social-links a {
+      background: rgba(255,255,255,.2);
+      padding: .5rem 1rem;
+      border-radius: .5rem;
+      color: #fff;
+      text-decoration: none;
+      font-size: .875rem;
+      font-weight: 500;
+      transition: background .3s ease;
+    }
+    .social-links a:hover { background: rgba(255,255,255,.3); }
+
+    .stats-bar {
+      background: #fff;
+      border-bottom: 1px solid #e5e5e5;
+      padding: 2rem 0;
+    }
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+      text-align: center;
+    }
+    .stat-number { font-size: 2rem; font-weight: 800; color: var(--accent); display: block; }
+    .stat-label { font-size: .8rem; color: var(--text-light); text-transform: uppercase; letter-spacing: .05em; }
+
+    .content-section { padding: 3rem 0; }
+    .card {
+      background: #fff;
+      border-radius: 1rem;
+      box-shadow: 0 2px 12px rgba(0,0,0,.08);
+      padding: 2rem;
+      margin-bottom: 2rem;
+    }
+    .card h2 { font-size: 1.5rem; font-weight: 700; color: var(--primary); margin-bottom: 1rem; }
+    .card p { color: var(--text-light); line-height: 1.8; margin-bottom: 1rem; }
+    .card p:last-child { margin-bottom: 0; }
+    .card p.highlight { font-weight: 600; color: var(--primary); }
+
+    .methods-grid {
+      display: grid;
+      gap: 1.5rem;
+    }
+    .method-card {
+      background: #fff;
+      padding: 1.5rem;
+      border-radius: .75rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,.06);
+    }
+    .method-card h3 { font-weight: 700; color: var(--primary); margin-bottom: .5rem; }
+    .method-card p { font-size: .875rem; color: var(--text-light); line-height: 1.6; }
+
+    .testing-bar {
+      background: var(--primary);
+      color: #fff;
+      border-radius: 1rem;
+      padding: 2rem;
+      margin-bottom: 2rem;
+    }
+    .testing-bar h2 { text-align: center; font-size: 1.5rem; margin-bottom: 1.5rem; }
+    .testing-steps {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 1rem;
+      text-align: center;
+    }
+    .testing-step-num {
+      width: 3rem;
+      height: 3rem;
+      background: rgba(255,255,255,.2);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto .5rem;
+      font-size: 1.25rem;
+      font-weight: 700;
+    }
+    .testing-step-label { font-size: .8rem; opacity: .9; }
+
+    .values-list { display: flex; flex-direction: column; gap: 1rem; }
+    .value-item {
+      background: #fff;
+      padding: 1.5rem;
+      border-radius: .75rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,.06);
+      border-left: 4px solid var(--accent);
+    }
+    .value-item h3 { font-weight: 700; color: var(--primary); margin-bottom: .25rem; }
+    .value-item p { font-size: .875rem; color: var(--text-light); }
+
+    .cta-section {
+      background: #fff;
+      border-radius: 1rem;
+      box-shadow: 0 2px 12px rgba(0,0,0,.08);
+      padding: 2.5rem;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    .cta-section h2 { font-size: 1.5rem; font-weight: 700; color: var(--primary); margin-bottom: .75rem; }
+    .cta-section p { color: var(--text-light); margin-bottom: 1.5rem; }
+    .cta-buttons { display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; }
+    .cta-btn {
+      padding: .75rem 2rem;
+      border-radius: .5rem;
+      font-weight: 600;
+      text-decoration: none;
+      display: inline-block;
+      transition: all .3s ease;
+    }
+    .cta-btn-primary { background: var(--accent); color: #fff; }
+    .cta-btn-primary:hover { background: var(--accent-dark); }
+    .cta-btn-secondary { background: var(--primary); color: #fff; }
+    .cta-btn-secondary:hover { background: var(--primary-dark); }
+
+    .company-info { text-align: center; padding: 2rem 0; font-size: .875rem; color: var(--text-light); }
+
+    @media (min-width: 768px) {
+      .hero-about-inner { flex-direction: row; text-align: left; }
+      .hero-about-text { text-align: left; }
+      .social-links { justify-content: flex-start; }
+      .stats-grid { grid-template-columns: repeat(4, 1fr); }
+      .methods-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 600px) {
+      .testing-steps { grid-template-columns: repeat(3, 1fr); }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Ilane Tall",
+    "jobTitle": "Product Researcher | Specializing in bathroom products and home textiles",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Best Toilet Seats"
+    },
+    "description": "Product Researcher specializing in bathroom products and home textiles. Helping families find the perfect toilet seat.",
+    "sameAs": [
+      "https://www.linkedin.com/in/ilanetall",
+      "https://twitter.com/ilanetall_bbr"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header id="site-header"></header>
+
+  <section class="hero-about">
+    <div class="container">
+      <div class="hero-about-inner">
+        <div class="author-photo">
+          <img src="images/author-ilane-tall.jpg" alt="Ilane Tall - Product Researcher" width="192" height="192">
+        </div>
+        <div class="hero-about-text">
+          <h1>Ilane Tall</h1>
+          <p class="subtitle">Product Researcher &amp; Bathroom Comfort Expert</p>
+          <p class="quote">"Helping families find the perfect toilet seat for comfort, hygiene, and peace of mind."</p>
+          <div class="social-links">
+            <a href="https://www.linkedin.com/in/ilanetall" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://twitter.com/ilanetall_bbr" target="_blank" rel="noopener noreferrer">X / Twitter</a>
+            <a href="contact">Email</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="stats-bar">
+    <div class="container">
+      <div class="stats-grid">
+        <div><span class="stat-number">100+</span><span class="stat-label">Toilet Seats Researched</span></div>
+        <div><span class="stat-number">10+</span><span class="stat-label">Years in Home Design</span></div>
+        <div><span class="stat-number">5+</span><span class="stat-label">Bathroom Niches Covered</span></div>
+        <div><span class="stat-number">50K+</span><span class="stat-label">Reviews Analyzed</span></div>
+      </div>
+    </div>
+  </section>
+
+  <main class="content-section">
+    <div class="container">
+
+      <div class="card">
+        <h2>My Story</h2>
+        <p>With over 10 years of experience in interior design and home products, I've made it my mission to help homeowners make informed decisions about their bathroom essentials.</p>
+        <p>After working as a buyer for major home goods retailers, I noticed how confusing the toilet seat market had become. Hundreds of options — from basic replacements to high-tech bidet seats — with no reliable comparison data.</p>
+        <p>That's why I created Best Toilet Seats — to provide honest, data-driven reviews based on real research, not just manufacturer specs.</p>
+        <p class="highlight">Every product on this site has been carefully evaluated using our rigorous 5-point methodology.</p>
+      </div>
+
+      <h2 style="font-size:1.75rem;font-weight:700;color:#1565C0;margin-bottom:1.5rem;">Our Research Approach</h2>
+      <div class="methods-grid">
+        <div class="method-card">
+          <h3>Data-Driven Analysis</h3>
+          <p>We analyze thousands of verified customer reviews to identify patterns, common praises, and recurring complaints. Numbers don't lie.</p>
+        </div>
+        <div class="method-card">
+          <h3>Spec Comparison</h3>
+          <p>We compare materials, dimensions, compatibility, weight limits, and features across competing products to give you a clear picture.</p>
+        </div>
+        <div class="method-card">
+          <h3>Real Customer Insights</h3>
+          <p>We highlight what real buyers say after weeks and months of use — the good, the bad, and everything in between.</p>
+        </div>
+        <div class="method-card">
+          <h3>Practical Recommendations</h3>
+          <p>We match products to specific needs. Not everyone needs the same toilet seat — we help you find YOUR perfect match.</p>
+        </div>
+      </div>
+
+      <div class="testing-bar" style="margin-top:2rem;">
+        <h2>Our 5-Point Testing Methodology</h2>
+        <div class="testing-steps">
+          <div><div class="testing-step-num">1</div><div class="testing-step-label">Comfort & Fit</div></div>
+          <div><div class="testing-step-num">2</div><div class="testing-step-label">Durability</div></div>
+          <div><div class="testing-step-num">3</div><div class="testing-step-label">Installation</div></div>
+          <div><div class="testing-step-num">4</div><div class="testing-step-label">Hygiene Features</div></div>
+          <div><div class="testing-step-num">5</div><div class="testing-step-label">Value for Money</div></div>
+        </div>
+      </div>
+
+      <h2 style="font-size:1.75rem;font-weight:700;color:#1565C0;margin:2rem 0 1rem;">What We Stand For</h2>
+      <div class="values-list">
+        <div class="value-item">
+          <h3>Honesty First</h3>
+          <p>We never recommend a product we wouldn't suggest to our own family. If something has issues, we tell you.</p>
+        </div>
+        <div class="value-item">
+          <h3>No Pay-to-Play</h3>
+          <p>Brands cannot pay for better rankings or reviews. Our recommendations are based solely on research and data.</p>
+        </div>
+        <div class="value-item">
+          <h3>Transparency About Affiliates</h3>
+          <p>Yes, we earn commissions when you buy through our links. But this never influences our rankings. We recommend the best products, period.</p>
+        </div>
+      </div>
+
+      <div class="cta-section" style="margin-top:2rem;">
+        <h2>Let's Connect!</h2>
+        <p>Have questions about toilet seats? Want to suggest a product for review? I'd love to hear from you!</p>
+        <div class="cta-buttons">
+          <a href="contact" class="cta-btn cta-btn-primary">Send Me an Email</a>
+          <a href="https://www.linkedin.com/in/ilanetall" target="_blank" rel="noopener noreferrer" class="cta-btn cta-btn-secondary">Connect on LinkedIn</a>
+        </div>
+      </div>
+
+      <div class="company-info">
+        <p>Best Toilet Seats is operated by <strong>Neclid LTD</strong></p>
+        <p>Based in Israel — Serving readers worldwide</p>
+      </div>
+
+    </div>
+  </main>
+
+  <footer id="site-footer"></footer>
+  <script src="components/site-components.js"></script>
+</body>
+</html>
