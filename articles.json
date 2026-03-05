@@ -1,1 +1,57 @@
-[]
+[
+  {
+    "title": "Best Toilet Seats of 2026: Expert Tested & Reviewed",
+    "slug": "best-toilet-seats",
+    "summary": "We tested 30+ toilet seats for comfort, durability, and ease of install. See our 7 top picks across every category.",
+    "image": "images/hero-best-toilet-seats.png",
+    "imageWidth": 400,
+    "imageHeight": 192,
+    "publishDate": "2026-03-05",
+    "category": "Reviews",
+    "featured": true
+  },
+  {
+    "title": "7 Best Soft-Close Toilet Seats (2026) — Tested & Reviewed",
+    "slug": "best-soft-close-toilet-seats",
+    "summary": "Stop the slamming. We tested 15 soft-close toilet seats and found the 7 best for quiet, durable performance.",
+    "image": "images/hero-best-soft-close-toilet-seats.png",
+    "imageWidth": 400,
+    "imageHeight": 192,
+    "publishDate": "2026-03-05",
+    "category": "Reviews",
+    "featured": true
+  },
+  {
+    "title": "Best Bidet Toilet Seats in 2026: Electric vs Non-Electric",
+    "slug": "best-bidet-toilet-seats",
+    "summary": "Electric or non-electric? We compared 12 bidet seats on hygiene, comfort, and value. Our 7 top picks from $24 to $700.",
+    "image": "images/hero-best-bidet-toilet-seats.png",
+    "imageWidth": 400,
+    "imageHeight": 192,
+    "publishDate": "2026-03-05",
+    "category": "Reviews",
+    "featured": true
+  },
+  {
+    "title": "Best Raised Toilet Seats for Seniors & Elderly (2026)",
+    "slug": "best-raised-toilet-seats-for-seniors",
+    "summary": "Safe, comfortable raised toilet seats for seniors. 6 expert picks with handles, padding, and 400lb capacity.",
+    "image": "images/hero-best-raised-toilet-seats-for-seniors.png",
+    "imageWidth": 400,
+    "imageHeight": 192,
+    "publishDate": "2026-03-05",
+    "category": "Reviews",
+    "featured": true
+  },
+  {
+    "title": "Best Potty Training Seats for Toddlers (2026) — Parent Tested",
+    "slug": "best-potty-training-seats-for-toddlers",
+    "summary": "Make potty training easier with the right seat. 6 parent-tested picks with splash guards, steps, and fun designs.",
+    "image": "images/hero-best-potty-training-seats-for-toddlers.png",
+    "imageWidth": 400,
+    "imageHeight": 192,
+    "publishDate": "2026-03-05",
+    "category": "Reviews",
+    "featured": true
+  }
+]
