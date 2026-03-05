@@ -4,8 +4,11 @@
  */
 window.SITE_CONFIG = {
   name: "Best Toilet Seats",
+  domain: "besttoiletseats.com",
   tagline: "Expert reviews & buying guides for the perfect toilet seat",
   logo: "images/toilet-seats-logo.svg",
+  affiliateTag: "besttoilet-seats-20",
+  gaId: "G-SG6BLKK4C1",
   colors: {
     primary: "#1565C0",
     primaryLight: "#42A5F5",
