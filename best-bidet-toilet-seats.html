@@ -20,7 +20,7 @@
         .quick-answer{background:linear-gradient(135deg,#FFF8E1,#FFECB3);border-left:4px solid #FFB300;padding:1.25rem;margin-bottom:2rem;border-radius:0 8px 8px 0}.quick-answer h2{font-size:1.1rem;color:#E65100;margin:0 0 .75rem 0;border:none;padding:0}.quick-answer p{margin:0}
         .toc{background:#f5f5f5;border-left:4px solid var(--accent);padding:20px 25px;margin:2rem 0;border-radius:0 8px 8px 0}.toc h2{color:var(--primary);font-size:1.1rem;margin:0 0 15px 0;border:none;padding:0}.toc ol{margin:0;padding-left:1.2rem}.toc li{margin:8px 0}.toc a{color:var(--accent);font-weight:500}
         .quick-pick-box{background:linear-gradient(135deg,var(--primary),var(--primary-light));border-radius:16px;padding:1.5rem;color:white;margin:2rem 0;position:relative}.quick-pick-label{background:var(--accent);padding:6px 16px;border-radius:20px;font-size:.85rem;font-weight:700;text-transform:uppercase;display:inline-block;margin-bottom:1rem}.quick-pick-content{display:flex;gap:1.5rem;align-items:center}.quick-pick-image{width:140px;height:140px;object-fit:contain;background:white;border-radius:12px;padding:10px;flex-shrink:0}.quick-pick-details h3{color:white;margin-top:0;font-size:1.3rem}.quick-pick-details .rating{opacity:.9;margin-bottom:.3rem}.quick-pick-details .price{font-size:1.6rem;font-weight:700;margin-bottom:.5rem}.quick-pick-details p{opacity:.95;margin:.5rem 0;font-size:.95rem}
-        .product-card{background:#f8f9fa;border-radius:12px;padding:1.5rem;margin:2rem 0;border:1px solid #e0e0e0}.product-badge{background:var(--accent);color:white;padding:5px 12px;border-radius:20px;font-size:.75rem;font-weight:700;text-transform:uppercase;display:inline-block;margin-bottom:.75rem}.product-content{display:grid;grid-template-columns:200px 1fr;gap:1.5rem;align-items:start}.product-image{width:200px;height:200px;object-fit:contain;background:white;border-radius:8px;padding:10px}.product-name{font-size:1.25rem;color:var(--primary-dark);margin-bottom:.5rem}.product-rating{color:#666;margin-bottom:.3rem}.product-price{font-size:1.5rem;font-weight:700;color:var(--primary);margin-bottom:.75rem}.best-for{font-size:.9rem;color:#555;margin-bottom:.5rem}
+        .product-card{background:#f8f9fa;border-radius:12px;padding:1.5rem;margin:2rem 0;border:1px solid #e0e0e0}.product-badge{background:var(--accent);color:white;padding:5px 12px;border-radius:20px;font-size:.75rem;font-weight:700;text-transform:uppercase;display:inline-block;margin-bottom:.75rem}.product-content{display:grid;grid-template-columns:auto 1fr;gap:1.5rem;align-items:start}.product-image{width:200px;height:200px;object-fit:contain;background:white;border-radius:8px;padding:10px}.product-name{font-size:1.25rem;color:var(--primary-dark);margin-bottom:.5rem}.product-rating{color:#666;margin-bottom:.3rem}.product-price{font-size:1.5rem;font-weight:700;color:var(--primary);margin-bottom:.75rem}.best-for{font-size:.9rem;color:#555;margin-bottom:.5rem}
         .pros-cons{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin:1rem 0;font-size:.9rem}.pros h4,.cons h4{font-size:.85rem;text-transform:uppercase;margin-bottom:.5rem}.pros h4{color:#4CAF50}.cons h4{color:#E53935}.pros ul,.cons ul{list-style:none;padding:0;margin:0}.pros li::before{content:"\1F44D "}.cons li::before{content:"\1F44E "}
         .specs-table{width:100%;border-collapse:collapse;margin:.75rem 0;font-size:.85rem}.specs-table td{padding:6px 10px;border-bottom:1px solid #e0e0e0}.specs-table td:first-child{font-weight:600;color:var(--primary-dark);width:35%}
         .cta-button{display:inline-block;background:var(--accent);color:white;padding:14px 28px;border-radius:8px;text-decoration:none;font-weight:600;transition:all .2s;margin-top:.5rem}.cta-button:hover{background:var(--accent-dark);transform:translateY(-2px);text-decoration:none;box-shadow:0 4px 12px rgba(255,179,0,.4)}
@@ -33,7 +33,14 @@
         .crosslink-banner{background:linear-gradient(135deg,#00695C,#00897B);padding:24px;border-radius:16px;margin:3rem 0;text-align:center}.crosslink-banner p{color:white;font-size:1.15rem;margin-bottom:1rem}.crosslink-banner a{background:white;color:#FF6F00;padding:12px 28px;border-radius:8px;text-decoration:none;font-weight:700;display:inline-block}.crosslink-banner a:hover{transform:translateY(-2px);text-decoration:none}
         .hero-image{width:100%;max-height:450px;object-fit:cover;border-radius:12px;margin-bottom:1.5rem}
         @media(max-width:768px){.article-header h1{font-size:1.7rem}h2{font-size:1.4rem}.quick-pick-content{flex-direction:column;text-align:center}.quick-pick-image{margin:0 auto}.product-content{grid-template-columns:1fr}.product-image{max-width:200px;margin:0 auto}.pros-cons{grid-template-columns:1fr}.decision-grid{grid-template-columns:1fr}.related-grid{grid-template-columns:1fr}.comparison-table{font-size:.75rem}.comparison-table th,.comparison-table td{padding:8px 5px}}
-    </style>
+    
+.product-gallery{text-align:center;min-width:200px}
+.gallery-main{width:100%!important;max-width:280px!important;height:220px!important;object-fit:contain!important;border-radius:8px!important;margin:0 auto 8px!important;display:block!important;transition:opacity .25s ease;background:#f9f9f9}
+.gallery-thumbs{display:flex!important;justify-content:center;gap:6px;flex-wrap:wrap}
+.gallery-thumb{width:48px!important;min-width:48px!important;max-width:48px!important;height:48px!important;object-fit:cover!important;border-radius:4px!important;border:2px solid #e0e0e0!important;margin:0!important;padding:0!important;cursor:pointer;transition:border-color .2s,transform .2s;background:#f9f9f9}
+.gallery-thumb:hover{transform:scale(1.1);border-color:#bbb!important}
+.gallery-thumb.active{border-color:#FFB300!important}
+</style>
     <script type="application/ld+json">
     {"@context":"https://schema.org","@graph":[{"@type":"Article","headline":"Best Bidet Toilet Seats in 2026: Electric vs Non-Electric","description":"We compared 20+ bidet toilet seats — electric and non-electric — to find the 7 best options for every budget.","image":"https://besttoiletseats.com/images/hero-best-bidet-toilet-seats.png","author":{"@type":"Person","name":"Ilane Tall","jobTitle":"Product Researcher","description":"Ilane specializes in bathroom products and home comfort solutions.","url":"https://besttoiletseats.com/about"},"publisher":{"@type":"Organization","name":"Best Toilet Seats","logo":{"@type":"ImageObject","url":"https://besttoiletseats.com/logo.svg"}},"datePublished":"2026-03-05","dateModified":"2026-03-05","mainEntityOfPage":{"@type":"WebPage","@id":"https://besttoiletseats.com/best-bidet-toilet-seats.html"}},{"@type":"ItemList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"Product","name":"Brondell Swash Ecoseat Non-Electric Bidet","image":"https://m.media-amazon.com/images/I/51cD1n2rw3L._AC_SL1500_.jpg","brand":{"@type":"Brand","name":"Brondell"},"offers":{"@type":"Offer","price":"89.99","priceCurrency":"USD","availability":"https://schema.org/InStock","url":"https://www.amazon.com/dp/B0815CP9G5?tag=besttoilet-seats-20"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.3","reviewCount":"10541"}}},{"@type":"ListItem","position":2,"item":{"@type":"Product","name":"Brondell Swash SE400 Electric Bidet Toilet Seat","image":"https://m.media-amazon.com/images/I/61D7dM2KqGL._AC_SL1500_.jpg","brand":{"@type":"Brand","name":"Brondell"},"offers":{"@type":"Offer","price":"279.99","priceCurrency":"USD","availability":"https://schema.org/InStock","url":"https://www.amazon.com/dp/B074MLZR3Y?tag=besttoilet-seats-20"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.2","reviewCount":"1424"}}},{"@type":"ListItem","position":3,"item":{"@type":"Product","name":"ALPHA BIDET UX Pearl Bidet Toilet Seat","image":"https://m.media-amazon.com/images/I/31y4+EjztJL._AC_SL1500_.jpg","brand":{"@type":"Brand","name":"ALPHA BIDET"},"offers":{"@type":"Offer","price":"449.00","priceCurrency":"USD","availability":"https://schema.org/InStock","url":"https://www.amazon.com/dp/B09VRFZ592?tag=besttoilet-seats-20"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.5","reviewCount":"639"}}},{"@type":"ListItem","position":4,"item":{"@type":"Product","name":"SAMODRA Non-Electric Bidet Attachment","image":"https://m.media-amazon.com/images/I/61IGdBkaALL._AC_SL1500_.jpg","brand":{"@type":"Brand","name":"SAMODRA"},"offers":{"@type":"Offer","price":"23.99","priceCurrency":"USD","availability":"https://schema.org/InStock","url":"https://www.amazon.com/dp/B07ZRC6717?tag=besttoilet-seats-20"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.4","reviewCount":"25178"}}},{"@type":"ListItem","position":5,"item":{"@type":"Product","name":"Electric Heated Bidet Toilet Seat LED Display","image":"https://m.media-amazon.com/images/I/51lwDh8JQHL._AC_SL1500_.jpg","brand":{"@type":"Brand","name":"Generic"},"offers":{"@type":"Offer","price":"169.99","priceCurrency":"USD","availability":"https://schema.org/InStock","url":"https://www.amazon.com/dp/B0CY2BXZHR?tag=besttoilet-seats-20"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.4","reviewCount":"565"}}},{"@type":"ListItem","position":6,"item":{"@type":"Product","name":"Dual Nozzle Bidet Toilet Seat Attachment","image":"https://m.media-amazon.com/images/I/61ReEABciRL._AC_SL1500_.jpg","brand":{"@type":"Brand","name":"Generic"},"offers":{"@type":"Offer","price":"23.99","priceCurrency":"USD","availability":"https://schema.org/InStock","url":"https://www.amazon.com/dp/B0DBV7FK8R?tag=besttoilet-seats-20"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.5","reviewCount":"873"}}},{"@type":"ListItem","position":7,"item":{"@type":"Product","name":"Brondell Thinline T44 Swash Electric Bidet","image":"https://m.media-amazon.com/images/I/41935YowgPL._AC_SL1500_.jpg","brand":{"@type":"Brand","name":"Brondell"},"offers":{"@type":"Offer","price":"699.99","priceCurrency":"USD","availability":"https://schema.org/InStock","url":"https://www.amazon.com/dp/B0CX1XFMSY?tag=besttoilet-seats-20"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.0","reviewCount":"2275"}}}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is the difference between an electric and non-electric bidet?","acceptedAnswer":{"@type":"Answer","text":"Electric bidet seats plug into a wall outlet and offer heated water, heated seats, warm air dryers, adjustable pressure, and sometimes LED night lights or deodorizers. Non-electric bidets connect only to your water supply and use water pressure for cleaning — they provide cold water only (or ambient temperature) and have no heated features. Electric models cost $170-$700+ while non-electric options run $24-$90."}},{"@type":"Question","name":"Are bidet toilet seats sanitary?","acceptedAnswer":{"@type":"Answer","text":"Yes, bidet seats are considered more hygienic than toilet paper alone. Water cleaning removes bacteria more effectively than dry wiping. Most bidet seats feature self-cleaning nozzles that rinse before and after each use. Studies published in medical journals have shown that bidet use reduces the risk of urinary tract infections and improves hygiene for people with mobility limitations."}},{"@type":"Question","name":"Can I install a bidet seat myself?","acceptedAnswer":{"@type":"Answer","text":"Most non-electric bidet attachments can be installed in 15-30 minutes with no tools beyond what comes in the box. You simply remove your existing seat, place the bidet bracket on the toilet bowl, reattach the seat, and connect the T-adapter to your water supply. Electric bidet seats require a nearby GFCI outlet — if you don't have one within reach, you may need an electrician to install one."}},{"@type":"Question","name":"Do bidets save money on toilet paper?","acceptedAnswer":{"@type":"Answer","text":"Yes. The average American household spends $120-$180 per year on toilet paper. Bidet users typically reduce toilet paper consumption by 75-80%, saving $90-$144 annually. A non-electric bidet attachment at $24 pays for itself in about 3 months. Even a $280 electric bidet seat pays for itself within 2-3 years while providing significantly better hygiene."}},{"@type":"Question","name":"Will a bidet fit my toilet?","acceptedAnswer":{"@type":"Answer","text":"Most bidet seats and attachments are designed for standard elongated or round toilets. Attachments with universal sizing fit virtually any toilet. Full bidet seats come in elongated and round versions — measure your toilet from the mounting holes to the front edge. Elongated bowls measure about 18.5 inches, round bowls about 16.5 inches. One-piece toilets with French curves may not be compatible with some bidet seats."}},{"@type":"Question","name":"How much water does a bidet use?","acceptedAnswer":{"@type":"Answer","text":"A typical bidet wash uses about 1/8 gallon (0.5 liters) of water per use. By comparison, manufacturing a single roll of toilet paper requires 37 gallons of water. Since bidets dramatically reduce toilet paper consumption, they actually result in significant net water savings — approximately 15,000 gallons per household per year when accounting for reduced toilet paper production."}}]},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://besttoiletseats.com/"},{"@type":"ListItem","position":2,"name":"Reviews","item":"https://besttoiletseats.com/articles.html"},{"@type":"ListItem","position":3,"name":"Best Bidet Toilet Seats"}]}]}
     </script>
@@ -216,7 +223,16 @@
             <div class="product-card" id="product-1">
                 <span class="product-badge">Best Overall Non-Electric</span>
                 <div class="product-content">
-                    <div style="text-align:center;min-width:200px;"><img src="https://m.media-amazon.com/images/I/51cD1n2rw3L._AC_SL1500_.jpg" alt="Brondell Swash Ecoseat Non-Electric Bidet" class="product-image" loading="lazy" width="200" height="200"></div>
+                    <div style="text-align:center;min-width:200px;"><div class="product-gallery">
+    <img src="https://m.media-amazon.com/images/I/51cD1n2rw3L._AC_SL500_.jpg" alt="Brondell Swash Ecoseat Non-Electric Bidet" class="gallery-main" loading="lazy" width="280" height="280">
+    <div class="gallery-thumbs">
+        <img src="https://m.media-amazon.com/images/I/51cD1n2rw3L._AC_SL100_.jpg" data-full="https://m.media-amazon.com/images/I/51cD1n2rw3L._AC_SL500_.jpg" class="gallery-thumb active" alt="Brondell Swash Ecoseat Non-Electric Bidet - view 1" loading="lazy" width="48" height="48">
+        <img src="https://m.media-amazon.com/images/I/21bScmNW9rL._AC_SL100_.jpg" data-full="https://m.media-amazon.com/images/I/21bScmNW9rL._AC_SL500_.jpg" class="gallery-thumb" alt="Brondell Swash Ecoseat Non-Electric Bidet - view 2" loading="lazy" width="48" height="48">
+        <img src="https://m.media-amazon.com/images/I/31eGm9BfiHL._AC_SL100_.jpg" data-full="https://m.media-amazon.com/images/I/31eGm9BfiHL._AC_SL500_.jpg" class="gallery-thumb" alt="Brondell Swash Ecoseat Non-Electric Bidet - view 3" loading="lazy" width="48" height="48">
+        <img src="https://m.media-amazon.com/images/I/4182iom6LTL._AC_SL100_.jpg" data-full="https://m.media-amazon.com/images/I/4182iom6LTL._AC_SL500_.jpg" class="gallery-thumb" alt="Brondell Swash Ecoseat Non-Electric Bidet - view 4" loading="lazy" width="48" height="48">
+        <img src="https://m.media-amazon.com/images/I/41n0anfQwCL._AC_SL100_.jpg" data-full="https://m.media-amazon.com/images/I/41n0anfQwCL._AC_SL500_.jpg" class="gallery-thumb" alt="Brondell Swash Ecoseat Non-Electric Bidet - view 5" loading="lazy" width="48" height="48">
+    </div>
+</div></div>
                     <div class="product-details">
                         <h3 class="product-name">1. Brondell Swash Ecoseat Non-Electric Bidet</h3>
                         <div class="product-rating">4.3/5 (10,541 verified reviews)</div>
@@ -240,7 +256,16 @@
             <div class="product-card" id="product-2">
                 <span class="product-badge" style="background:#1565C0;">Best Mid-Range Electric</span>
                 <div class="product-content">
-                    <div style="text-align:center;min-width:200px;"><img src="https://m.media-amazon.com/images/I/61D7dM2KqGL._AC_SL1500_.jpg" alt="Brondell Swash SE400 Electric Bidet Toilet Seat" class="product-image" loading="lazy" width="200" height="200"></div>
+                    <div style="text-align:center;min-width:200px;"><div class="product-gallery">
+    <img src="https://m.media-amazon.com/images/I/61D7dM2KqGL._AC_SL500_.jpg" alt="Brondell Swash SE400 Electric Bidet Toilet Seat" class="gallery-main" loading="lazy" width="280" height="280">
+    <div class="gallery-thumbs">
+        <img src="https://m.media-amazon.com/images/I/61D7dM2KqGL._AC_SL100_.jpg" data-full="https://m.media-amazon.com/images/I/61D7dM2KqGL._AC_SL500_.jpg" class="gallery-thumb active" alt="Brondell Swash SE400 Electric Bidet Toilet Seat - view 1" loading="lazy" width="48" height="48">
+        <img src="https://m.media-amazon.com/images/I/31UaI8tngeL._AC_SL100_.jpg" data-full="https://m.media-amazon.com/images/I/31UaI8tngeL._AC_SL500_.jpg" class="gallery-thumb" alt="Brondell Swash SE400 Electric Bidet Toilet Seat - view 2" loading="lazy" width="48" height="48">
+        <img src="https://m.media-amazon.com/images/I/31dVDAgsg1L._AC_SL100_.jpg" data-full="https://m.media-amazon.com/images/I/31dVDAgsg1L._AC_SL500_.jpg" class="gallery-thumb" alt="Brondell Swash SE400 Electric Bidet Toilet Seat - view 3" loading="lazy" width="48" height="48">
+        <img src="https://m.media-amazon.com/images/I/31ZMzgv8aAL._AC_SL100_.jpg" data-full="https://m.media-amazon.com/images/I/31ZMzgv8aAL._AC_SL500_.jpg" class="gallery-thumb" alt="Brondell Swash SE400 Electric Bidet Toilet Seat - view 4" loading="lazy" width="48" height="48">
+        <img src="https://m.media-amazon.com/images/I/41qhLZUIBoL._AC_SL100_.jpg" data-full="https://m.media-amazon.com/images/I/41qhLZUIBoL._AC_SL500_.jpg" class="gallery-thumb" alt="Brondell Swash SE400 Electric Bidet Toilet Seat - view 5" loading="lazy" width="48" height="48">
+    </div>
+</div></div>
                     <div class="product-details">
                         <h3 class="product-name">2. Brondell Swash SE400 Electric Bidet Toilet Seat</h3>
                         <div class="product-rating">4.2/5 (1,424 verified reviews)</div>
@@ -265,7 +290,16 @@
             <div class="product-card" id="product-3">
                 <span class="product-badge" style="background:#9C27B0;">Best Premium Electric</span>
                 <div class="product-content">
-                    <div style="text-align:center;min-width:200px;"><img src="https://m.media-amazon.com/images/I/31y4+EjztJL._AC_SL1500_.jpg" alt="ALPHA BIDET UX Pearl Bidet Toilet Seat" class="product-image" loading="lazy" width="200" height="200"></div>
+                    <div style="text-align:center;min-width:200px;"><div class="product-gallery">
+    <img src="https://m.media-amazon.com/images/I/31y4+EjztJL._AC_SL500_.jpg" alt="ALPHA BIDET UX Pearl Bidet Toilet Seat" class="gallery-main" loading="lazy" width="280" height="280">
+    <div class="gallery-thumbs">
+        <img src="https://m.media-amazon.com/images/I/31y4+EjztJL._AC_SL100_.jpg" data-full="https://m.media-amazon.com/images/I/31y4+EjztJL._AC_SL500_.jpg" class="gallery-thumb active" alt="ALPHA BIDET UX Pearl Bidet Toilet Seat - view 1" loading="lazy" width="48" height="48">
+        <img src="https://m.media-amazon.com/images/I/21TJ2o4fcjL._AC_SL100_.jpg" data-full="https://m.media-amazon.com/images/I/21TJ2o4fcjL._AC_SL500_.jpg" class="gallery-thumb" alt="ALPHA BIDET UX Pearl Bidet Toilet Seat - view 2" loading="lazy" width="48" height="48">
+        <img src="https://m.media-amazon.com/images/I/31HrYEV7lUL._AC_SL100_.jpg" data-full="https://m.media-amazon.com/images/I/31HrYEV7lUL._AC_SL500_.jpg" class="gallery-thumb" alt="ALPHA BIDET UX Pearl Bidet Toilet Seat - view 3" loading="lazy" width="48" height="48">
+        <img src="https://m.media-amazon.com/images/I/21oS0+9kSXL._AC_SL100_.jpg" data-full="https://m.media-amazon.com/images/I/21oS0+9kSXL._AC_SL500_.jpg" class="gallery-thumb" alt="ALPHA BIDET UX Pearl Bidet Toilet Seat - view 4" loading="lazy" width="48" height="48">
+        <img src="https://m.media-amazon.com/images/I/31d65BgbhYL._AC_SL100_.jpg" data-full="https://m.media-amazon.com/images/I/31d65BgbhYL._AC_SL500_.jpg" class="gallery-thumb" alt="ALPHA BIDET UX Pearl Bidet Toilet Seat - view 5" loading="lazy" width="48" height="48">
+    </div>
+</div></div>
                     <div class="product-details">
                         <h3 class="product-name">3. ALPHA BIDET UX Pearl Bidet Toilet Seat</h3>
                         <div class="product-rating">4.5/5 (639 verified reviews)</div>
@@ -289,7 +323,16 @@
             <div class="product-card" id="product-4">
                 <span class="product-badge" style="background:#4CAF50;">Best Budget Attachment</span>
                 <div class="product-content">
-                    <div style="text-align:center;min-width:200px;"><img src="https://m.media-amazon.com/images/I/61IGdBkaALL._AC_SL1500_.jpg" alt="SAMODRA Non-Electric Bidet Attachment" class="product-image" loading="lazy" width="200" height="200"></div>
+                    <div style="text-align:center;min-width:200px;"><div class="product-gallery">
+    <img src="https://m.media-amazon.com/images/I/61IGdBkaALL._AC_SL500_.jpg" alt="SAMODRA Non-Electric Bidet Attachment" class="gallery-main" loading="lazy" width="280" height="280">
+    <div class="gallery-thumbs">
+        <img src="https://m.media-amazon.com/images/I/61IGdBkaALL._AC_SL100_.jpg" data-full="https://m.media-amazon.com/images/I/61IGdBkaALL._AC_SL500_.jpg" class="gallery-thumb active" alt="SAMODRA Non-Electric Bidet Attachment - view 1" loading="lazy" width="48" height="48">
+        <img src="https://m.media-amazon.com/images/I/41YLFzVqdnL._AC_SL100_.jpg" data-full="https://m.media-amazon.com/images/I/41YLFzVqdnL._AC_SL500_.jpg" class="gallery-thumb" alt="SAMODRA Non-Electric Bidet Attachment - view 2" loading="lazy" width="48" height="48">
+        <img src="https://m.media-amazon.com/images/I/51EDHOGka3L._AC_SL100_.jpg" data-full="https://m.media-amazon.com/images/I/51EDHOGka3L._AC_SL500_.jpg" class="gallery-thumb" alt="SAMODRA Non-Electric Bidet Attachment - view 3" loading="lazy" width="48" height="48">
+        <img src="https://m.media-amazon.com/images/I/513XwhOtBuL._AC_SL100_.jpg" data-full="https://m.media-amazon.com/images/I/513XwhOtBuL._AC_SL500_.jpg" class="gallery-thumb" alt="SAMODRA Non-Electric Bidet Attachment - view 4" loading="lazy" width="48" height="48">
+        <img src="https://m.media-amazon.com/images/I/41niRIduGeL._AC_SL100_.jpg" data-full="https://m.media-amazon.com/images/I/41niRIduGeL._AC_SL500_.jpg" class="gallery-thumb" alt="SAMODRA Non-Electric Bidet Attachment - view 5" loading="lazy" width="48" height="48">
+    </div>
+</div></div>
                     <div class="product-details">
                         <h3 class="product-name">4. SAMODRA Non-Electric Bidet Attachment</h3>
                         <div class="product-rating">4.4/5 (25,178 verified reviews)</div>
@@ -314,7 +357,16 @@
             <div class="product-card" id="product-5">
                 <span class="product-badge" style="background:#FF6F00;">Best Value Electric</span>
                 <div class="product-content">
-                    <div style="text-align:center;min-width:200px;"><img src="https://m.media-amazon.com/images/I/51lwDh8JQHL._AC_SL1500_.jpg" alt="Electric Heated Bidet Toilet Seat LED Display" class="product-image" loading="lazy" width="200" height="200"></div>
+                    <div style="text-align:center;min-width:200px;"><div class="product-gallery">
+    <img src="https://m.media-amazon.com/images/I/51lwDh8JQHL._AC_SL500_.jpg" alt="Electric Heated Bidet Toilet Seat LED Display" class="gallery-main" loading="lazy" width="280" height="280">
+    <div class="gallery-thumbs">
+        <img src="https://m.media-amazon.com/images/I/51lwDh8JQHL._AC_SL100_.jpg" data-full="https://m.media-amazon.com/images/I/51lwDh8JQHL._AC_SL500_.jpg" class="gallery-thumb active" alt="Electric Heated Bidet Toilet Seat LED Display - view 1" loading="lazy" width="48" height="48">
+        <img src="https://m.media-amazon.com/images/I/31ia2xQHlDL._AC_SL100_.jpg" data-full="https://m.media-amazon.com/images/I/31ia2xQHlDL._AC_SL500_.jpg" class="gallery-thumb" alt="Electric Heated Bidet Toilet Seat LED Display - view 2" loading="lazy" width="48" height="48">
+        <img src="https://m.media-amazon.com/images/I/418E1Xbeg0L._AC_SL100_.jpg" data-full="https://m.media-amazon.com/images/I/418E1Xbeg0L._AC_SL500_.jpg" class="gallery-thumb" alt="Electric Heated Bidet Toilet Seat LED Display - view 3" loading="lazy" width="48" height="48">
+        <img src="https://m.media-amazon.com/images/I/41cZD84lg1L._AC_SL100_.jpg" data-full="https://m.media-amazon.com/images/I/41cZD84lg1L._AC_SL500_.jpg" class="gallery-thumb" alt="Electric Heated Bidet Toilet Seat LED Display - view 4" loading="lazy" width="48" height="48">
+        <img src="https://m.media-amazon.com/images/I/41hla7vqIxL._AC_SL100_.jpg" data-full="https://m.media-amazon.com/images/I/41hla7vqIxL._AC_SL500_.jpg" class="gallery-thumb" alt="Electric Heated Bidet Toilet Seat LED Display - view 5" loading="lazy" width="48" height="48">
+    </div>
+</div></div>
                     <div class="product-details">
                         <h3 class="product-name">5. Electric Heated Bidet Toilet Seat with LED Display</h3>
                         <div class="product-rating">4.4/5 (565 verified reviews)</div>
@@ -338,7 +390,16 @@
             <div class="product-card" id="product-6">
                 <span class="product-badge" style="background:#607D8B;">Best Basic Attachment</span>
                 <div class="product-content">
-                    <div style="text-align:center;min-width:200px;"><img src="https://m.media-amazon.com/images/I/61ReEABciRL._AC_SL1500_.jpg" alt="Dual Nozzle Bidet Toilet Seat Attachment" class="product-image" loading="lazy" width="200" height="200"></div>
+                    <div style="text-align:center;min-width:200px;"><div class="product-gallery">
+    <img src="https://m.media-amazon.com/images/I/61ReEABciRL._AC_SL500_.jpg" alt="Dual Nozzle Bidet Toilet Seat Attachment" class="gallery-main" loading="lazy" width="280" height="280">
+    <div class="gallery-thumbs">
+        <img src="https://m.media-amazon.com/images/I/61ReEABciRL._AC_SL100_.jpg" data-full="https://m.media-amazon.com/images/I/61ReEABciRL._AC_SL500_.jpg" class="gallery-thumb active" alt="Dual Nozzle Bidet Toilet Seat Attachment - view 1" loading="lazy" width="48" height="48">
+        <img src="https://m.media-amazon.com/images/I/31FVGUu762L._AC_SL100_.jpg" data-full="https://m.media-amazon.com/images/I/31FVGUu762L._AC_SL500_.jpg" class="gallery-thumb" alt="Dual Nozzle Bidet Toilet Seat Attachment - view 2" loading="lazy" width="48" height="48">
+        <img src="https://m.media-amazon.com/images/I/41F95rE02iL._AC_SL100_.jpg" data-full="https://m.media-amazon.com/images/I/41F95rE02iL._AC_SL500_.jpg" class="gallery-thumb" alt="Dual Nozzle Bidet Toilet Seat Attachment - view 3" loading="lazy" width="48" height="48">
+        <img src="https://m.media-amazon.com/images/I/41hTWjsClSL._AC_SL100_.jpg" data-full="https://m.media-amazon.com/images/I/41hTWjsClSL._AC_SL500_.jpg" class="gallery-thumb" alt="Dual Nozzle Bidet Toilet Seat Attachment - view 4" loading="lazy" width="48" height="48">
+        <img src="https://m.media-amazon.com/images/I/410N4MqXALL._AC_SL100_.jpg" data-full="https://m.media-amazon.com/images/I/410N4MqXALL._AC_SL500_.jpg" class="gallery-thumb" alt="Dual Nozzle Bidet Toilet Seat Attachment - view 5" loading="lazy" width="48" height="48">
+    </div>
+</div></div>
                     <div class="product-details">
                         <h3 class="product-name">6. Dual Nozzle Bidet Toilet Seat Attachment</h3>
                         <div class="product-rating">4.5/5 (873 verified reviews)</div>
@@ -362,7 +423,16 @@
             <div class="product-card" id="product-7">
                 <span class="product-badge" style="background:#6A1B9A;">Best Luxury</span>
                 <div class="product-content">
-                    <div style="text-align:center;min-width:200px;"><img src="https://m.media-amazon.com/images/I/41935YowgPL._AC_SL1500_.jpg" alt="Brondell Thinline T44 Swash Electric Bidet" class="product-image" loading="lazy" width="200" height="200"></div>
+                    <div style="text-align:center;min-width:200px;"><div class="product-gallery">
+    <img src="https://m.media-amazon.com/images/I/41935YowgPL._AC_SL500_.jpg" alt="Brondell Thinline T44 Swash Electric Bidet" class="gallery-main" loading="lazy" width="280" height="280">
+    <div class="gallery-thumbs">
+        <img src="https://m.media-amazon.com/images/I/41935YowgPL._AC_SL100_.jpg" data-full="https://m.media-amazon.com/images/I/41935YowgPL._AC_SL500_.jpg" class="gallery-thumb active" alt="Brondell Thinline T44 Swash Electric Bidet - view 1" loading="lazy" width="48" height="48">
+        <img src="https://m.media-amazon.com/images/I/11-A59q4AUL._AC_SL100_.jpg" data-full="https://m.media-amazon.com/images/I/11-A59q4AUL._AC_SL500_.jpg" class="gallery-thumb" alt="Brondell Thinline T44 Swash Electric Bidet - view 2" loading="lazy" width="48" height="48">
+        <img src="https://m.media-amazon.com/images/I/41pXsYHjqCL._AC_SL100_.jpg" data-full="https://m.media-amazon.com/images/I/41pXsYHjqCL._AC_SL500_.jpg" class="gallery-thumb" alt="Brondell Thinline T44 Swash Electric Bidet - view 3" loading="lazy" width="48" height="48">
+        <img src="https://m.media-amazon.com/images/I/41GN3uWxkDL._AC_SL100_.jpg" data-full="https://m.media-amazon.com/images/I/41GN3uWxkDL._AC_SL500_.jpg" class="gallery-thumb" alt="Brondell Thinline T44 Swash Electric Bidet - view 4" loading="lazy" width="48" height="48">
+        <img src="https://m.media-amazon.com/images/I/31Scwd3sbvL._AC_SL100_.jpg" data-full="https://m.media-amazon.com/images/I/31Scwd3sbvL._AC_SL500_.jpg" class="gallery-thumb" alt="Brondell Thinline T44 Swash Electric Bidet - view 5" loading="lazy" width="48" height="48">
+    </div>
+</div></div>
                     <div class="product-details">
                         <h3 class="product-name">7. Brondell Thinline T44 Swash Electric Bidet</h3>
                         <div class="product-rating">4.0/5 (2,275 verified reviews)</div>
@@ -489,4 +559,17 @@
     </main>
     <footer id="site-footer"></footer>
     <script src="components/site-components.js" defer></script>
+<script>
+document.querySelectorAll('.product-gallery').forEach(function(g){
+    var m=g.querySelector('.gallery-main');
+    g.querySelectorAll('.gallery-thumb').forEach(function(t){
+        t.addEventListener('click',function(){
+            m.style.opacity='0';
+            setTimeout(function(){m.src=t.getAttribute('data-full');m.alt=t.alt;m.style.opacity='1'},200);
+            g.querySelectorAll('.gallery-thumb').forEach(function(x){x.classList.remove('active')});
+            t.classList.add('active');
+        });
+    });
+});
+</script>
 </body></html>
