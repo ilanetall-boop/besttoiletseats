@@ -7,6 +7,7 @@ window.SITE_CONFIG = {
   domain: "besttoiletseats.com",
   tagline: "Expert reviews & buying guides for the perfect toilet seat",
   logo: "images/toilet-seats-logo.svg",
+  newsletterUrl: "https://script.google.com/macros/s/AKfycbxhUcinCHfLDqvtL6ko2bxreGTOv4yOkGPrO_hUC7v9AVXvjI0cAG9k2nVXKAkbN8kV/exec",
   affiliateTag: "besttoilet-seats-20",
   gaId: "G-SG6BLKK4C1",
   colors: {

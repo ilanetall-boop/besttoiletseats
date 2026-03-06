@@ -781,24 +781,43 @@
 
     function handleNewsletter(event) {
       event.preventDefault();
-      const email = event.target.querySelector('input[type="email"]').value;
-      const button = event.target.querySelector('button');
-      const originalText = button.textContent;
+      var email = event.target.querySelector('input[type="email"]').value;
+      var button = event.target.querySelector('button');
+      var originalText = button.textContent;
 
       if (!email || !email.includes('@')) {
         alert('Please enter a valid email address');
         return;
       }
 
+      var url = (window.SITE_CONFIG && window.SITE_CONFIG.newsletterUrl) || '';
+      if (!url || url === 'APPS_SCRIPT_URL') {
+        alert('Newsletter coming soon! Thank you for your interest.');
+        return;
+      }
+
       button.textContent = 'Subscribing...';
       button.disabled = true;
 
-      setTimeout(() => {
-        alert('Thank you for subscribing! You\'ll receive our latest toilet seat reviews and deals.');
+      fetch(url, {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: { 'Content-Type': 'text/plain' },
+        body: JSON.stringify({
+          email: email,
+          blog: (window.SITE_CONFIG && window.SITE_CONFIG.domain) || location.hostname,
+          source: location.pathname
+        })
+      }).then(function() {
+        alert('Thank you for subscribing! You will receive our latest reviews and deals.');
         event.target.reset();
+      }).catch(function() {
+        alert('Thank you for subscribing!');
+        event.target.reset();
+      }).finally(function() {
         button.textContent = originalText;
         button.disabled = false;
-      }, 1200);
+      });
     }
 
     // Deferred analytics
