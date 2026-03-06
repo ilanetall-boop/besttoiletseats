@@ -503,7 +503,14 @@
     <div class="container">
       <div class="hero-grid">
         <div>
-          <div style="width:100%;aspect-ratio:800/240;background:rgba(255,255,255,.1);border-radius:.75rem;display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.5);font-size:1.2rem;">Hero image coming soon</div>
+          <img src="images/hero-how-to-install-a-toilet-seat.webp"
+               alt="How to Install a Toilet Seat: Step-by-Step Guide (2026)"
+               width="800"
+               height="240"
+               loading="eager"
+               fetchpriority="high"
+               decoding="sync"
+               class="hero-image">
         </div>
         <div class="hero-content" id="hero-content">
           <div class="hero-meta">
@@ -694,12 +701,14 @@
       if (featuredArticles.length === 0) return;
       const article = featuredArticles[index];
       const content = document.getElementById('hero-content');
+      const heroImg = document.querySelector('.hero-image');
 
       content.classList.add('fade-out');
       setTimeout(() => {
         document.getElementById('hero-title').textContent = article.title;
         document.getElementById('hero-excerpt').textContent = article.summary;
         document.getElementById('hero-link').href = article.slug;
+        if (article.image && heroImg) { heroImg.src = article.image; heroImg.alt = article.title; }
 
         document.querySelectorAll('.hero-dot').forEach((dot, i) => {
           dot.classList.toggle('active', i === index);
