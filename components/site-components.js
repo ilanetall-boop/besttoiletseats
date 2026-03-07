@@ -15,6 +15,20 @@
   }
 
   // ---------------------------------------------------------------------------
+  // Google Analytics — auto-inject if gaId is set and gtag not already loaded
+  // ---------------------------------------------------------------------------
+  if (config.gaId && !window.gtag) {
+    var gaScript = document.createElement('script');
+    gaScript.async = true;
+    gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=' + config.gaId;
+    document.head.appendChild(gaScript);
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = function () { window.dataLayer.push(arguments); };
+    window.gtag('js', new Date());
+    window.gtag('config', config.gaId, { send_page_view: true });
+  }
+
+  // ---------------------------------------------------------------------------
   // Detect current page
   // ---------------------------------------------------------------------------
   var path = window.location.pathname;
