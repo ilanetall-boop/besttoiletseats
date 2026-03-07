@@ -40,7 +40,7 @@ window.SITE_CONFIG = {
     network: [
       { label: "Best Bath Rugs", href: "https://www.bestbathrugs.com" },
       { label: "Best Shower Curtains", href: "https://best-shower-curtains.com" },
-      { label: "Best Bathroom Vanities", href: "https://best-bathroom-vanities.com" }
+      { label: "Best Bathroom Vanities", href: "https://bestbathroomvanities.com" }
     ]
   },
   networkBanners: [
@@ -64,7 +64,7 @@ window.SITE_CONFIG = {
     },
     {
       id: "best-bathroom-vanities",
-      domain: "best-bathroom-vanities.com",
+      domain: "bestbathroomvanities.com",
       headline: "Shopping for a Bathroom Vanity?",
       description: "Expert reviews of the best bathroom vanities — from floating modern designs to farmhouse styles. Find the perfect vanity for your renovation.",
       ctaText: "Browse Bathroom Vanities",
