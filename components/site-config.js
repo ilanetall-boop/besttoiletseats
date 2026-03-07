@@ -39,7 +39,8 @@ window.SITE_CONFIG = {
     ],
     network: [
       { label: "Best Bath Rugs", href: "https://www.bestbathrugs.com" },
-      { label: "Best Shower Curtains", href: "https://www.best-shower-curtains.com" }
+      { label: "Best Shower Curtains", href: "https://best-shower-curtains.com" },
+      { label: "Best Bathroom Vanities", href: "https://best-bathroom-vanities.com" }
     ]
   },
   networkBanners: [
@@ -59,6 +60,15 @@ window.SITE_CONFIG = {
       description: "From waterproof liners to luxury hotel-style designs. Our experts tested the top shower curtains so you don't have to.",
       ctaText: "Browse Shower Curtains",
       bannerImage: "images/banner-shower-curtains.jpg",
+      active: true
+    },
+    {
+      id: "best-bathroom-vanities",
+      domain: "best-bathroom-vanities.com",
+      headline: "Shopping for a Bathroom Vanity?",
+      description: "Expert reviews of the best bathroom vanities — from floating modern designs to farmhouse styles. Find the perfect vanity for your renovation.",
+      ctaText: "Browse Bathroom Vanities",
+      bannerImage: "images/banner-bathroom-vanities.jpg",
       active: true
     }
   ]
