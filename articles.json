@@ -43,7 +43,7 @@
     "imageHeight": 192,
     "publishDate": "2026-03-05",
     "category": "Reviews",
-    "featured": true
+    "featured": false
   },
   {
     "title": "7 Best Soft-Close Toilet Seats (2026) — Tested & Reviewed",
@@ -54,7 +54,7 @@
     "imageHeight": 192,
     "publishDate": "2026-03-05",
     "category": "Reviews",
-    "featured": true
+    "featured": false
   },
   {
     "title": "Best Bidet Toilet Seats in 2026: Electric vs Non-Electric",
@@ -65,7 +65,7 @@
     "imageHeight": 192,
     "publishDate": "2026-03-05",
     "category": "Reviews",
-    "featured": true
+    "featured": false
   },
   {
     "title": "Best Raised Toilet Seats for Seniors & Elderly (2026)",
@@ -76,7 +76,7 @@
     "imageHeight": 192,
     "publishDate": "2026-03-05",
     "category": "Reviews",
-    "featured": true
+    "featured": false
   },
   {
     "title": "Best Potty Training Seats for Toddlers (2026) — Parent Tested",
@@ -87,6 +87,6 @@
     "imageHeight": 192,
     "publishDate": "2026-03-05",
     "category": "Reviews",
-    "featured": true
+    "featured": false
   }
 ]

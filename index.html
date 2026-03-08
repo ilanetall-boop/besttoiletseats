@@ -769,7 +769,8 @@
         articles.sort((a, b) => new Date(b.publishDate) - new Date(a.publishDate));
         allArticles = articles;
 
-        featuredArticles = articles.filter(a => a.featured);
+        // Featured articles (max 3 for Editor's Picks + Hero)
+        featuredArticles = articles.filter(a => a.featured).slice(0, 3);
         if (featuredArticles.length === 0) {
           featuredArticles = articles.slice(0, 3);
         }
@@ -781,6 +782,10 @@
         }
 
         renderPopular(featuredArticles);
+
+        // Latest Articles grid (exclude Editor's Picks to avoid duplicates)
+        const pickedSlugs = new Set(featuredArticles.map(a => a.slug));
+        allArticles = articles.filter(a => !pickedSlugs.has(a.slug));
         renderArticles('all');
         updateStats(articles);
         setupFilters();
