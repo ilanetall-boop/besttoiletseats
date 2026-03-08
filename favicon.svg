@@ -1,0 +1,16 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="32" height="32" rx="4" fill="#1565C0"/>
+
+  <!-- Toilet Seat Ring (oval) -->
+  <ellipse cx="16" cy="17" rx="9" ry="10" stroke="#BBDEFB" stroke-width="3" fill="none"/>
+
+  <!-- Seat Opening (inner oval) -->
+  <ellipse cx="16" cy="17" rx="5.5" ry="6.5" fill="#0D47A1"/>
+
+  <!-- Lid Hinge -->
+  <rect x="12" y="5" width="8" height="3" rx="1.5" fill="#BBDEFB"/>
+
+  <!-- Accent Sparkle -->
+  <path d="M26 6C26 6 27 3 27 2.5C27 1.67 26.33 1 25.5 1C24.67 1 24 1.67 24 2.5C24 3 25 6 25 6H26Z" fill="#FFB300"/>
+</svg>
