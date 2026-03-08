@@ -40,7 +40,8 @@ window.SITE_CONFIG = {
     network: [
       { label: "Best Bath Rugs", href: "https://www.bestbathrugs.com" },
       { label: "Best Shower Curtains", href: "https://best-shower-curtains.com" },
-      { label: "Best Bathroom Vanities", href: "https://bestbathroomvanities.com" }
+      { label: "Best Bathroom Vanities", href: "https://bestbathroomvanities.com" },
+      { label: "Best Shower Heads", href: "https://best-shower-heads.com" }
     ]
   },
   networkBanners: [
@@ -69,6 +70,15 @@ window.SITE_CONFIG = {
       description: "Expert reviews of the best bathroom vanities — from floating modern designs to farmhouse styles. Find the perfect vanity for your renovation.",
       ctaText: "Browse Bathroom Vanities",
       bannerImage: "images/banner-bathroom-vanities.jpg",
+      active: true
+    },
+    {
+      id: "best-shower-heads",
+      domain: "best-shower-heads.com",
+      headline: "Upgrade Your Shower Head?",
+      description: "From rainfall to high-pressure designs. Expert reviews of the best shower heads for an amazing shower experience.",
+      ctaText: "Browse Shower Heads",
+      bannerImage: "images/banner-shower-heads.jpg",
       active: true
     }
   ]
