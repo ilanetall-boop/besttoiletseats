@@ -533,16 +533,6 @@
 
   <!-- MAIN CONTENT -->
   <main>
-    <!-- EDITOR'S PICKS -->
-    <section class="popular-section" id="popular-section" style="display:none;">
-      <div class="container">
-        <div class="section-header">
-          <h2>Editor's Picks</h2>
-        </div>
-        <div class="popular-grid" id="popular-grid"></div>
-      </div>
-    </section>
-
     <!-- LATEST ARTICLES -->
     <section class="articles-section">
       <div class="container">
@@ -656,28 +646,6 @@
       `;
     }
 
-    function createPopularCard(article, index) {
-      const labels = ['Top Pick', 'Popular', 'Trending'];
-      return `
-        <article class="popular-card">
-          <span class="popular-badge">${labels[index] || 'Featured'}</span>
-          <a href="${article.slug}">
-            <img src="${article.image}"
-                 alt="${article.title}"
-                 width="${article.imageWidth || 400}"
-                 height="${article.imageHeight || 192}"
-                 loading="lazy"
-                 decoding="async">
-          </a>
-          <div class="popular-card-content">
-            <h3><a href="${article.slug}">${article.title}</a></h3>
-            <p>${article.summary}</p>
-            <a href="${article.slug}" class="read-more">Read article &rarr;</a>
-          </div>
-        </article>
-      `;
-    }
-
     function renderArticles(category) {
       const grid = document.getElementById('articles-grid');
       const filtered = category === 'all'
@@ -689,14 +657,6 @@
         return;
       }
       grid.innerHTML = filtered.map(createArticleCard).join('');
-    }
-
-    function renderPopular(featured) {
-      if (featured.length === 0) return;
-      const section = document.getElementById('popular-section');
-      const grid = document.getElementById('popular-grid');
-      grid.innerHTML = featured.map((a, i) => createPopularCard(a, i)).join('');
-      section.style.display = '';
     }
 
     function showHero(index) {
@@ -780,12 +740,7 @@
           buildHeroDots(featuredArticles.length);
           startHeroRotation();
         }
-
-        renderPopular(featuredArticles);
-
-        // Latest Articles grid (exclude Editor's Picks to avoid duplicates)
-        const pickedSlugs = new Set(featuredArticles.map(a => a.slug));
-        allArticles = articles.filter(a => !pickedSlugs.has(a.slug));
+        // All articles grid
         renderArticles('all');
         updateStats(articles);
         setupFilters();
