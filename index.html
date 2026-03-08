@@ -763,7 +763,7 @@
       });
     }
 
-    fetch('articles.json')
+    fetch('articles.json?v=2')
       .then(r => r.json())
       .then(articles => {
         articles.sort((a, b) => new Date(b.publishDate) - new Date(a.publishDate));
