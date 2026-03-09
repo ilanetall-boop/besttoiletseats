@@ -195,4 +195,80 @@
         '</div>' +
       '</div>';
   }
+  // ---------------------------------------------------------------------------
+  // Product image gallery — click thumbnail to view full-size
+  // Supports two gallery structures:
+  //   1) .gallery-main + .gallery-thumbs (BBR, SC, BTS)
+  //   2) .product-gallery grid (BSH, BV)
+  // ---------------------------------------------------------------------------
+
+  // Inject gallery lightbox CSS
+  var galleryCss = [
+    '.gallery-lightbox{position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,.85);z-index:9999;display:flex;align-items:center;justify-content:center;cursor:zoom-out;opacity:0;transition:opacity .2s ease}',
+    '.gallery-lightbox.show{opacity:1}',
+    '.gallery-lightbox img{max-width:90%;max-height:90%;object-fit:contain;border-radius:8px;box-shadow:0 4px 24px rgba(0,0,0,.5)}',
+    '.gallery-thumb{cursor:pointer}',
+    '.product-gallery img{cursor:pointer}'
+  ].join('\n');
+  var galleryStyle = document.createElement('style');
+  galleryStyle.textContent = galleryCss;
+  document.head.appendChild(galleryStyle);
+
+  document.addEventListener('click', function (e) {
+    var img = e.target;
+    if (!img || img.tagName !== 'IMG') return;
+
+    var src = null;
+
+    // Case 1: gallery-thumb with data-full attribute
+    if (img.classList.contains('gallery-thumb') && img.getAttribute('data-full')) {
+      src = img.getAttribute('data-full');
+      // Also update the gallery-main image if present
+      var container = img.closest('.product-card') || img.parentElement.parentElement;
+      var mainImg = container ? container.querySelector('.gallery-main') : null;
+      if (mainImg) {
+        mainImg.src = src;
+        mainImg.alt = img.alt;
+      }
+      // Update active state
+      var thumbs = img.parentElement.querySelectorAll('.gallery-thumb');
+      for (var t = 0; t < thumbs.length; t++) thumbs[t].classList.remove('active');
+      img.classList.add('active');
+    }
+
+    // Case 2: product-gallery img click
+    if (img.parentElement && img.parentElement.classList.contains('product-gallery')) {
+      src = img.src;
+    }
+
+    // Case 3: gallery-main click
+    if (img.classList.contains('gallery-main')) {
+      src = img.src;
+    }
+
+    // Open lightbox
+    if (src) {
+      e.preventDefault();
+      var overlay = document.createElement('div');
+      overlay.className = 'gallery-lightbox';
+      var bigImg = document.createElement('img');
+      bigImg.src = src;
+      bigImg.alt = img.alt || 'Product image';
+      overlay.appendChild(bigImg);
+      document.body.appendChild(overlay);
+      // Trigger fade-in
+      requestAnimationFrame(function () { overlay.classList.add('show'); });
+      overlay.addEventListener('click', function () {
+        overlay.classList.remove('show');
+        setTimeout(function () { overlay.remove(); }, 200);
+      });
+      document.addEventListener('keydown', function closeOnEsc(ev) {
+        if (ev.key === 'Escape') {
+          overlay.classList.remove('show');
+          setTimeout(function () { overlay.remove(); }, 200);
+          document.removeEventListener('keydown', closeOnEsc);
+        }
+      });
+    }
+  });
 })();
