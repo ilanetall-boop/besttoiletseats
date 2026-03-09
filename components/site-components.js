@@ -202,12 +202,19 @@
   //   2) .product-gallery grid (BSH, BV)
   // ---------------------------------------------------------------------------
 
-  // Inject gallery lightbox CSS
+  // Inject gallery lightbox + improved gallery layout CSS
   var galleryCss = [
+    '/* Gallery layout: main image prominent, thumbs as small row below */',
+    '.product-gallery{display:flex;flex-direction:column;align-items:center;gap:8px;margin-bottom:12px}',
+    '.gallery-main{width:100%!important;max-width:320px!important;height:260px!important;object-fit:contain!important;border-radius:8px!important;margin:0 auto 4px!important;display:block!important;background:#f9f9f9;border:1px solid #e0e0e0;cursor:pointer;transition:opacity .25s ease}',
+    '.gallery-thumbs{display:flex!important;justify-content:center;gap:6px;flex-wrap:wrap}',
+    '.gallery-thumb{width:52px!important;min-width:52px!important;max-width:52px!important;height:52px!important;object-fit:cover!important;border-radius:6px!important;border:2px solid #e0e0e0!important;cursor:pointer!important;transition:border-color .2s,transform .2s}',
+    '.gallery-thumb:hover{border-color:var(--accent,#FF7043)!important;transform:scale(1.08)}',
+    '.gallery-thumb.active{border-color:var(--accent,#FF7043)!important;box-shadow:0 0 0 1px var(--accent,#FF7043)}',
+    '/* Lightbox */',
     '.gallery-lightbox{position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,.85);z-index:9999;display:flex;align-items:center;justify-content:center;cursor:zoom-out;opacity:0;transition:opacity .2s ease}',
     '.gallery-lightbox.show{opacity:1}',
     '.gallery-lightbox img{max-width:90%;max-height:90%;object-fit:contain;border-radius:8px;box-shadow:0 4px 24px rgba(0,0,0,.5)}',
-    '.gallery-thumb{cursor:pointer}',
     '.product-gallery img{cursor:pointer}'
   ].join('\n');
   var galleryStyle = document.createElement('style');
