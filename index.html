@@ -791,28 +791,6 @@
       });
     }
 
-    // Deferred analytics
-    window.addEventListener('load', function() {
-      if (!localStorage.getItem('analytics-disabled')) {
-        var gaId = 'G-XXXXXXXXXX'; // TODO: Replace with actual GA ID
-        var script = document.createElement('script');
-        script.async = true;
-        script.src = 'https://www.googletagmanager.com/gtag/js?id=' + gaId;
-        document.head.appendChild(script);
-
-        script.onload = function() {
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', gaId, {
-            'page_title': document.title,
-            'page_location': window.location.href,
-            'send_page_view': true
-          });
-          window.gtag = gtag;
-        };
-      }
-    });
   </script>
 </body>
 </html>
