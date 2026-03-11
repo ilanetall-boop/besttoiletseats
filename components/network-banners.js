@@ -106,7 +106,7 @@
   document.head.appendChild(style);
 
   function createBannerElement(banner) {
-    var url = 'https://www.' + banner.domain + (banner.landingPage || '');
+    var url = 'https://' + banner.domain + (banner.landingPage || '');
     var el = document.createElement('a');
     el.className = 'network-banner';
     el.href = url;

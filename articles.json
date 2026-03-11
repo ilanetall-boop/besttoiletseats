@@ -99,5 +99,29 @@
     "publishDate": "2026-03-09",
     "category": "Reviews",
     "featured": false
+  },
+  {
+    "title": "5 Best Padded Toilet Seats for Extra Comfort (2026)",
+    "slug": "best-padded-toilet-seats",
+    "summary": "We tested 10+ padded toilet seats for comfort, durability, and hygiene. Our top 5 cushioned picks from $22.99 — perfect for elderly and comfort-seekers.",
+    "image": "images/hero-best-padded-toilet-seats.png",
+    "imageWidth": 400,
+    "imageHeight": 192,
+    "publishDate": "2026-03-10",
+    "category": "Reviews",
+    "template": "roundup",
+    "featured": false
+  },
+  {
+    "title": "How to Replace a Toilet Seat: Easy Step-by-Step (2026)",
+    "slug": "how-to-replace-a-toilet-seat",
+    "summary": "Learn how to replace a toilet seat in under 15 minutes. Tools, removal, installation, and our top pick toilet seats. Step-by-step guide with photos.",
+    "image": "images/hero-how-to-replace-a-toilet-seat.png",
+    "imageWidth": 400,
+    "imageHeight": 192,
+    "publishDate": "2026-03-10",
+    "category": "Guides",
+    "template": "how-to",
+    "featured": false
   }
 ]

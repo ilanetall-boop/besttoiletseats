@@ -47,7 +47,7 @@ window.SITE_CONFIG = {
   networkBanners: [
     {
       id: "best-bath-rugs",
-      domain: "bestbathrugs.com",
+      domain: "www.bestbathrugs.com",
       headline: "Looking for the Perfect Bath Rug?",
       description: "Discover our expert reviews of the best bath rugs — from ultra-absorbent to non-slip designs. Find your perfect match.",
       ctaText: "Browse Bath Rugs",
