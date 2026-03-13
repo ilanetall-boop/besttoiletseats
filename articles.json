@@ -147,5 +147,17 @@
     "category": "Reviews",
     "template": "roundup",
     "featured": true
+  },
+  {
+    "title": "Toilet Seat Won't Stay Up? 5 Easy Fixes That Work (2026)",
+    "slug": "toilet-seat-wont-stay-up-fix",
+    "summary": "Toilet seat keeps falling down? 5 proven fixes from simple bumper adjustments to hinge replacement. Step-by-step instructions with no plumber needed.",
+    "image": "images/hero-toilet-seat-wont-stay-up-fix.webp",
+    "imageWidth": 400,
+    "imageHeight": 229,
+    "publishDate": "2026-03-13",
+    "category": "Guides",
+    "template": "how-to",
+    "featured": false
   }
 ]
