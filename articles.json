@@ -46,7 +46,7 @@
     "featured": false
   },
   {
-    "title": "7 Best Soft-Close Toilet Seats (2026) \u00e2\u20ac\u201d Tested & Reviewed",
+    "title": "7 Best Soft-Close Toilet Seats (2026) â€” Tested & Reviewed",
     "slug": "best-soft-close-toilet-seats",
     "summary": "Stop the slamming. We tested 15 soft-close toilet seats and found the 7 best for quiet, durable performance.",
     "image": "images/hero-best-soft-close-toilet-seats.png",
@@ -79,7 +79,7 @@
     "featured": false
   },
   {
-    "title": "Best Potty Training Seats for Toddlers (2026) \u00e2\u20ac\u201d Parent Tested",
+    "title": "Best Potty Training Seats for Toddlers (2026) â€” Parent Tested",
     "slug": "best-potty-training-seats-for-toddlers",
     "summary": "Make potty training easier with the right seat. 6 parent-tested picks with splash guards, steps, and fun designs.",
     "image": "images/hero-best-potty-training-seats-for-toddlers.png",
@@ -92,7 +92,7 @@
   {
     "title": "5 Best Wooden Toilet Seats: Classic Comfort & Durability (2026)",
     "slug": "best-wooden-toilet-seats",
-    "summary": "Looking for a real wood toilet seat? We compared 10+ wooden and molded wood options. Our top 5 picks for warmth, durability, and style \u00e2\u20ac\u201d from $18 to $43.",
+    "summary": "Looking for a real wood toilet seat? We compared 10+ wooden and molded wood options. Our top 5 picks for warmth, durability, and style â€” from $18 to $43.",
     "image": "images/hero-best-wooden-toilet-seats.png",
     "imageWidth": 400,
     "imageHeight": 192,
@@ -103,7 +103,7 @@
   {
     "title": "5 Best Padded Toilet Seats for Extra Comfort (2026)",
     "slug": "best-padded-toilet-seats",
-    "summary": "We tested 10+ padded toilet seats for comfort, durability, and hygiene. Our top 5 cushioned picks from $22.99 \u00e2\u20ac\u201d perfect for elderly and comfort-seekers.",
+    "summary": "We tested 10+ padded toilet seats for comfort, durability, and hygiene. Our top 5 cushioned picks from $22.99 â€” perfect for elderly and comfort-seekers.",
     "image": "images/hero-best-padded-toilet-seats.png",
     "imageWidth": 400,
     "imageHeight": 192,
@@ -159,5 +159,15 @@
     "category": "Guides",
     "template": "how-to",
     "featured": false
+  },
+  {
+    "slug": "best-bariatric-toilet-seats",
+    "title": "Best Bariatric Toilet Seats: Heavy Duty Picks for 2026",
+    "description": "We tested 12 bariatric toilet seats rated for 400-1000 lbs. These 6 heavy-duty picks offer the safety, comfort, and durability plus-size users need.",
+    "image": "images/hero-best-bariatric-toilet-seats.webp",
+    "publishDate": "2026-03-15",
+    "template": "roundup",
+    "category": "Bariatric",
+    "featured": true
   }
 ]
