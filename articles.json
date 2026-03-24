@@ -9,7 +9,8 @@
     "publishDate": "2026-03-08",
     "category": "Reviews",
     "template": "roundup",
-    "featured": true
+    "featured": true,
+    "description": "5 best heated toilet seats tested for warmth, comfort, and reliability. Electric bidet seats with adjustable heat from $169.99 to $699.99. Updated March 2026."
   },
   {
     "title": "How to Install a Toilet Seat: Step-by-Step Guide (2026)",
@@ -21,7 +22,8 @@
     "publishDate": "2026-03-06",
     "category": "Guides",
     "template": "how-to",
-    "featured": true
+    "featured": true,
+    "description": "Step-by-step guide to installing or replacing a toilet seat in under 15 minutes. Tools needed, common mistakes, and 5 best toilet seats for easy install."
   },
   {
     "title": "Elongated vs Round Toilet Seats: Which Is Better? (2026)",
@@ -32,7 +34,8 @@
     "imageHeight": 192,
     "publishDate": "2026-03-06",
     "category": "Comparisons",
-    "featured": true
+    "featured": true,
+    "description": "Elongated vs round toilet seats compared side by side. We tested both shapes for comfort, fit, and value. Find which toilet seat shape is right for your bathroom."
   },
   {
     "title": "Best Toilet Seats of 2026: Expert Tested & Reviewed",
@@ -43,10 +46,11 @@
     "imageHeight": 192,
     "publishDate": "2026-03-05",
     "category": "Reviews",
-    "featured": false
+    "featured": false,
+    "description": "We tested 30+ toilet seats for comfort, durability, and ease of install. See our 7 top picks across every category."
   },
   {
-    "title": "7 Best Soft-Close Toilet Seats (2026) â€” Tested & Reviewed",
+    "title": "7 Best Soft-Close Toilet Seats (2026) — Tested & Reviewed",
     "slug": "best-soft-close-toilet-seats",
     "summary": "Stop the slamming. We tested 15 soft-close toilet seats and found the 7 best for quiet, durable performance.",
     "image": "images/hero-best-soft-close-toilet-seats.png",
@@ -54,7 +58,8 @@
     "imageHeight": 192,
     "publishDate": "2026-03-05",
     "category": "Reviews",
-    "featured": false
+    "featured": false,
+    "description": "Stop the slamming. We tested 15 soft-close toilet seats and found the 7 best for quiet, durable performance."
   },
   {
     "title": "Best Bidet Toilet Seats in 2026: Electric vs Non-Electric",
@@ -65,7 +70,8 @@
     "imageHeight": 192,
     "publishDate": "2026-03-05",
     "category": "Reviews",
-    "featured": false
+    "featured": false,
+    "description": "Electric or non-electric? We compared 12 bidet seats on hygiene, comfort, and value. Our 7 top picks from $24 to $700."
   },
   {
     "title": "Best Raised Toilet Seats for Seniors & Elderly (2026)",
@@ -76,10 +82,11 @@
     "imageHeight": 192,
     "publishDate": "2026-03-05",
     "category": "Reviews",
-    "featured": false
+    "featured": false,
+    "description": "Safe, comfortable raised toilet seats for seniors. 6 expert picks with handles, padding, and 400lb capacity."
   },
   {
-    "title": "Best Potty Training Seats for Toddlers (2026) â€” Parent Tested",
+    "title": "Best Potty Training Seats for Toddlers (2026) — Parent Tested",
     "slug": "best-potty-training-seats-for-toddlers",
     "summary": "Make potty training easier with the right seat. 6 parent-tested picks with splash guards, steps, and fun designs.",
     "image": "images/hero-best-potty-training-seats-for-toddlers.png",
@@ -87,30 +94,33 @@
     "imageHeight": 192,
     "publishDate": "2026-03-05",
     "category": "Reviews",
-    "featured": false
+    "featured": false,
+    "description": "Make potty training easier with the right seat. 6 parent-tested picks with splash guards, steps, and fun designs."
   },
   {
     "title": "5 Best Wooden Toilet Seats: Classic Comfort & Durability (2026)",
     "slug": "best-wooden-toilet-seats",
-    "summary": "Looking for a real wood toilet seat? We compared 10+ wooden and molded wood options. Our top 5 picks for warmth, durability, and style â€” from $18 to $43.",
+    "summary": "Looking for a real wood toilet seat? We compared 10+ wooden and molded wood options. Our top 5 picks for warmth, durability, and style — from $18 to $43.",
     "image": "images/hero-best-wooden-toilet-seats.png",
     "imageWidth": 400,
     "imageHeight": 192,
     "publishDate": "2026-03-09",
     "category": "Reviews",
-    "featured": false
+    "featured": false,
+    "description": "Looking for a real wood toilet seat? We compared 10+ wooden and molded wood options. Our top 5 picks for warmth, durability, and style — from $18 to $43."
   },
   {
     "title": "5 Best Padded Toilet Seats for Extra Comfort (2026)",
     "slug": "best-padded-toilet-seats",
-    "summary": "We tested 10+ padded toilet seats for comfort, durability, and hygiene. Our top 5 cushioned picks from $22.99 â€” perfect for elderly and comfort-seekers.",
+    "summary": "We tested 10+ padded toilet seats for comfort, durability, and hygiene. Our top 5 cushioned picks from $22.99 — perfect for elderly and comfort-seekers.",
     "image": "images/hero-best-padded-toilet-seats.png",
     "imageWidth": 400,
     "imageHeight": 192,
     "publishDate": "2026-03-10",
     "category": "Reviews",
     "template": "roundup",
-    "featured": false
+    "featured": false,
+    "description": "We tested 10+ padded toilet seats for comfort, durability, and hygiene. Our top 5 cushioned picks from $22.99 — perfect for elderly and comfort-seekers."
   },
   {
     "title": "How to Replace a Toilet Seat: Easy Step-by-Step (2026)",
@@ -122,7 +132,8 @@
     "publishDate": "2026-03-10",
     "category": "Guides",
     "template": "how-to",
-    "featured": false
+    "featured": false,
+    "description": "Learn how to replace a toilet seat in under 15 minutes. Tools, removal, installation, and our top pick toilet seats. Step-by-step guide with photos."
   },
   {
     "title": "Bidet vs Toilet Paper: Real Cost Savings Breakdown (2026)",
@@ -134,7 +145,8 @@
     "publishDate": "2026-03-11",
     "category": "Guides",
     "template": "guide",
-    "featured": true
+    "featured": true,
+    "description": "How much does a bidet really save? We calculated annual costs for 4 bidet models vs toilet paper. Most households save (-\u0000/year after the first year."
   },
   {
     "title": "Best Smart Toilet Seats with Remote Control (2026)",
@@ -146,7 +158,8 @@
     "publishDate": "2026-03-12",
     "category": "Reviews",
     "template": "roundup",
-    "featured": true
+    "featured": true,
+    "description": "7 best smart toilet seats with remote control tested. Electric bidet seats from TOTO, Bio Bidet, Brondell, and ALPHA. From $249 to $758."
   },
   {
     "title": "Toilet Seat Won't Stay Up? 5 Easy Fixes That Work (2026)",
@@ -158,7 +171,8 @@
     "publishDate": "2026-03-13",
     "category": "Guides",
     "template": "how-to",
-    "featured": false
+    "featured": false,
+    "description": "Toilet seat keeps falling down? 5 proven fixes from simple bumper adjustments to hinge replacement. Step-by-step instructions with no plumber needed."
   },
   {
     "slug": "best-bariatric-toilet-seats",
@@ -168,7 +182,8 @@
     "publishDate": "2026-03-15",
     "template": "roundup",
     "category": "Bariatric",
-    "featured": true
+    "featured": true,
+    "summary": "We tested 12 bariatric toilet seats rated for 400-1000 lbs. These 6 heavy-duty picks offer the safety, comfort, and durability plus-size users need."
   },
   {
     "slug": "best-elongated-toilet-seats",
@@ -178,7 +193,8 @@
     "publishDate": "2026-03-23",
     "template": "roundup",
     "category": "Elongated",
-    "featured": true
+    "featured": true,
+    "description": "We tested 15 elongated toilet seats and picked the 7 best. From budget-friendly Bemis to premium KOHLER Hyten, find the perfect fit for your bathroom."
   },
   {
     "slug": "best-round-toilet-seats",
@@ -188,7 +204,8 @@
     "publishDate": "2026-03-23",
     "template": "roundup",
     "category": "Round",
-    "featured": false
+    "featured": false,
+    "description": "Round toilet seats are perfect for compact bathrooms. We tested the top 5 round seats from KOHLER, Mayfair, and more for comfort and durability."
   },
   {
     "slug": "best-toilet-seats-under-50",
@@ -198,6 +215,7 @@
     "publishDate": "2026-03-23",
     "template": "roundup",
     "category": "Budget",
-    "featured": false
+    "featured": false,
+    "description": "Quality toilet seats don't have to break the bank. Our 7 best picks under $50 include slow-close, wood, and elongated options from trusted brands."
   }
 ]
