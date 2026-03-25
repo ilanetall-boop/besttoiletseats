@@ -217,5 +217,19 @@
     "category": "Budget",
     "featured": false,
     "description": "Quality toilet seats don't have to break the bank. Our 7 best picks under $50 include slow-close, wood, and elongated options from trusted brands."
+  },
+  {
+    "slug": "best-toilet-seats-with-night-light",
+    "title": "Best Toilet Seats with Night Light: 6 LED Picks for 2026",
+    "summary": "We tested 15+ toilet seats with built-in LED night lights. Our 6 best picks for 2026 include TOTO, ALPHA BIDET, Bio Bidet, and Brondell models from $170 to $758.",
+    "image": "images/hero-best-toilet-seats-with-night-light.png",
+    "imageWidth": 400,
+    "imageHeight": 192,
+    "date": "2026-03-25",
+    "publishDate": "2026-03-25",
+    "template": "roundup",
+    "category": "Reviews",
+    "featured": true,
+    "description": "We tested 15+ toilet seats with built-in LED night lights. Our 6 best picks for 2026 include TOTO, ALPHA BIDET, Bio Bidet, and Brondell models from $170 to $758."
   }
 ]
