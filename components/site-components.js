@@ -129,7 +129,7 @@
             '<a href="index">' +
               '<img src="' + config.logo + '" alt="' + config.name + ' Logo" width="56" height="56">' +
               '<div>' +
-                '<h1>' + config.name + '</h1>' +
+                '<div class="site-title" style="font-size:1.5em;font-weight:700;margin:0">' + config.name + '</div>' +
                 '<p>' + config.tagline + '</p>' +
               '</div>' +
             '</a>' +
