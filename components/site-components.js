@@ -102,6 +102,8 @@
     '  #site-header nav li{border-top:1px solid var(--border,#e5e5e5)}',
     '  #site-header nav a{display:block;padding:.75rem 0}',
     '  #site-header .header-content{flex-wrap:wrap}',
+    '  table,.comparison-table{display:block;overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100vw}',
+    '  .specs-grid,.product-specs{overflow-x:auto;max-width:100vw}',
     '}'
   ].join('\n');
 
