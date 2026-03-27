@@ -51,7 +51,6 @@ window.SITE_CONFIG = {
       headline: "Looking for the Perfect Bath Rug?",
       description: "Discover our expert reviews of the best bath rugs — from ultra-absorbent to non-slip designs. Find your perfect match.",
       ctaText: "Browse Bath Rugs",
-      bannerImage: "images/banner-bath-rugs.jpg",
       active: true
     },
     {
@@ -60,7 +59,6 @@ window.SITE_CONFIG = {
       headline: "Need a New Shower Curtain?",
       description: "From waterproof liners to luxury hotel-style designs. Our experts tested the top shower curtains so you don't have to.",
       ctaText: "Browse Shower Curtains",
-      bannerImage: "images/banner-shower-curtains.jpg",
       active: true
     },
     {
@@ -69,7 +67,6 @@ window.SITE_CONFIG = {
       headline: "Shopping for a Bathroom Vanity?",
       description: "Expert reviews of the best bathroom vanities — from floating modern designs to farmhouse styles. Find the perfect vanity for your renovation.",
       ctaText: "Browse Bathroom Vanities",
-      bannerImage: "images/banner-bathroom-vanities.jpg",
       active: true
     },
     {
@@ -78,7 +75,6 @@ window.SITE_CONFIG = {
       headline: "Upgrade Your Shower Head?",
       description: "From rainfall to high-pressure designs. Expert reviews of the best shower heads for an amazing shower experience.",
       ctaText: "Browse Shower Heads",
-      bannerImage: "images/banner-shower-heads.jpg",
       active: true
     }
   ]
