@@ -41,7 +41,10 @@ window.SITE_CONFIG = {
       { label: "Best Bath Rugs", href: "https://www.bestbathrugs.com" },
       { label: "Best Shower Curtains", href: "https://www.best-shower-curtains.com" },
       { label: "Best Bathroom Vanities", href: "https://www.bestbathroomvanities.com" },
-      { label: "Best Shower Heads", href: "https://www.best-shower-heads.com" }
+      { label: "Best Shower Heads", href: "https://www.best-shower-heads.com" },
+      { label: "Best Soap Dispensers", href: "https://www.best-soap-dispensers.com" },
+      { label: "Best Bathroom Mirrors", href: "https://www.best-bathroom-mirrors.com" },
+      { label: "Best Bath Towels", href: "https://www.best-bath-towels.com" }
     ]
   },
   networkBanners: [
