@@ -245,5 +245,19 @@
     "category": "Reviews",
     "featured": true,
     "description": "We tested 15+ heavy-duty toilet seats rated for 400-1000 lbs. Our 6 best picks for heavy people offer reinforced hinges, wider seats, and reliable comfort in 2026."
+  },
+  {
+    "slug": "best-dual-flush-toilet-seats",
+    "title": "Best Dual Flush Toilet Seats: Water-Saving Picks for 2026",
+    "summary": "We tested 12+ water-saving toilet seats for flush efficiency, comfort, and durability. Our 6 top dual flush picks for 2026 from $30.81 to $69.32.",
+    "description": "We tested 12+ water-saving toilet seats for flush efficiency, comfort, and durability. Our 6 top dual flush picks for 2026 from $30.81 to $69.32.",
+    "image": "images/hero-best-dual-flush-toilet-seats.jpg",
+    "imageWidth": 400,
+    "imageHeight": 192,
+    "date": "2026-03-28",
+    "publishDate": "2026-03-28",
+    "template": "roundup",
+    "category": "Reviews",
+    "featured": true
   }
 ]
