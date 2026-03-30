@@ -39,15 +39,15 @@ window.SITE_CONFIG = {
     ],
     network: [
       { label: "Best Bath Rugs", href: "https://www.bestbathrugs.com" },
-      { label: "Best Shower Curtains", href: "https://best-shower-curtains.com" },
-      { label: "Best Bathroom Vanities", href: "https://bestbathroomvanities.com" },
-      { label: "Best Shower Heads", href: "https://best-shower-heads.com" },
-      { label: "Best Bath Towels", href: "https://best-bath-towels.com" },
-      { label: "Best Bathroom Mirrors", href: "https://bestbathroommirrors.com" },
-      { label: "Best Soap Dispensers", href: "https://best-soap-dispensers.com" },
-      { label: "Best Towel Warmers", href: "https://best-towel-warmers.com" },
-      { label: "Best Bathroom Faucets", href: "https://best-bathroom-faucets.com" },
-      { label: "Best Bathroom Storage", href: "https://bestbathroomstorage.com" }
+      { label: "Best Shower Curtains", href: "https://www.best-shower-curtains.com" },
+      { label: "Best Bathroom Vanities", href: "https://www.bestbathroomvanities.com" },
+      { label: "Best Shower Heads", href: "https://www.best-shower-heads.com" },
+      { label: "Best Soap Dispensers", href: "https://www.best-soap-dispensers.com" },
+      { label: "Best Bathroom Mirrors", href: "https://www.best-bathroom-mirrors.com" },
+      { label: "Best Bath Towels", href: "https://www.best-bath-towels.com" },
+      { label: "Best Towel Warmers", href: "https://www.best-towel-warmers.com" },
+      { label: "Best Bathroom Faucets", href: "https://www.best-bathroom-faucets.com" },
+      { label: "Best Bathroom Storage", href: "https://www.best-bathroom-storage.com" }
     ]
   },
   networkBanners: [
