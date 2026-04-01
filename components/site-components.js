@@ -156,17 +156,9 @@
   }
 
   // ---------------------------------------------------------------------------
-  // Inject affiliate disclosure on article pages (not homepage/utility pages)
+  // Affiliate disclosure — now inline in author byline, no auto-injection
+  // Removed 2026-04-01: was creating duplicate disclosure blocks
   // ---------------------------------------------------------------------------
-  var isArticle = document.querySelector('article') && !window.location.pathname.match(/^\/?$|index|articles|about|contact|privacy|terms|disclosure|comparisons|how-we-research|404/);
-  if (isArticle && !document.querySelector('.affiliate-disclosure')) {
-    var disclosureEl = document.createElement('div');
-    disclosureEl.className = 'affiliate-disclosure';
-    disclosureEl.style.cssText = 'background:#f8f9fa;border-left:3px solid var(--accent,#FF6F00);padding:10px 16px;margin:10px 0 20px;font-size:0.85rem;color:#666;font-style:italic;max-width:900px;margin-left:auto;margin-right:auto;';
-    disclosureEl.innerHTML = 'This article contains affiliate links. If you purchase through these links, we may earn a small commission at no extra cost to you. <a href="/disclosure" style="color:var(--primary,#333)">Full disclosure</a>.';
-    var articleEl = document.querySelector('article');
-    if (articleEl) articleEl.parentNode.insertBefore(disclosureEl, articleEl);
-  }
 
   // ---------------------------------------------------------------------------
   // Inject footer
