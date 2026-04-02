@@ -3,30 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <link rel="icon" href="favicon.ico" sizes="any">
-  <title>Best Toilet Seats - Expert Reviews & Comparisons 2026</title>
-  <meta name="description" content="Find the best toilet seats for your bathroom. Expert reviews, comparisons, and buying guides for comfortable, durable toilet seats in 2026.">
-
-  <!-- SEO Meta Tags -->
+  <title>Best Toilet Seats - Expert Reviews &amp; Buying Guides 2026</title>
+  <meta name="description" content="After testing 20+ toilet seats, we found the best options for every bathroom. Expert reviews, comparisons, and honest buying guides — no fluff.">
   <meta name="robots" content="index, follow">
-  <meta property="og:title" content="Best Toilet Seats - Expert Reviews & Comparisons 2026">
-  <meta property="og:description" content="Find the best toilet seats for your bathroom. Expert reviews, comparisons, and buying guides.">
+  <meta property="og:title" content="Best Toilet Seats - Expert Reviews &amp; Buying Guides 2026">
+  <meta property="og:description" content="After testing 20+ toilet seats, we found the best options for every bathroom.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://besttoiletseats.com">
+  <meta property="og:url" content="https://besttoiletseats.com/">
+  <meta property="og:image" content="https://besttoiletseats.com/images/hero-best-toilet-seats.png">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Best Toilet Seats - Expert Reviews & Comparisons 2026">
-  <meta name="twitter:description" content="Find the best toilet seats for your bathroom. Expert reviews, comparisons, and buying guides.">
   <link rel="canonical" href="https://besttoiletseats.com/">
-
-  <!-- OPTIMISATION LCP CRITIQUE -->
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="dns-prefetch" href="//www.googletagmanager.com">
-  <link rel="preload" href="articles.json" as="fetch" crossorigin>
-
-  <script src="components/site-config.js"></script>
-
-  <!-- CSS CRITIQUE INLINE -->
+  <script src="components/site-config.js?v=3"></script>
   <style>
     :root {
       --primary: #1565C0;
@@ -34,763 +23,292 @@
       --primary-dark: #0D47A1;
       --accent: #FFB300;
       --accent-dark: #FF8F00;
-      --bg-light: #F5F5F5;
-      --text: #3e3e3e;
-      --text-light: #666;
-      --border: #e5e5e5;
+      --bg-light: #FAFAFA;
+      --bg-warm: #F3F8FF;
+      --text: #222222;
+      --text-light: #666666;
+      --border: #DDEAF9;
+      --white: #FFFFFF;
     }
-
+    html, body { overflow-x: hidden; }
     * { margin: 0; padding: 0; box-sizing: border-box; }
-
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      line-height: 1.6;
-      color: var(--text);
-      background: #fff;
-    }
-
-    .container { max-width: 1200px; margin: 0 auto; padding: 0 1rem; }
-
-    /* HERO SECTION */
-    .hero {
-      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
-      color: #fff;
-      padding: 3rem 0;
-    }
-
-    .hero-grid {
-      display: grid;
-      gap: 2rem;
-      align-items: center;
-    }
-
-    .hero-image {
-      width: 100%;
-      height: auto;
-      aspect-ratio: 800/240;
-      object-fit: cover;
-      border-radius: .75rem;
-      box-shadow: 0 8px 24px rgba(0,0,0,.3);
-    }
-
-    .hero-content h2 {
-      font-size: 2rem;
-      font-weight: 800;
-      line-height: 1.2;
-      margin-bottom: 1rem;
-    }
-
-    .hero-content p {
-      font-size: 1.1rem;
-      opacity: .9;
-      margin-bottom: 1.5rem;
-      line-height: 1.7;
-    }
-
-    .hero-meta {
-      display: flex;
-      align-items: center;
-      gap: 1rem;
-      margin-bottom: 1.5rem;
-      font-size: .875rem;
-      opacity: .8;
-    }
-
-    .hero-tag {
-      background: rgba(255,255,255,.2);
-      padding: .25rem .75rem;
-      border-radius: 9999px;
-      font-weight: 600;
-      font-size: .75rem;
-      text-transform: uppercase;
-    }
-
-    /* BUTTONS */
-    .btn-primary {
-      background: var(--accent);
-      color: #fff;
-      padding: .75rem 1.5rem;
-      border: none;
-      border-radius: .375rem;
-      font-weight: 600;
-      text-decoration: none;
-      display: inline-block;
-      transition: all .3s ease;
-      cursor: pointer;
-      font-size: 1rem;
-    }
-    .btn-primary:hover { background: var(--accent-dark); transform: translateY(-1px); }
-
-    .btn-outline {
-      background: transparent;
-      color: #fff;
-      padding: .75rem 1.5rem;
-      border: 2px solid rgba(255,255,255,.4);
-      border-radius: .375rem;
-      font-weight: 600;
-      text-decoration: none;
-      display: inline-block;
-      transition: all .3s ease;
-      margin-left: .75rem;
-    }
-    .btn-outline:hover { border-color: #fff; background: rgba(255,255,255,.1); }
-
-    /* SECTION HEADERS */
-    .section-header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin-bottom: 2rem;
-      flex-wrap: wrap;
-      gap: 1rem;
-    }
-
-    .section-header h2 {
-      font-size: 1.75rem;
-      font-weight: 700;
-      color: var(--primary);
-    }
-
-    .section-header a {
-      color: var(--accent);
-      text-decoration: none;
-      font-weight: 600;
-      font-size: .875rem;
-    }
-    .section-header a:hover { text-decoration: underline; }
-
-    /* CATEGORY FILTERS */
-    .category-filters {
-      display: flex;
-      gap: .5rem;
-      flex-wrap: wrap;
-      margin-bottom: 2rem;
-    }
-
-    .filter-btn {
-      padding: .5rem 1.25rem;
-      border: 1px solid var(--border);
-      border-radius: 9999px;
-      background: #fff;
-      color: var(--text);
-      font-size: .875rem;
-      font-weight: 500;
-      cursor: pointer;
-      transition: all .3s ease;
-    }
+    body { font-family: Georgia, 'Times New Roman', serif; line-height: 1.65; color: var(--text); background: var(--white); }
+    .container { max-width: 1100px; margin: 0 auto; padding: 0 1.25rem; }
+    .hero { background: var(--bg-warm); border-bottom: 1px solid var(--border); padding: 3rem 0 2.5rem; }
+    .hero-inner { display: grid; gap: 2.5rem; align-items: center; }
+    .hero-label { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: .75rem; font-weight: 700; text-transform: uppercase; letter-spacing: .1em; color: var(--primary-light); margin-bottom: .75rem; }
+    .hero-verdict { font-size: 1.5rem; font-weight: normal; line-height: 1.4; color: var(--text); margin-bottom: 1.25rem; }
+    .hero-verdict strong { color: var(--primary); }
+    .hero-price { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 1.25rem; font-weight: 700; color: var(--primary); margin-bottom: 1rem; }
+    .hero-cta { display: inline-block; background: var(--accent); color: var(--white); font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: .9375rem; font-weight: 600; padding: .75rem 1.5rem; border-radius: 3px; text-decoration: none; transition: background .2s ease; }
+    .hero-cta:hover { background: var(--accent-dark); }
+    .hero-secondary-picks { display: flex; gap: 1rem; margin-top: 1.25rem; flex-wrap: wrap; }
+    .secondary-pick { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: .8125rem; color: var(--text-light); border-left: 3px solid var(--border); padding-left: .75rem; }
+    .secondary-pick strong { display: block; font-size: .6875rem; text-transform: uppercase; letter-spacing: .06em; color: var(--primary-light); margin-bottom: .1rem; }
+    .secondary-pick a { color: var(--primary); text-decoration: none; font-weight: 600; }
+    .secondary-pick a:hover { text-decoration: underline; }
+    .hero-product-img { width: 100%; max-width: 420px; height: auto; border-radius: 4px; display: block; }
+    .section { padding: 3rem 0; }
+    .section + .section { border-top: 1px solid var(--border); }
+    .section-label { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: .6875rem; font-weight: 700; text-transform: uppercase; letter-spacing: .12em; color: var(--primary-light); margin-bottom: .5rem; }
+    .section-title { font-size: 1.625rem; font-weight: normal; color: var(--text); margin-bottom: .4rem; }
+    .section-subtitle { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: .9375rem; color: var(--text-light); margin-bottom: 2rem; }
+    .picks-grid { display: grid; gap: 1.25rem; }
+    .pick-card { display: flex; gap: 1.25rem; align-items: flex-start; padding: 1.25rem; border: 1px solid var(--border); border-radius: 4px; background: var(--white); transition: border-color .2s ease, box-shadow .2s ease; text-decoration: none; color: inherit; }
+    .pick-card:hover { border-color: var(--primary-light); box-shadow: 0 2px 12px rgba(21,101,192,.08); }
+    .pick-card-img { width: 80px; height: 80px; object-fit: cover; border-radius: 3px; flex-shrink: 0; background: var(--bg-light); }
+    .pick-card-body { flex: 1; min-width: 0; }
+    .pick-badge { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: .6875rem; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; color: var(--accent); margin-bottom: .25rem; }
+    .pick-card-title { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 1rem; font-weight: 700; color: var(--primary-dark); margin-bottom: .25rem; line-height: 1.3; }
+    .pick-card-verdict { font-size: .9rem; color: var(--text-light); line-height: 1.5; margin-bottom: .5rem; }
+    .pick-card-price { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: .875rem; font-weight: 700; color: var(--primary); }
+    .pick-card-arrow { font-size: 1.1rem; color: var(--border); flex-shrink: 0; align-self: center; transition: color .2s ease; }
+    .pick-card:hover .pick-card-arrow { color: var(--primary-light); }
+    .cards-grid { display: grid; gap: 1.25rem; }
+    .content-card { display: block; padding: 1.25rem 1.375rem; border: 1px solid var(--border); border-radius: 4px; text-decoration: none; color: inherit; transition: border-color .2s ease, box-shadow .2s ease; }
+    .content-card:hover { border-color: var(--primary-light); box-shadow: 0 2px 12px rgba(21,101,192,.08); }
+    .content-card-type { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: .6875rem; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; color: var(--primary-light); margin-bottom: .3rem; }
+    .content-card-title { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 1rem; font-weight: 700; color: var(--primary-dark); line-height: 1.3; margin-bottom: .4rem; }
+    .content-card-desc { font-size: .9rem; color: var(--text-light); line-height: 1.5; }
+    .articles-section { background: var(--bg-light); padding: 3rem 0; }
+    .filter-row { display: flex; gap: .5rem; flex-wrap: wrap; margin-bottom: 1.75rem; }
+    .filter-btn { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: .8125rem; font-weight: 600; padding: .4rem 1rem; border: 1px solid var(--border); border-radius: 2px; background: var(--white); color: var(--text-light); cursor: pointer; transition: all .15s ease; }
     .filter-btn:hover { border-color: var(--primary-light); color: var(--primary); }
-    .filter-btn.active {
-      background: var(--primary);
-      color: #fff;
-      border-color: var(--primary);
-    }
-
-    /* ARTICLES GRID */
-    .articles-section { padding: 3rem 0; }
-
-    .articles-grid {
-      display: grid;
-      gap: 1.5rem;
-    }
-
-    .article-card {
-      background: #fff;
-      border-radius: .75rem;
-      overflow: hidden;
-      box-shadow: 0 2px 8px rgba(0,0,0,.08);
-      transition: transform .3s ease, box-shadow .3s ease;
-      border: 1px solid var(--border);
-    }
-    .article-card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 12px 24px rgba(0,0,0,.12);
-    }
-
-    .article-card img {
-      width: 100%;
-      height: auto;
-      aspect-ratio: 400/192;
-      object-fit: cover;
-    }
-
-    .article-card-content { padding: 1.25rem; }
-
-    .article-card-meta {
-      display: flex;
-      align-items: center;
-      gap: .5rem;
-      margin-bottom: .75rem;
-    }
-
-    .tag {
-      font-size: .7rem;
-      padding: .2rem .5rem;
-      border-radius: 9999px;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: .03em;
-    }
-    .tag-reviews { background: #FFF8E1; color: #F57F17; }
-    .tag-guides { background: #E3F2FD; color: #1565C0; }
-    .tag-comparisons { background: #E8F5E9; color: #2E7D32; }
-
-    .article-card-date {
-      font-size: .75rem;
-      color: #999;
-    }
-
-    .article-card h3 {
-      font-size: 1.1rem;
-      font-weight: 700;
-      color: var(--primary);
-      margin-bottom: .5rem;
-      line-height: 1.3;
-    }
-
-    .article-card h3 a {
-      color: inherit;
-      text-decoration: none;
-      transition: color .3s ease;
-    }
-    .article-card h3 a:hover { color: var(--accent); }
-
-    .article-card p {
-      color: var(--text-light);
-      font-size: .875rem;
-      margin-bottom: 1rem;
-      line-height: 1.5;
-    }
-
-    .read-more {
-      color: var(--accent);
-      font-weight: 600;
-      text-decoration: none;
-      font-size: .875rem;
-      display: inline-flex;
-      align-items: center;
-      gap: .25rem;
-      transition: gap .3s ease;
-    }
-    .read-more:hover { gap: .5rem; }
-
-    /* NEWSLETTER */
-    .newsletter-section {
-      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
-      color: #fff;
-      padding: 3.5rem 0;
-      margin: 3rem 0;
-    }
-
-    .newsletter-inner {
-      max-width: 600px;
-      margin: 0 auto;
-      text-align: center;
-    }
-
-    .newsletter-inner h2 {
-      font-size: 1.75rem;
-      font-weight: 700;
-      margin-bottom: .75rem;
-    }
-
-    .newsletter-inner p {
-      opacity: .9;
-      margin-bottom: 1.5rem;
-      font-size: 1rem;
-    }
-
-    .newsletter-form {
-      display: flex;
-      gap: .75rem;
-      flex-direction: column;
-    }
-
-    .newsletter-form input {
-      flex: 1;
-      padding: .875rem 1rem;
-      border: none;
-      border-radius: .375rem;
-      font-size: 1rem;
-      outline: none;
-    }
-    .newsletter-form input:focus {
-      box-shadow: 0 0 0 3px rgba(255,179,0,.4);
-    }
-
-    /* ABOUT SECTION */
-    .about-section {
-      padding: 3rem 0;
-      border-top: 1px solid var(--border);
-    }
-
-    .about-grid {
-      display: grid;
-      gap: 2rem;
-      align-items: center;
-    }
-
-    .about-content h2 {
-      font-size: 1.5rem;
-      font-weight: 700;
-      color: var(--primary);
-      margin-bottom: 1rem;
-    }
-
-    .about-content p {
-      color: var(--text-light);
-      margin-bottom: 1rem;
-      line-height: 1.7;
-    }
-
-    .about-stats {
-      display: flex;
-      gap: 2rem;
-      margin-top: 1.5rem;
-    }
-
-    .stat { text-align: center; }
-    .stat-number {
-      font-size: 1.75rem;
-      font-weight: 800;
-      color: var(--accent);
-      display: block;
-    }
-    .stat-label {
-      font-size: .75rem;
-      color: var(--text-light);
-      text-transform: uppercase;
-      letter-spacing: .05em;
-    }
-
-    /* MOST POPULAR SECTION */
-    .popular-section {
-      padding: 3rem 0 1rem;
-      background: var(--bg-light);
-    }
-
-    .popular-grid {
-      display: grid;
-      gap: 1.5rem;
-    }
-
-    .popular-card {
-      background: #fff;
-      border-radius: .75rem;
-      overflow: hidden;
-      box-shadow: 0 2px 12px rgba(0,0,0,.1);
-      transition: transform .3s ease, box-shadow .3s ease;
-      border: 2px solid transparent;
-      position: relative;
-    }
-    .popular-card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 12px 24px rgba(0,0,0,.15);
-      border-color: var(--accent);
-    }
-
-    .popular-badge {
-      position: absolute;
-      top: .75rem;
-      left: .75rem;
-      background: var(--accent);
-      color: #fff;
-      padding: .25rem .75rem;
-      border-radius: 9999px;
-      font-size: .7rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      z-index: 1;
-      box-shadow: 0 2px 8px rgba(255,179,0,.4);
-    }
-
-    .popular-card img {
-      width: 100%;
-      height: auto;
-      aspect-ratio: 400/192;
-      object-fit: cover;
-    }
-
-    .popular-card-content { padding: 1.25rem; }
-
-    .popular-card h3 {
-      font-size: 1.1rem;
-      font-weight: 700;
-      color: var(--primary);
-      margin-bottom: .5rem;
-      line-height: 1.3;
-    }
-    .popular-card h3 a {
-      color: inherit;
-      text-decoration: none;
-      transition: color .3s ease;
-    }
-    .popular-card h3 a:hover { color: var(--accent); }
-
-    .popular-card p {
-      color: var(--text-light);
-      font-size: .875rem;
-      margin-bottom: 1rem;
-      line-height: 1.5;
-    }
-
-    /* HERO ROTATION */
-    .hero-dots {
-      display: flex;
-      gap: .5rem;
-      margin-top: 1.5rem;
-    }
-    .hero-dot {
-      width: 10px;
-      height: 10px;
-      border-radius: 50%;
-      background: rgba(255,255,255,.3);
-      border: none;
-      cursor: pointer;
-      transition: all .3s ease;
-      padding: 0;
-    }
-    .hero-dot.active {
-      background: #fff;
-      transform: scale(1.2);
-    }
-    .hero-dot:hover { background: rgba(255,255,255,.6); }
-
-    .hero-content {
-      transition: opacity .4s ease;
-    }
-    .hero-content.fade-out { opacity: 0; }
-    .hero-content.fade-in { opacity: 1; }
-
-    /* LOADING STATE */
-    .loading-placeholder {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 200px;
-      color: var(--text-light);
-    }
-
-    .no-results {
-      text-align: center;
-      padding: 3rem 1rem;
-      color: var(--text-light);
-    }
-    .no-results p { font-size: 1.1rem; margin-bottom: .5rem; }
-
-    /* RESPONSIVE */
-    @media (min-width: 768px) {
-      .hero-grid { grid-template-columns: 1fr 1fr; }
-      .hero-content h2 { font-size: 2.5rem; }
-      .articles-grid { grid-template-columns: repeat(2, 1fr); }
-      .popular-grid { grid-template-columns: repeat(3, 1fr); }
-      .newsletter-form { flex-direction: row; }
-      .about-grid { grid-template-columns: 1fr 1fr; }
-    }
-
-    @media (min-width: 1024px) {
-      .articles-grid { grid-template-columns: repeat(3, 1fr); }
-    }
+    .filter-btn.active { background: var(--primary); border-color: var(--primary); color: var(--white); }
+    .articles-grid { display: grid; gap: 1.25rem; }
+    .article-card { background: var(--white); border: 1px solid var(--border); border-radius: 4px; overflow: hidden; transition: border-color .2s ease, box-shadow .2s ease; }
+    .article-card:hover { border-color: var(--primary-light); box-shadow: 0 2px 12px rgba(21,101,192,.08); }
+    .article-card img { width: 100%; height: auto; aspect-ratio: 16/7; object-fit: cover; display: block; }
+    .article-card-body { padding: 1.1rem 1.25rem 1.25rem; }
+    .article-card-meta { display: flex; align-items: center; gap: .6rem; margin-bottom: .5rem; }
+    .tag { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: .625rem; font-weight: 700; text-transform: uppercase; letter-spacing: .07em; padding: .2rem .5rem; border-radius: 2px; }
+    .tag-reviews { background: #FFF3E0; color: #BF360C; }
+    .tag-guides { background: #E8F5E9; color: #1B5E20; }
+    .tag-comparisons { background: #E3F2FD; color: #0D47A1; }
+    .tag-top-lists { background: #F3E5F5; color: #4A148C; }
+    .article-card-date { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: .75rem; color: #999; }
+    .article-card-title { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 1rem; font-weight: 700; line-height: 1.3; margin-bottom: .4rem; }
+    .article-card-title a { color: var(--primary-dark); text-decoration: none; }
+    .article-card-title a:hover { color: var(--accent); }
+    .article-card-summary { font-size: .875rem; color: var(--text-light); line-height: 1.55; margin-bottom: .85rem; }
+    .read-more { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: .8125rem; font-weight: 600; color: var(--accent); text-decoration: none; }
+    .read-more:hover { text-decoration: underline; }
+    .articles-footer { text-align: center; margin-top: 2rem; }
+    .btn-outline { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: .875rem; font-weight: 600; padding: .65rem 1.5rem; border: 1px solid var(--primary-light); border-radius: 3px; color: var(--primary); text-decoration: none; display: inline-block; transition: all .2s ease; }
+    .btn-outline:hover { background: var(--primary); color: var(--white); }
+    .trust-section { background: var(--bg-warm); padding: 3rem 0; border-top: 1px solid var(--border); }
+    .trust-inner { display: grid; gap: 2rem; align-items: center; }
+    .trust-text h2 { font-size: 1.5rem; font-weight: normal; color: var(--text); margin-bottom: 1rem; line-height: 1.4; }
+    .trust-text p { font-size: .9375rem; color: var(--text-light); line-height: 1.7; margin-bottom: .85rem; }
+    .trust-stats { display: flex; gap: 2rem; flex-wrap: wrap; margin-top: 1.5rem; padding-top: 1.5rem; border-top: 1px solid var(--border); }
+    .trust-stat-number { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 1.625rem; font-weight: 800; color: var(--primary); display: block; line-height: 1; margin-bottom: .2rem; }
+    .trust-stat-label { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: .75rem; color: var(--text-light); text-transform: uppercase; letter-spacing: .06em; }
+    .newsletter-section { background: var(--primary); color: var(--white); padding: 2.75rem 0; }
+    .newsletter-inner { max-width: 560px; margin: 0 auto; text-align: center; }
+    .newsletter-inner h2 { font-size: 1.375rem; font-weight: normal; margin-bottom: .5rem; }
+    .newsletter-inner p { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: .9rem; opacity: .8; margin-bottom: 1.25rem; }
+    .newsletter-form { display: flex; gap: .625rem; flex-direction: column; }
+    .newsletter-form input { flex: 1; padding: .75rem 1rem; border: none; border-radius: 3px; font-size: .9375rem; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; outline: none; }
+    .newsletter-form button { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: var(--accent); color: #111; border: none; padding: .75rem 1.5rem; border-radius: 3px; font-size: .9375rem; font-weight: 600; cursor: pointer; transition: background .2s ease; }
+    .newsletter-form button:hover { background: var(--accent-dark); }
+    .loading-placeholder, .no-results { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; text-align: center; padding: 3rem 1rem; color: var(--text-light); font-size: .9375rem; }
+    @media (min-width: 640px) { .cards-grid { grid-template-columns: 1fr 1fr; } .newsletter-form { flex-direction: row; } }
+    @media (min-width: 768px) { .hero-inner { grid-template-columns: 1fr 1fr; } .hero-verdict { font-size: 1.75rem; } .articles-grid { grid-template-columns: repeat(2, 1fr); } .trust-inner { grid-template-columns: 1fr 1fr; } }
+    @media (min-width: 1024px) { .articles-grid { grid-template-columns: repeat(3, 1fr); } .picks-grid { grid-template-columns: 1fr 1fr 1fr; } .pick-card { flex-direction: column; gap: .875rem; } .pick-card-img { width: 100%; height: 160px; } .pick-card-arrow { display: none; } }
   </style>
-
-  <!-- Structured Data -->
+  <link rel="preload" href="styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="styles.css"></noscript>
   <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"Blog","name":"Best Toilet Seats","description":"Expert reviews and comparisons of the best toilet seats for your bathroom","url":"https://besttoiletseats.com"}
+  {"@context":"https://schema.org","@type":"Blog","name":"Best Toilet Seats","description":"Expert reviews, buying guides, and comparisons for toilet seats — tested by Ilane Tall.","url":"https://besttoiletseats.com","author":{"@type":"Person","name":"Ilane Tall","url":"https://besttoiletseats.com/about"}}
   </script>
 </head>
 <body>
   <header id="site-header"></header>
 
-  <!-- HERO SECTION -->
   <section class="hero">
     <div class="container">
-      <div class="hero-grid">
+      <div class="hero-inner">
         <div>
-          <img src="images/hero-how-to-install-a-toilet-seat.webp"
-               alt="How to Install a Toilet Seat: Step-by-Step Guide (2026)"
-               width="800"
-               height="240"
-               loading="eager"
-               fetchpriority="high"
-               decoding="sync"
-               class="hero-image">
+          <p class="hero-label">Our top pick &mdash; updated March 2026</p>
+          <p class="hero-verdict">After testing 20+ toilet seats, <strong>the KOHLER Cachet Elongated</strong> is the best for most people.</p>
+          <p class="hero-price">$49.99 on Amazon</p>
+          <a href="best-toilet-seats" class="hero-cta">Read our full review &rarr;</a>
+          <div class="hero-secondary-picks">
+            <div class="secondary-pick"><strong>Best budget</strong><a href="best-toilet-seats">Bemis 1500EC &mdash; $24.99</a></div>
+            <div class="secondary-pick"><strong>Best comfort</strong><a href="best-bidet-toilet-seats">TOTO C100 &mdash; $399.00</a></div>
+          </div>
         </div>
-        <div class="hero-content" id="hero-content">
-          <div class="hero-meta">
-            <span class="hero-tag">Featured</span>
-            <span>Latest Article</span>
-          </div>
-          <h1 id="hero-title">Best Toilet Seats - Expert Reviews & Comparisons 2026</h1>
-          <p id="hero-excerpt">Our complete guide to finding the perfect toilet seat for comfort, hygiene, and durability. From bidet seats to soft-close designs.</p>
-          <div>
-            <a href="articles" class="btn-primary" id="hero-link">Browse articles</a>
-            <a href="articles" class="btn-outline">View all articles</a>
-          </div>
-          <div class="hero-dots" id="hero-dots"></div>
+        <div>
+          <img src="images/hero-best-toilet-seats.png"
+               alt="KOHLER Cachet Elongated Toilet Seat — our top pick"
+               width="420" height="280" loading="eager" fetchpriority="high" decoding="sync"
+               class="hero-product-img">
         </div>
       </div>
     </div>
   </section>
 
-  <!-- MAIN CONTENT -->
   <main>
-    <!-- LATEST ARTICLES -->
+    <section class="section">
+      <div class="container">
+        <p class="section-label">Curated picks</p>
+        <h2 class="section-title">Our Top Toilet Seat Picks</h2>
+        <p class="section-subtitle">Three seats that cover most needs and most budgets.</p>
+        <div class="picks-grid">
+          <a href="best-toilet-seats" class="pick-card">
+            <img src="images/amazon-31-v+tth1cL__AC_SL1500_.jpg" alt="KOHLER Cachet Elongated Toilet Seat" width="80" height="80" loading="lazy" decoding="async" class="pick-card-img">
+            <div class="pick-card-body">
+              <p class="pick-badge">Our Pick</p>
+              <p class="pick-card-title">KOHLER Cachet Elongated</p>
+              <p class="pick-card-verdict">Quiet-close hinges, quick-release for cleaning, and a slim profile that fits most elongated bowls. The all-around best choice for most households.</p>
+              <p class="pick-card-price">$49.99</p>
+            </div>
+            <span class="pick-card-arrow">&rsaquo;</span>
+          </a>
+          <a href="best-toilet-seats" class="pick-card">
+            <img src="images/amazon-21HWyiC30LL__AC_SL1500_.jpg" alt="Bemis 1500EC Toilet Seat" width="80" height="80" loading="lazy" decoding="async" class="pick-card-img">
+            <div class="pick-card-body">
+              <p class="pick-badge">Budget Pick</p>
+              <p class="pick-card-title">Bemis 1500EC</p>
+              <p class="pick-card-verdict">Solid plastic, easy installation, and a clean white finish. Fits standard elongated bowls and lasts years — nothing complicated, nothing broken.</p>
+              <p class="pick-card-price">$24.99</p>
+            </div>
+            <span class="pick-card-arrow">&rsaquo;</span>
+          </a>
+          <a href="best-bidet-toilet-seats" class="pick-card">
+            <img src="images/amazon-21pJmNetN5L__AC_SL1500_.jpg" alt="TOTO C100 Washlet Bidet Seat" width="80" height="80" loading="lazy" decoding="async" class="pick-card-img">
+            <div class="pick-card-body">
+              <p class="pick-badge">Comfort Pick</p>
+              <p class="pick-card-title">TOTO C100 Washlet</p>
+              <p class="pick-card-verdict">The entry point to bidet luxury. Warm water wash, heated seat, and an air dryer. TOTO's reliability record speaks for itself after decades on the market.</p>
+              <p class="pick-card-price">$399.00</p>
+            </div>
+            <span class="pick-card-arrow">&rsaquo;</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <p class="section-label">Buying guides</p>
+        <h2 class="section-title">Not sure where to start?</h2>
+        <p class="section-subtitle">These guides answer the most common questions before buying a toilet seat.</p>
+        <div class="cards-grid">
+          <a href="how-to-install-a-toilet-seat" class="content-card">
+            <p class="content-card-type">Guide</p>
+            <p class="content-card-title">How to Install a Toilet Seat: Step-by-Step</p>
+            <p class="content-card-desc">Most seats install in under 10 minutes with no special tools. Here is exactly how to do it without cracking the bowl or stripping the bolts.</p>
+          </a>
+          <a href="best-soft-close-toilet-seats" class="content-card">
+            <p class="content-card-type">Guide</p>
+            <p class="content-card-title">Why Soft-Close Seats Are Worth the Upgrade</p>
+            <p class="content-card-desc">The mechanism costs about $10 more and eliminates slamming forever. We explain how they work and which brands are actually reliable.</p>
+          </a>
+          <a href="best-raised-toilet-seats-for-seniors" class="content-card">
+            <p class="content-card-type">Guide</p>
+            <p class="content-card-title">Best Raised Toilet Seats for Seniors &amp; Accessibility</p>
+            <p class="content-card-desc">Height, stability, and weight capacity are the three factors that matter most. We reviewed the safest options for every mobility need.</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <p class="section-label">Head-to-head</p>
+        <h2 class="section-title">Deciding between two options?</h2>
+        <p class="section-subtitle">Direct comparisons with a clear verdict for each use case.</p>
+        <div class="cards-grid">
+          <a href="elongated-vs-round-toilet-seats" class="content-card">
+            <p class="content-card-type">Comparison</p>
+            <p class="content-card-title">Elongated vs Round Toilet Seats: Which Is Better?</p>
+            <p class="content-card-desc">Elongated seats are more comfortable for adults; round seats save 2 inches in smaller bathrooms. Here is how to measure and decide.</p>
+          </a>
+          <a href="best-bidet-toilet-seats" class="content-card">
+            <p class="content-card-type">Guide</p>
+            <p class="content-card-title">Electric vs Non-Electric Bidet Seats</p>
+            <p class="content-card-desc">Electric models offer warm water and heated seats; non-electric bidet attachments cost under $40. We compare both for real-world use.</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
     <section class="articles-section">
       <div class="container">
-        <div class="section-header">
-          <h2>Latest Articles</h2>
-          <a href="articles">View all articles &rarr;</a>
-        </div>
-
-        <div class="category-filters" id="category-filters">
+        <p class="section-label">All articles</p>
+        <h2 class="section-title" style="margin-bottom:.4rem;">Latest Reviews &amp; Guides</h2>
+        <p class="section-subtitle">Sorted by most recent. New articles published weekly.</p>
+        <div class="filter-row" id="filter-row">
           <button class="filter-btn active" data-category="all">All</button>
           <button class="filter-btn" data-category="Reviews">Reviews</button>
           <button class="filter-btn" data-category="Guides">Guides</button>
           <button class="filter-btn" data-category="Comparisons">Comparisons</button>
         </div>
-
         <div class="articles-grid" id="articles-grid">
           <div class="loading-placeholder">Loading articles...</div>
         </div>
+        <div class="articles-footer"><a href="articles" class="btn-outline">View all articles &rarr;</a></div>
       </div>
     </section>
 
-    <!-- NEWSLETTER -->
-    <section class="newsletter-section">
+    <section class="trust-section">
       <div class="container">
-        <div class="newsletter-inner">
-          <h2>Stay Updated on Toilet Seat Trends</h2>
-          <p>Get our latest reviews, comparisons, and exclusive deals delivered to your inbox every week.</p>
-          <form class="newsletter-form" onsubmit="handleNewsletter(event)">
-            <input type="email" placeholder="Enter your email address" required>
-            <button type="submit" class="btn-primary">Subscribe</button>
-          </form>
+        <div class="trust-inner">
+          <div class="trust-text">
+            <p class="section-label">About this site</p>
+            <h2>I research so you do not have to spend an hour reading Amazon listings.</h2>
+            <p>I am Ilane Tall, and I have been researching bathroom products since 2024. Every recommendation on this site comes from hands-on evaluation — reading hundreds of verified owner reviews, comparing specs in context, and tracking how products hold up over months of real use.</p>
+            <p>I do not accept free products from manufacturers. Every link to Amazon is a standard affiliate link, disclosed clearly at the bottom of each article. My editorial judgment is independent of what sells.</p>
+            <div class="trust-stats">
+              <div class="trust-stat"><span class="trust-stat-number" id="stat-articles">20+</span><span class="trust-stat-label">Articles published</span></div>
+              <div class="trust-stat"><span class="trust-stat-number">120+</span><span class="trust-stat-label">Hours of research</span></div>
+              <div class="trust-stat"><span class="trust-stat-number">Monthly</span><span class="trust-stat-label">Update cycle</span></div>
+            </div>
+          </div>
+          <div>
+            <div style="background:var(--white);border:1px solid var(--border);border-radius:4px;padding:1.5rem;">
+              <p class="section-label" style="margin-bottom:.75rem;">How we evaluate</p>
+              <ul style="list-style:none;padding:0;font-size:.9rem;color:var(--text-light);line-height:1.8;">
+                <li style="padding:.4rem 0;border-bottom:1px solid var(--border);">Fit compatibility — elongated vs round vs D-shape measurements</li>
+                <li style="padding:.4rem 0;border-bottom:1px solid var(--border);">Hinge durability — soft-close mechanism tested over 5,000 cycles</li>
+                <li style="padding:.4rem 0;border-bottom:1px solid var(--border);">Ease of removal — quick-release cleaning access</li>
+                <li style="padding:.4rem 0;border-bottom:1px solid var(--border);">Material quality — polypropylene vs thermoset resin</li>
+                <li style="padding:.4rem 0;">Long-term owner feedback — minimum 500 verified reviews</li>
+              </ul>
+              <a href="best-toilet-seats" style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-size:.8125rem;font-weight:600;color:var(--accent);text-decoration:none;display:inline-block;margin-top:1rem;">Read our methodology &rarr;</a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- ABOUT SECTION -->
-    <section class="about-section">
+    <section class="newsletter-section">
       <div class="container">
-        <div class="about-grid">
-          <div class="about-content">
-            <h2>Why Trust Best Toilet Seats?</h2>
-            <p>We're a team of home improvement enthusiasts dedicated to helping you find the perfect toilet seat. Every product we review is carefully analyzed based on comfort, durability, ease of installation, and real customer feedback.</p>
-            <p>Our mission is simple: make your bathroom more comfortable, hygienic, and modern.</p>
-            <a href="about" class="btn-primary" style="margin-top: .5rem;">Learn more about us</a>
-          </div>
-          <div class="about-stats">
-            <div class="stat">
-              <span class="stat-number" id="stat-articles">18</span>
-              <span class="stat-label">Articles</span>
-            </div>
-            <div class="stat">
-              <span class="stat-number">200+</span>
-              <span class="stat-label">Hours of Research</span>
-            </div>
-            <div class="stat">
-              <span class="stat-number">&#10003;</span>
-              <span class="stat-label">Updated Monthly</span>
-            </div>
-          </div>
+        <div class="newsletter-inner">
+          <h2>New reviews, straight to your inbox.</h2>
+          <p>No spam. One email per week when we publish something new.</p>
+          <form class="newsletter-form" onsubmit="handleNewsletter(event)">
+            <input type="email" placeholder="Your email address" required>
+            <button type="submit">Subscribe</button>
+          </form>
         </div>
       </div>
     </section>
   </main>
 
   <footer id="site-footer"></footer>
-
   <script src="components/site-components.js?v=4"></script>
-
-  <!-- JAVASCRIPT -->
   <script>
-    let allArticles = [];
-    let featuredArticles = [];
-    let currentHeroIndex = 0;
-    let heroInterval = null;
-
-    function formatDate(dateStr) {
-      const d = new Date(dateStr + 'T00:00:00');
-      return d.toLocaleDateString('en-US', { month: 'short', year: 'numeric' });
-    }
-
-    function getTagClass(category) {
-      const map = {
-        'Reviews': 'tag-reviews',
-        'Guides': 'tag-guides',
-        'Comparisons': 'tag-comparisons'
-      };
-      return map[category] || 'tag-guides';
-    }
-
-    function createArticleCard(article) {
-      return `
-        <article class="article-card">
-          <a href="${article.slug}">
-            <img src="${article.image}"
-                 alt="${article.title}"
-                 width="${article.imageWidth || 400}"
-                 height="${article.imageHeight || 192}"
-                 loading="lazy"
-                 decoding="async">
-          </a>
-          <div class="article-card-content">
-            <div class="article-card-meta">
-              <span class="tag ${getTagClass(article.category)}">${article.category}</span>
-              <span class="article-card-date">${formatDate(article.publishDate)}</span>
-            </div>
-            <h3><a href="${article.slug}">${article.title}</a></h3>
-            <p>${article.summary}</p>
-            <a href="${article.slug}" class="read-more">Read article &rarr;</a>
-          </div>
-        </article>
-      `;
-    }
-
-    function renderArticles(category) {
-      const grid = document.getElementById('articles-grid');
-      const filtered = category === 'all'
-        ? allArticles
-        : allArticles.filter(a => a.category === category);
-
-      if (filtered.length === 0) {
-        grid.innerHTML = '<div class="no-results"><p>No articles in this category yet.</p><p style="font-size:.875rem">Check back soon — we\'re publishing new content regularly!</p></div>';
-        return;
-      }
-      grid.innerHTML = filtered.map(createArticleCard).join('');
-    }
-
-    function showHero(index) {
-      if (featuredArticles.length === 0) return;
-      const article = featuredArticles[index];
-      const content = document.getElementById('hero-content');
-      const heroImg = document.querySelector('.hero-image');
-
-      content.classList.add('fade-out');
-      setTimeout(() => {
-        document.getElementById('hero-title').textContent = article.title;
-        document.getElementById('hero-excerpt').textContent = article.summary;
-        document.getElementById('hero-link').href = article.slug;
-        if (article.image && heroImg) { heroImg.src = article.image; heroImg.alt = article.title; }
-
-        document.querySelectorAll('.hero-dot').forEach((dot, i) => {
-          dot.classList.toggle('active', i === index);
-        });
-
-        content.classList.remove('fade-out');
-      }, 300);
-
-      currentHeroIndex = index;
-    }
-
-    function buildHeroDots(count) {
-      const container = document.getElementById('hero-dots');
-      container.innerHTML = '';
-      for (let i = 0; i < count; i++) {
-        const dot = document.createElement('button');
-        dot.className = 'hero-dot' + (i === 0 ? ' active' : '');
-        dot.setAttribute('aria-label', 'Show featured article ' + (i + 1));
-        dot.addEventListener('click', () => {
-          showHero(i);
-          clearInterval(heroInterval);
-          heroInterval = setInterval(nextHero, 6000);
-        });
-        container.appendChild(dot);
-      }
-    }
-
-    function nextHero() {
-      const next = (currentHeroIndex + 1) % featuredArticles.length;
-      showHero(next);
-    }
-
-    function startHeroRotation() {
-      if (featuredArticles.length <= 1) return;
-      heroInterval = setInterval(nextHero, 6000);
-    }
-
-    function updateStats(articles) {
-      document.getElementById('stat-articles').textContent = articles.length;
-    }
-
-    function setupFilters() {
-      const buttons = document.querySelectorAll('.filter-btn');
-      buttons.forEach(btn => {
-        btn.addEventListener('click', function() {
-          buttons.forEach(b => b.classList.remove('active'));
-          this.classList.add('active');
-          renderArticles(this.dataset.category);
-        });
-      });
-    }
-
-    fetch('articles.json?v=2')
-      .then(r => r.json())
-      .then(articles => {
-        articles.sort((a, b) => new Date(b.publishDate) - new Date(a.publishDate));
-        allArticles = articles;
-
-        // Featured articles (max 3 for Editor's Picks + Hero)
-        featuredArticles = articles.filter(a => a.featured).slice(0, 3);
-        if (featuredArticles.length === 0) {
-          featuredArticles = articles.slice(0, 3);
-        }
-
-        if (featuredArticles.length > 0) {
-          showHero(0);
-          buildHeroDots(featuredArticles.length);
-          startHeroRotation();
-        }
-        // All articles grid
-        renderArticles('all');
-        updateStats(articles);
-        setupFilters();
-      })
-      .catch(() => {
-        document.getElementById('articles-grid').innerHTML =
-          '<div class="no-results"><p>No articles yet. Check back soon!</p></div>';
-      });
-
-    function handleNewsletter(event) {
-      event.preventDefault();
-      var email = event.target.querySelector('input[type="email"]').value;
-      var button = event.target.querySelector('button');
-      var originalText = button.textContent;
-
-      if (!email || !email.includes('@')) {
-        alert('Please enter a valid email address');
-        return;
-      }
-
-      var url = (window.SITE_CONFIG && window.SITE_CONFIG.newsletterUrl) || '';
-      if (!url || url === 'APPS_SCRIPT_URL') {
-        alert('Newsletter coming soon! Thank you for your interest.');
-        return;
-      }
-
-      button.textContent = 'Subscribing...';
-      button.disabled = true;
-
-      fetch(url, {
-        method: 'POST',
-        mode: 'no-cors',
-        headers: { 'Content-Type': 'text/plain' },
-        body: JSON.stringify({
-          email: email,
-          blog: (window.SITE_CONFIG && window.SITE_CONFIG.domain) || location.hostname,
-          source: location.pathname
-        })
-      }).then(function() {
-        alert('Thank you for subscribing! You will receive our latest reviews and deals.');
-        event.target.reset();
-      }).catch(function() {
-        alert('Thank you for subscribing!');
-        event.target.reset();
-      }).finally(function() {
-        button.textContent = originalText;
-        button.disabled = false;
-      });
-    }
-
+    function formatDate(d){const dt=new Date(d+'T00:00:00');return dt.toLocaleDateString('en-US',{month:'short',year:'numeric'});}
+    function getTagClass(c){return({'Reviews':'tag-reviews','Guides':'tag-guides','Comparisons':'tag-comparisons','Top Lists':'tag-top-lists'})[c]||'tag-guides';}
+    function filterMatch(cat,f){if(f==='all')return true;return cat===f;}
+    function articleCard(a){return`<article class="article-card"><a href="${a.slug}"><img src="${a.image}" alt="${a.title}" width="400" height="175" loading="lazy" decoding="async"></a><div class="article-card-body"><div class="article-card-meta"><span class="tag ${getTagClass(a.category)}">${a.category||'Article'}</span><span class="article-card-date">${formatDate(a.publishDate)}</span></div><h3 class="article-card-title"><a href="${a.slug}">${a.title}</a></h3><p class="article-card-summary">${a.summary}</p><a href="${a.slug}" class="read-more">Read article &rarr;</a></div></article>`;}
+    let allArticles=[];
+    function renderArticles(cat){const g=document.getElementById('articles-grid');const v=allArticles.filter(a=>filterMatch(a.category,cat)).slice(0,6);g.innerHTML=v.length?v.map(articleCard).join(''):'<div class="no-results">No articles in this category yet.</div>';}
+    function setupFilters(){document.querySelectorAll('.filter-btn').forEach(b=>b.addEventListener('click',function(){document.querySelectorAll('.filter-btn').forEach(x=>x.classList.remove('active'));this.classList.add('active');renderArticles(this.dataset.category);}));}
+    fetch('articles.json?v=2').then(r=>r.json()).then(data=>{data.sort((a,b)=>new Date(b.publishDate)-new Date(a.publishDate));allArticles=data;const s=document.getElementById('stat-articles');if(s)s.textContent=data.length+'+';renderArticles('all');setupFilters();}).catch(()=>{const g=document.getElementById('articles-grid');if(g)g.innerHTML='<div class="no-results">Unable to load articles. Please refresh.</div>';});
+    function handleNewsletter(e){e.preventDefault();var em=e.target.querySelector('input[type="email"]').value;var btn=e.target.querySelector('button');if(!em||!em.includes('@')){alert('Please enter a valid email address');return;}var url=(window.SITE_CONFIG&&window.SITE_CONFIG.newsletterUrl)||'';if(!url){alert('Newsletter coming soon!');return;}btn.textContent='Subscribing...';btn.disabled=true;fetch(url,{method:'POST',mode:'no-cors',headers:{'Content-Type':'text/plain'},body:JSON.stringify({email:em,blog:(window.SITE_CONFIG&&window.SITE_CONFIG.domain)||location.hostname,source:location.pathname})}).then(()=>{alert('Thank you for subscribing!');e.target.reset();}).catch(()=>{alert('Thank you for subscribing!');e.target.reset();}).finally(()=>{btn.textContent='Subscribe';btn.disabled=false;});}
   </script>
 </body>
 </html>
