@@ -55,7 +55,7 @@
     '#site-header button{font:inherit;cursor:pointer}',
 
     '/* ===== HEADER ===== */',
-    '#site-header{background:#fff;border-bottom:1px solid var(--border,#e5e5e5);position:sticky;top:0;z-index:50;box-shadow:0 1px 3px rgba(0,0,0,.1)}',
+    '#site-header{background:#fff;border-bottom:1px solid var(--border,#e5e5e5);position:sticky;top:0;z-index:50;box-shadow:0 1px 3px rgba(0,0,0,.1);min-height:82px}',
     '#site-header .hf-container,#site-footer .hf-container{max-width:1200px;margin:0 auto;padding:0 1rem}',
     '#site-header .header-content{display:flex;align-items:center;justify-content:space-between;padding:1rem 0}',
     '#site-header .logo-section{display:flex;align-items:center;gap:1rem}',
