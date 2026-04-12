@@ -12,36 +12,33 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About Ilane Tall - Best Toilet Seats</title>
-  <meta name="description" content="Meet Ilane Tall, Certified Interior Design Consultant & Bath Accessories Expert. Helping families create safer, more comfortable bathrooms since 2015.">
+  <meta name="description" content="Meet Ilane Tall, Product Researcher specializing in bathroom fixtures and toilet accessories. Helping families find safer, more comfortable toilet seats since 2024.">
   <meta name="robots" content="index, follow">
   <meta property="og:title" content="About Ilane Tall - Best Toilet Seats">
-  <meta property="og:description" content="Meet Ilane Tall, Certified Interior Design Consultant & Bath Accessories Expert. Helping families create safer, more comfortable bathrooms since 2015.">
+  <meta property="og:description" content="Meet Ilane Tall, Product Researcher specializing in bathroom fixtures and toilet accessories.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://www.besttoiletseats.com/about">
+  <meta property="og:url" content="https://besttoiletseats.com/about">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="About Ilane Tall - Best Toilet Seats">
-  <meta name="twitter:description" content="Meet Ilane Tall, Certified Interior Design Consultant & Bath Accessories Expert. Helping families create safer, more comfortable bathrooms since 2015.">
-  <link rel="canonical" href="https://www.besttoiletseats.com/about">
-  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="canonical" href="https://besttoiletseats.com/about">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="favicon.ico" sizes="any">
   <script src="components/site-config.js?v=5"></script>
   <style>
     :root {
       --primary: #1565C0;
-      --primary-light: #8D6E63;
+      --primary-light: #42A5F5;
       --primary-dark: #0D47A1;
       --accent: #FFB300;
       --accent-dark: #FF8F00;
       --bg-light: #FAFAFA;
-      --bg-warm: #FBF7F5;
+      --bg-warm: #F3F8FF;
       --text: #222222;
       --text-light: #666666;
-      --border: #E8E0DC;
+      --border: #DDEAF9;
       --white: #FFFFFF;
     }
 
     html, body { overflow-x: hidden; }
-
     * { margin: 0; padding: 0; box-sizing: border-box; }
 
     body {
@@ -49,10 +46,6 @@
       line-height: 1.65;
       color: var(--text);
       background: var(--white);
-    }
-
-    .sans {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     }
 
     .container {
@@ -85,7 +78,7 @@
       border: 4px solid var(--white);
       border-radius: 50%;
       overflow: hidden;
-      box-shadow: 0 4px 16px rgba(93, 64, 55, 0.12);
+      box-shadow: 0 4px 16px rgba(21,101,192,.12);
     }
 
     .hero-photo img {
@@ -94,30 +87,31 @@
       object-fit: cover;
     }
 
-    .hero-info h1 {
-      font-size: 2rem;
+    .hero h1 {
+      font-size: 2.25rem;
       font-weight: normal;
       color: var(--text);
-      margin-bottom: 0.5rem;
+      margin-bottom: .35rem;
     }
 
     .hero-subtitle {
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      font-size: 1.125rem;
+      font-size: 1rem;
       color: var(--primary-light);
-      margin-bottom: 0.75rem;
+      font-weight: 600;
+      margin-bottom: .25rem;
     }
 
     .hero-tagline {
-      font-size: 1rem;
-      color: var(--text-light);
       font-style: italic;
-      margin-bottom: 1.5rem;
+      color: var(--text-light);
+      font-size: .9375rem;
+      margin-bottom: 1rem;
     }
 
     .hero-social {
       display: flex;
-      gap: 1rem;
+      gap: .75rem;
       justify-content: center;
       flex-wrap: wrap;
     }
@@ -125,17 +119,16 @@
     .social-link {
       display: inline-flex;
       align-items: center;
-      gap: 0.5rem;
-      background: transparent;
-      border: 1px solid var(--primary-light);
-      color: var(--primary);
+      gap: .4rem;
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      font-size: 0.875rem;
+      font-size: .875rem;
       font-weight: 600;
-      padding: 0.625rem 1rem;
-      border-radius: 3px;
+      color: var(--primary);
       text-decoration: none;
-      transition: all 0.2s ease;
+      padding: .5rem 1rem;
+      border: 1px solid var(--border);
+      border-radius: 3px;
+      transition: all .2s ease;
     }
 
     .social-link:hover {
@@ -165,130 +158,113 @@
       text-align: center;
     }
 
-    .credential-item {
-      padding: 1rem 0;
-    }
+    .credential-item { padding: 1rem 0; }
 
     .credential-number {
       font-size: 2rem;
       font-weight: 700;
       color: var(--accent);
-      margin-bottom: 0.5rem;
+      margin-bottom: .5rem;
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    }
-
-    .credential-label {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      font-size: 0.875rem;
-      color: var(--text-light);
-      margin-bottom: 0.5rem;
     }
 
     .credential-icon {
-      width: 40px;
-      height: 40px;
-      background: var(--primary);
+      width: 48px;
+      height: 48px;
+      background: rgba(21,101,192,.08);
       border-radius: 50%;
       display: flex;
       align-items: center;
       justify-content: center;
-      margin: 0 auto 0.75rem;
+      margin: 0 auto .75rem;
     }
 
     .credential-icon svg {
-      width: 20px;
-      height: 20px;
-      color: var(--white);
+      width: 24px;
+      height: 24px;
+      color: var(--primary);
       stroke: currentColor;
       fill: none;
     }
 
-    /* ─── MAIN CONTENT ─── */
-    main {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 3rem 1.25rem;
+    .credential-label {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      font-size: .875rem;
+      color: var(--text-light);
     }
 
     /* ─── BIO CARD ─── */
     .bio-card {
-      background: var(--white);
-      border: 1px solid var(--border);
-      border-radius: 4px;
-      padding: 2rem;
-      margin-bottom: 3rem;
-      transition: box-shadow 0.2s ease;
-    }
-
-    .bio-card:hover {
-      box-shadow: 0 2px 12px rgba(93, 64, 55, 0.08);
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 3rem 1.25rem;
+      border-bottom: 1px solid var(--border);
     }
 
     .bio-card h2 {
-      font-size: 1.5rem;
+      font-size: 1.625rem;
       font-weight: normal;
       color: var(--primary);
-      margin-bottom: 1.5rem;
+      margin-bottom: 1.25rem;
     }
 
     .bio-card p {
-      font-size: 1rem;
-      color: var(--text-light);
       margin-bottom: 1rem;
-      line-height: 1.8;
+      color: var(--text);
+      font-size: .9375rem;
     }
 
-    .bio-card p:last-child {
-      margin-bottom: 0;
-    }
-
-    .bio-card p.highlight {
-      font-weight: 600;
-      color: var(--primary);
+    .bio-card .highlight {
       background: var(--bg-warm);
-      padding: 1rem;
-      border-left: 3px solid var(--accent);
-      margin: 1.5rem 0;
+      border-left: 3px solid var(--primary);
+      padding: 1rem 1.25rem;
+      font-style: italic;
+      margin-top: 1.25rem;
+      border-radius: 0 4px 4px 0;
     }
 
-    /* ─── RESEARCH APPROACH SECTION ─── */
+    /* ─── RESEARCH APPROACH ─── */
+    .research-section {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 3rem 1.25rem;
+      border-bottom: 1px solid var(--border);
+    }
+
     .research-section h2 {
       font-size: 1.625rem;
       font-weight: normal;
       color: var(--text);
-      margin-bottom: 1rem;
+      margin-bottom: .5rem;
     }
 
     .research-intro {
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      font-size: 0.9375rem;
+      font-size: .9375rem;
       color: var(--text-light);
       margin-bottom: 2rem;
     }
 
     .approach-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 1.5rem;
-      margin-bottom: 3rem;
+      gap: 1.25rem;
     }
 
     .approach-card {
-      background: var(--white);
       border: 1px solid var(--border);
       border-radius: 4px;
       padding: 1.5rem;
-      transition: box-shadow 0.2s ease;
+      transition: box-shadow .2s ease;
     }
 
     .approach-card:hover {
-      box-shadow: 0 2px 12px rgba(93, 64, 55, 0.08);
+      box-shadow: 0 2px 12px rgba(21,101,192,.08);
     }
 
     .approach-icon {
       width: 48px;
       height: 48px;
-      background: rgba(255, 112, 67, 0.1);
+      background: rgba(21,101,192,.08);
       border-radius: 4px;
       display: flex;
       align-items: center;
@@ -299,79 +275,32 @@
     .approach-icon svg {
       width: 24px;
       height: 24px;
-      color: var(--accent);
+      color: var(--primary);
       stroke: currentColor;
       fill: none;
     }
 
     .approach-card h3 {
-      font-size: 0.95rem;
+      font-size: .95rem;
       font-weight: 700;
       color: var(--primary);
-      margin-bottom: 0.75rem;
+      margin-bottom: .75rem;
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     }
 
     .approach-card p {
-      font-size: 0.875rem;
+      font-size: .875rem;
       color: var(--text-light);
       line-height: 1.6;
     }
 
-    /* ─── METHODOLOGY SECTION ─── */
-    .methodology {
-      background: var(--primary);
-      color: var(--white);
-      border-radius: 4px;
-      padding: 2.5rem 2rem;
-      margin-bottom: 3rem;
-      text-align: center;
-    }
-
-    .methodology h2 {
-      font-size: 1.5rem;
-      font-weight: normal;
-      color: var(--white);
-      margin-bottom: 2rem;
-    }
-
-    .methodology-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-      gap: 1.5rem;
-    }
-
-    .methodology-item {
-      padding: 1rem;
-    }
-
-    .methodology-number {
-      width: 48px;
-      height: 48px;
-      background: rgba(255, 255, 255, 0.15);
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.5rem;
-      font-weight: 700;
-      margin: 0 auto 0.75rem;
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    }
-
-    .methodology-label {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      font-size: 0.8rem;
-      opacity: 0.9;
-      line-height: 1.4;
-    }
-
-    /* ─── BY THE NUMBERS SECTION ─── */
+    /* ─── NUMBERS SECTION ─── */
     .numbers-section {
       background: var(--bg-light);
       border-radius: 4px;
       padding: 2.5rem 2rem;
-      margin-bottom: 3rem;
+      margin: 3rem auto;
+      max-width: 1100px;
       text-align: center;
     }
 
@@ -388,25 +317,27 @@
       gap: 2rem;
     }
 
-    .number-item {
-      padding: 1rem 0;
-    }
-
     .number-value {
       font-size: 2rem;
       font-weight: 700;
       color: var(--accent);
-      margin-bottom: 0.5rem;
+      margin-bottom: .5rem;
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     }
 
     .number-label {
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      font-size: 0.875rem;
+      font-size: .875rem;
       color: var(--text-light);
     }
 
     /* ─── VALUES SECTION ─── */
+    .values-section {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 1.25rem 3rem;
+    }
+
     .values-section h2 {
       font-size: 1.625rem;
       font-weight: normal;
@@ -417,61 +348,47 @@
     .values-grid {
       display: flex;
       flex-direction: column;
-      gap: 1.5rem;
-      margin-bottom: 3rem;
+      gap: 1.25rem;
     }
 
     .value-card {
-      background: var(--white);
       border: 1px solid var(--border);
-      border-left: 4px solid var(--accent);
       border-radius: 4px;
       padding: 1.5rem;
-      transition: box-shadow 0.2s ease;
-    }
-
-    .value-card:hover {
-      box-shadow: 0 2px 12px rgba(93, 64, 55, 0.08);
     }
 
     .value-card h3 {
-      font-size: 1rem;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      font-size: .95rem;
       font-weight: 700;
       color: var(--primary);
-      margin-bottom: 0.5rem;
+      margin-bottom: .5rem;
     }
 
     .value-card p {
-      font-size: 0.875rem;
+      font-size: .875rem;
       color: var(--text-light);
       line-height: 1.6;
     }
 
     /* ─── CTA SECTION ─── */
     .cta-section {
-      background: var(--white);
-      border: 1px solid var(--border);
-      border-radius: 4px;
-      padding: 2.5rem 2rem;
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 3rem 1.25rem;
       text-align: center;
-      margin-bottom: 3rem;
-      transition: box-shadow 0.2s ease;
-    }
-
-    .cta-section:hover {
-      box-shadow: 0 2px 12px rgba(93, 64, 55, 0.08);
+      border-top: 1px solid var(--border);
     }
 
     .cta-section h2 {
-      font-size: 1.5rem;
+      font-size: 1.625rem;
       font-weight: normal;
-      color: var(--primary);
-      margin-bottom: 1rem;
+      margin-bottom: .5rem;
     }
 
     .cta-description {
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      font-size: 0.9375rem;
+      font-size: .9375rem;
       color: var(--text-light);
       margin-bottom: 1.5rem;
     }
@@ -486,126 +403,52 @@
     .cta-btn {
       display: inline-block;
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      font-size: 0.9375rem;
+      font-size: .9375rem;
       font-weight: 600;
-      padding: 0.75rem 1.5rem;
+      padding: .75rem 1.5rem;
       border-radius: 3px;
       text-decoration: none;
-      transition: all 0.2s ease;
+      transition: all .2s ease;
     }
 
-    .cta-btn-primary {
-      background: var(--accent);
-      color: var(--white);
-      border: none;
-    }
-
-    .cta-btn-primary:hover {
-      background: var(--accent-dark);
-    }
-
-    .cta-btn-secondary {
-      background: var(--primary);
-      color: var(--white);
-      border: none;
-    }
-
-    .cta-btn-secondary:hover {
-      background: var(--primary-dark);
-    }
-
-    .cta-btn-outline {
-      background: transparent;
-      color: var(--primary);
-      border: 2px solid var(--primary);
-    }
-
-    .cta-btn-outline:hover {
-      background: var(--primary);
-      color: var(--white);
-    }
+    .cta-btn-primary { background: var(--accent); color: var(--white); border: none; }
+    .cta-btn-primary:hover { background: var(--accent-dark); }
+    .cta-btn-secondary { background: var(--primary); color: var(--white); border: none; }
+    .cta-btn-secondary:hover { background: var(--primary-dark); }
+    .cta-btn-outline { background: transparent; color: var(--primary); border: 2px solid var(--primary); }
+    .cta-btn-outline:hover { background: var(--primary); color: var(--white); }
 
     /* ─── COMPANY INFO ─── */
     .company-info {
-      padding-top: 2rem;
+      padding: 2rem 1.25rem;
       text-align: center;
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      font-size: 0.8125rem;
+      font-size: .8125rem;
       color: var(--text-light);
-      border-top: 1px solid var(--border);
     }
 
-    .company-info p {
-      margin-bottom: 0.5rem;
-    }
+    .company-info p { margin-bottom: .5rem; }
 
     /* ─── RESPONSIVE ─── */
     @media (min-width: 768px) {
       .hero-content {
         flex-direction: row;
         text-align: left;
-        gap: 3rem;
       }
 
-      .hero-photo {
-        flex-shrink: 0;
-      }
-
-      .hero-social {
-        justify-content: flex-start;
-      }
-
-      .credentials-grid {
-        grid-template-columns: repeat(4, 1fr);
-      }
-
-      .approach-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-
-      .methodology-grid {
-        grid-template-columns: repeat(5, 1fr);
-      }
-
-      .numbers-grid {
-        grid-template-columns: repeat(4, 1fr);
-      }
+      .hero-social { justify-content: flex-start; }
+      .credentials-grid { grid-template-columns: repeat(4, 1fr); }
+      .approach-grid { grid-template-columns: repeat(2, 1fr); }
+      .numbers-grid { grid-template-columns: repeat(4, 1fr); }
     }
 
     @media (max-width: 767px) {
-      .hero h1 {
-        font-size: 1.75rem;
-      }
-
-      .research-section h2,
-      .values-section h2 {
-        font-size: 1.375rem;
-      }
-
-      .credentials-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 1.5rem;
-      }
-
-      .approach-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .methodology-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-
-      .numbers-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-
-      .cta-buttons {
-        flex-direction: column;
-      }
-
-      .cta-btn {
-        width: 100%;
-      }
+      .hero h1 { font-size: 1.75rem; }
+      .credentials-grid { grid-template-columns: repeat(2, 1fr); gap: 1.5rem; }
+      .approach-grid { grid-template-columns: 1fr; }
+      .numbers-grid { grid-template-columns: repeat(2, 1fr); }
+      .cta-buttons { flex-direction: column; }
+      .cta-btn { width: 100%; }
     }
   </style>
 
@@ -615,15 +458,14 @@
     "@context": "https://schema.org",
     "@type": "Person",
     "name": "Ilane Tall",
-    "jobTitle": "Product Researcher | Specializing in bathroom products and home textiles",
+    "jobTitle": "Product Researcher | Specializing in bathroom fixtures and toilet accessories",
     "worksFor": {
       "@type": "Organization",
       "name": "Best Toilet Seats"
     },
-    "description": "Product Researcher specializing in bathroom products and home textiles. Helping families create safer, more comfortable bathrooms.",
+    "description": "Product Researcher specializing in bathroom fixtures and toilet accessories. Helping families find safer, more comfortable toilet seats.",
     "sameAs": [
-      "https://www.linkedin.com/in/ilanetall",
-      "https://twitter.com/ilanetall_bbr"
+      "https://www.linkedin.com/in/ilanetall"
     ]
   }
   </script>
@@ -635,20 +477,16 @@
   <section class="hero">
     <div class="hero-content">
       <div class="hero-photo">
-        <img src="images/ilane-tall-80x80.webp?v=2?v=3" alt="Ilane Tall - Certified Interior Design Consultant" width="200" height="200">
+        <img src="images/ilane-tall-80x80.jpg" alt="Ilane Tall - Product Researcher" width="200" height="200">
       </div>
       <div class="hero-info">
         <h1>Ilane Tall</h1>
-        <p class="hero-subtitle">Certified Interior Design Consultant & Bath Accessories Expert</p>
-        <p class="hero-tagline">"Helping families create safer, more comfortable bathrooms since 2015"</p>
+        <p class="hero-subtitle">Product Researcher | Bathroom Fixtures & Toilet Accessories</p>
+        <p class="hero-tagline">"Helping families find safer, more comfortable toilet seats since 2024"</p>
         <div class="hero-social">
           <a href="https://www.linkedin.com/in/ilanetall" target="_blank" rel="noopener noreferrer" class="social-link">
             <svg fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
             LinkedIn
-          </a>
-          <a href="https://twitter.com/ilanetall_bbr" target="_blank" rel="noopener noreferrer" class="social-link">
-            <svg fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-            X / Twitter
           </a>
           <a href="contact" class="social-link">
             <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
@@ -664,7 +502,7 @@
     <div class="credentials-grid">
       <div class="credential-item">
         <div class="credential-number">200+</div>
-        <p class="credential-label">toilet seats Tested</p>
+        <p class="credential-label">Toilet Seats Tested</p>
       </div>
       <div class="credential-item">
         <div class="credential-number">10+</div>
@@ -687,14 +525,13 @@
 
   <!-- Main Content -->
   <main>
-
     <!-- Bio Section -->
     <section class="bio-card">
       <h2>My Story</h2>
       <p>With over 10 years of experience in interior design and home textiles, I've made it my mission to help homeowners make informed decisions about their bathroom essentials.</p>
       <p>After working as a buyer for major home goods retailers, I noticed how overwhelming the toilet seat market had become. Hundreds of options, misleading marketing claims, and no reliable testing data.</p>
-      <p>That's why I created Best Toilet Seats - to provide honest, data-driven reviews based on real testing, not just manufacturer specs.</p>
-      <p class="highlight">Every product on this site has been personally evaluated using our rigorous 5-point testing methodology.</p>
+      <p>That's why I created Best Toilet Seats -- to provide honest, data-driven reviews based on real research, not just manufacturer specs.</p>
+      <p class="highlight">Every product on this site has been carefully evaluated using our rigorous research methodology, analyzing specifications, verified customer reviews, and real-world performance data.</p>
     </section>
 
     <!-- Our Approach -->
@@ -710,56 +547,26 @@
           <h3>Data-Driven Analysis</h3>
           <p>We analyze thousands of verified customer reviews to identify patterns, common praises, and recurring complaints. Numbers don't lie.</p>
         </div>
-
         <div class="approach-card">
           <div class="approach-icon">
             <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
           </div>
           <h3>Spec Comparison</h3>
-          <p>We compare materials, dimensions, care instructions, and features across competing products to give you a clear picture.</p>
+          <p>We compare materials, dimensions, weight capacity, hinge types, and features across competing products to give you a clear picture.</p>
         </div>
-
         <div class="approach-card">
           <div class="approach-icon">
             <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/></svg>
           </div>
           <h3>Real Customer Insights</h3>
-          <p>We highlight what real buyers say after weeks and months of use - the good, the bad, and everything in between.</p>
+          <p>We highlight what real buyers say after weeks and months of use -- the good, the bad, and everything in between.</p>
         </div>
-
         <div class="approach-card">
           <div class="approach-icon">
             <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
           </div>
           <h3>Practical Recommendations</h3>
-          <p>We match products to specific needs. Not everyone needs the same toilet seat - we help you find YOUR perfect match.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- 5-Point Testing Methodology -->
-    <section class="methodology">
-      <h2>Our 5-Point Testing Methodology</h2>
-      <div class="methodology-grid">
-        <div class="methodology-item">
-          <div class="methodology-number">1</div>
-          <p class="methodology-label">Absorbency Test</p>
-        </div>
-        <div class="methodology-item">
-          <div class="methodology-number">2</div>
-          <p class="methodology-label">Slip Resistance</p>
-        </div>
-        <div class="methodology-item">
-          <div class="methodology-number">3</div>
-          <p class="methodology-label">Durability Check</p>
-        </div>
-        <div class="methodology-item">
-          <div class="methodology-number">4</div>
-          <p class="methodology-label">Comfort Rating</p>
-        </div>
-        <div class="methodology-item">
-          <div class="methodology-number">5</div>
-          <p class="methodology-label">Wash & Care</p>
+          <p>We match products to specific needs. Not everyone needs the same toilet seat -- we help you find YOUR perfect match.</p>
         </div>
       </div>
     </section>
@@ -769,20 +576,20 @@
       <h2>Best Toilet Seats By The Numbers</h2>
       <div class="numbers-grid">
         <div class="number-item">
-          <div class="number-value">500K+</div>
+          <div class="number-value">300K+</div>
           <p class="number-label">Reviews Analyzed</p>
         </div>
         <div class="number-item">
           <div class="number-value">200+</div>
-          <p class="number-label">Products Tested</p>
+          <p class="number-label">Products Evaluated</p>
         </div>
         <div class="number-item">
-          <div class="number-value">50+</div>
+          <div class="number-value">21</div>
           <p class="number-label">In-Depth Articles</p>
         </div>
         <div class="number-item">
-          <div class="number-value">10K+</div>
-          <p class="number-label">Monthly Readers</p>
+          <div class="number-value">15+</div>
+          <p class="number-label">Categories Covered</p>
         </div>
       </div>
     </section>
@@ -790,18 +597,15 @@
     <!-- Our Values -->
     <section class="values-section">
       <h2>What We Stand For</h2>
-
       <div class="values-grid">
         <div class="value-card">
           <h3>Honesty First</h3>
           <p>We never recommend a product we wouldn't suggest to our own family. If something has issues, we tell you.</p>
         </div>
-
         <div class="value-card">
           <h3>No Pay-to-Play</h3>
           <p>Brands cannot pay for better rankings or reviews. Our recommendations are based solely on research and data.</p>
         </div>
-
         <div class="value-card">
           <h3>Transparency About Affiliates</h3>
           <p>Yes, we earn commissions when you buy through our links. But this never influences our rankings. We recommend the best products, period.</p>
@@ -816,16 +620,14 @@
       <div class="cta-buttons">
         <a href="contact" class="cta-btn cta-btn-primary">Send Me an Email</a>
         <a href="https://www.linkedin.com/in/ilanetall" target="_blank" rel="noopener noreferrer" class="cta-btn cta-btn-secondary">Connect on LinkedIn</a>
-        <a href="https://twitter.com/ilanetall_bbr" target="_blank" rel="noopener noreferrer" class="cta-btn cta-btn-outline">Follow on X</a>
       </div>
     </section>
 
     <!-- Company Info -->
     <section class="company-info">
       <p>Best Toilet Seats is operated by Neclid LTD, Ashdod, Israel.</p>
-      <p>All product recommendations are our honest opinions based on thorough research and real-world testing.</p>
+      <p>All product recommendations are our honest opinions based on thorough research and real-world data analysis.</p>
     </section>
-
   </main>
 
   <footer id="site-footer"></footer>
