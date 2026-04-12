@@ -30,11 +30,11 @@
     <script src="components/site-config.js?v=5"></script>
 
     <style>
-        :root { --primary: #1565C0; --primary-light: #42A5F5; --primary-dark: #0D47A1; --accent: #FFB300; --accent-dark: #FF8F00; }
+        :root { --primary: #1565C0; --primary-light: #42A5F5; --primary-dark: #0D47A1; --accent: #FFB300; --accent-dark: #FF8F00;--bg-warm:#F3F8FF;--text:#222222;--text-light:#666666;--border:#DDEAF9;--white:#FFFFFF; }
         * { margin: 0; padding: 0; box-sizing: border-box; }
         html { scroll-behavior: smooth; }
         body { font-family: Georgia, 'Times New Roman', serif; line-height: 1.7; color: #333; background: #f8f9fa; }
-        h1, h2, h3 { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+        /* h1/h2/h3 inherit Georgia serif from body */
 
         .breadcrumb { background: #fff; padding: 15px 20px; font-size: 0.9rem; color: #666; border-bottom: 1px solid #e0e0e0; max-width: 1200px; margin: 0 auto; }
         .breadcrumb a { color: var(--accent); text-decoration: none; }
@@ -43,17 +43,17 @@
         main { max-width: 1000px; margin: 0 auto; padding: 40px 20px; background: #fff; min-height: 100vh; }
 
         .article-header { margin-bottom: 2rem; }
-        .article-header h1 { font-size: 2.2rem; color: var(--primary-dark); line-height: 1.3; margin-bottom: 1rem; }
+        .article-header h1{ font-size: 2.2rem; color:var(--text); line-height: 1.3; margin-bottom: 1rem; }
         .article-meta { color: #666; font-size: 0.9rem; margin-bottom: 1rem; }
 
         .author-box { display: flex; align-items: center; gap: 12px; margin: 1rem 0; padding: 1rem; background: #f8f9fa; border-radius: 8px; }
-        .author-box img { width: 80px; height: 80px; border-radius: 50%; object-fit: cover; }
+        .author-box img{width:56px;height:56px; border-radius: 50%; object-fit: cover; }
         .author-box strong { color: var(--primary-dark); }
         .author-box p { font-size: 0.85rem; color: #666; margin: 0; }
 
         .hero-image { width: 100%; height: auto; border-radius: 12px; margin: 1.5rem 0; box-shadow: 0 4px 20px rgba(0,0,0,0.1); }
 
-        h2 { color: var(--primary); font-size: 1.6rem; margin: 2.5rem 0 1rem; border-bottom: 2px solid var(--accent); padding-bottom: 10px; }
+        h2 { color:var(--text);font-weight:normal; font-size: 1.6rem; margin: 2.5rem 0 1rem; }
         h3 { color: var(--primary-dark); font-size: 1.3rem; margin: 1.5rem 0 0.75rem; }
         h4 { color: var(--primary); font-size: 1.1rem; margin: 1.2rem 0 0.5rem; }
         p { margin: 1rem 0; }
@@ -69,7 +69,7 @@
         .quick-answer p:first-of-type { margin-top: 0; }
 
         .toc { background: #f5f5f5; border-left: 4px solid var(--accent); padding: 20px 25px; margin: 2rem 0; border-radius: 0 8px 8px 0; }
-        .toc h2 { color: var(--primary); font-size: 1.1rem; margin: 0 0 15px 0; border: none; padding: 0; }
+        .toc h2 { color:var(--text);font-weight:normal; font-size: 1.1rem; margin: 0 0 15px 0; border: none; padding: 0; }
         .toc ol { margin: 0; padding-left: 1.2rem; }
         .toc li { margin: 8px 0; }
         .toc a { color: var(--accent); font-weight: 500; }
@@ -83,9 +83,9 @@
         .quick-pick-details .price { font-size: 1.6rem; font-weight: 700; margin-bottom: 0.5rem; }
         .quick-pick-details p { opacity: 0.95; margin: 0.5rem 0; font-size: 0.95rem; }
 
-        .product-card { background: #f8f9fa; border-radius: 12px; padding: 1.5rem; margin: 2rem 0; border: 1px solid #e0e0e0; }
-        .product-badge { background: var(--accent); color: white; padding: 5px 12px; border-radius: 20px; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; display: inline-block; margin-bottom: 0.75rem; }
-        .product-content { display: grid; grid-template-columns: 200px 1fr; gap: 1.5rem; align-items: start; }
+        .product-section{ background: #f8f9fa; border-radius:8px; padding: 1.5rem; margin: 2rem 0; border: 1px solid #e0e0e0; }
+        .pick-badge{ background: var(--accent); color: white; padding: 5px 12px; border-radius: 20px; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; display: inline-block; margin-bottom: 0.75rem; }
+        .product-head{ display: grid; grid-template-columns:220px 1fr; gap: 1.5rem; align-items: start; }
         .product-image { width: 200px; height: 200px; object-fit: contain; background: white; border-radius: 8px; padding: 10px; }
         .product-name { font-size: 1.25rem; color: var(--primary-dark); margin-bottom: 0.5rem; }
         .product-rating { color: #666; margin-bottom: 0.3rem; }
@@ -105,7 +105,7 @@
         .cons li { padding-left: 20px; position: relative; }
         .cons li::before { content: "-"; position: absolute; left: 0; color: #E53935; font-weight: 700; }
 
-        .cta-button { display: inline-block; background: var(--accent); color: white; padding: 14px 28px; border-radius: 8px; text-decoration: none; font-weight: 600; transition: all 0.2s; margin-top: 0.5rem; }
+        .cta-button { display: inline-block; background:#FFB300; color: white; padding: 14px 28px; border-radius: 8px; text-decoration: none; font-weight: 600; transition: all 0.2s; margin-top: 0.5rem; }
         .cta-button:hover { background: var(--accent-dark); transform: translateY(-2px); text-decoration: none; box-shadow: 0 4px 12px rgba(255, 179, 0, 0.4); }
 
         .comparison-table { width: 100%; border-collapse: collapse; margin: 2rem 0; font-size: 0.9rem; background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
@@ -179,7 +179,7 @@
             main { max-width: 100%; }
             .quick-pick-content { flex-direction: column; text-align: center; }
             .quick-pick-image { margin: 0 auto; }
-            .product-content { grid-template-columns: 1fr; }
+            .product-head{ grid-template-columns: 1fr; }
             .product-image { max-width: 200px; margin: 0 auto; }
             .pros-cons { grid-template-columns: 1fr; }
             .versus-split { grid-template-columns: 1fr; }
@@ -193,10 +193,22 @@
             .gallery-main { max-width: 200px; height: 200px; }
         }
     
-        .things-to-know { background: #f0f7ff; border-left: 4px solid #1976D2; padding: 1.5rem; margin: 2rem 0; border-radius: 0 8px 8px 0; }
-        .things-to-know h2 { font-size: 1.2rem; color: #1565C0; margin: 0 0 1rem 0; border: none; padding: 0; }
+        .things-to-know{background:linear-gradient(135deg,#FFF8E1,#FFECB3); border-left:4px solid #FFB300; padding: 1.5rem; margin: 2rem 0; border-radius: 0 8px 8px 0; }
+        .things-to-know h2 { font-size: 1.2rem; color:#E65100;text-transform:uppercase;letter-spacing:0.05em; margin: 0 0 1rem 0; border: none; padding: 0; }
         .things-to-know li { margin-bottom: 0.75rem; }
         .how-we-picked, .how-we-tested, .the-competition, .why-trust-us { margin: 2.5rem 0; }
+    
+        .specs-table{width:100%;border-collapse:collapse;font-size:0.85rem;margin:0.75rem 0}
+        .specs-table td{padding:7px 10px;border-bottom:1px solid #e0e0e0}
+        .specs-table td:first-child{font-weight:600;color:var(--primary-dark);width:38%}
+    
+        .disclosure{font-size:0.8rem;color:#999;margin-top:4px}
+        .disclosure a{color:#999;text-decoration:underline}
+    
+        .author-avatar{width:56px;height:56px;border-radius:50%;overflow:hidden;flex-shrink:0}
+        .author-avatar img{width:100%;height:100%;object-fit:cover}
+        .author-info strong{color:var(--primary-dark);display:block}
+        .author-info span{font-size:0.85rem;color:#666}
     </style>
 
     <script type="application/ld+json">
@@ -298,21 +310,15 @@
             <!-- Article Header -->
             <div class="article-header">
                 <h1>Elongated vs Round Toilet Seats: Complete Comparison Guide</h1>
-                <p class="article-meta">
-                    <strong>Updated:</strong> March 11, 2026 &bull;
-                    <strong>Reading time:</strong> 18 min
-                </p>
+                <div class="article-meta">Updated <strong>March 11, 2026</strong></div>
                 <div class="author-box">
-                    <img src="images/ilane-tall-80x80.jpg" alt="Ilane Tall" width="80" height="80" onerror="this.style.display='none'">
-                    <div>
-                        <strong>Ilane Tall</strong>
-                        <p>Product Researcher | Specializing in bathroom fixtures and toilet accessories</p>
-                    </div>
-                </div>
+                <div class="author-avatar"><img src="images/ilane-tall-80x80.jpg" alt="Ilane Tall" width="56" height="56"></div>
+                <div class="author-info"><strong>Ilane Tall</strong><span>Product Researcher, Best Toilet Seats</span></div>
+            </div>
             </div>
 
             <!-- Affiliate Disclaimer -->
-            <p style="font-size: 0.8rem; color: #888; margin: 0.5rem 0 1.5rem; font-style: italic;">This article contains affiliate links. If you purchase through these links, we may earn a small commission at no extra cost to you. <a href="disclosure.html" style="color: #888;">Full disclosure</a>.</p>
+            <p class="disclosure"><a href="disclosure">Contains affiliate links (disclosure)</a></p>
 
             <!-- Quick Answer Box -->
             <div class="quick-answer">
@@ -604,9 +610,9 @@
             <p>Based on our research, customer reviews, and value analysis, here are our top recommendations for each shape category.</p>
 
             <!-- Product 1: Best Elongated -->
-            <div class="product-card">
-                <span class="product-badge">BEST ELONGATED</span>
-                <div class="product-content">
+            <div class="product-section">
+                <span class="pick-badge">BEST ELONGATED</span>
+                <div class="product-head">
                     <div class="product-gallery">
                         <div class="gallery-thumbs">
                             <img src="images/amazon-61+cdOVb02L.webp" data-full="images/amazon-61+cdOVb02L.webp" class="gallery-thumb" alt="KOHLER Brevia Elongated - hinge detail" loading="lazy" width="48" height="48">
@@ -631,7 +637,7 @@
 
                         <div class="pros-cons">
                             <div class="pros">
-                                <h4>Pros</h4>
+                                <h4>What we like</h4>
                                 <ul>
                                     <li>Outstanding value under $35</li>
                                     <li>Reliable slow-close mechanism</li>
@@ -640,7 +646,7 @@
                                 </ul>
                             </div>
                             <div class="cons">
-                                <h4>Cons</h4>
+                                <h4>Flaws but not dealbreakers</h4>
                                 <ul>
                                     <li>Not tool-free installation</li>
                                     <li>Plastic can feel cold in winter</li>
@@ -663,9 +669,9 @@
             </div>
 
             <!-- Product 2: Best Round -->
-            <div class="product-card">
-                <span class="product-badge" style="background: #0097A7;">BEST ROUND</span>
-                <div class="product-content">
+            <div class="product-section">
+                <span class="pick-badge" style="background: #0097A7;">BEST ROUND</span>
+                <div class="product-head">
                     <div class="product-gallery">
                         <img src="images/amazon-316dilra+LL.webp" alt="KOHLER Cachet ReadyLatch Round Toilet Seat" class="gallery-main" loading="lazy" width="260" height="260">
                         <div class="gallery-thumbs">
@@ -692,7 +698,7 @@
 
                         <div class="pros-cons">
                             <div class="pros">
-                                <h4>Pros</h4>
+                                <h4>What we like</h4>
                                 <ul>
                                     <li>Zero-tool installation and removal</li>
                                     <li>Most reviewed round seat on Amazon</li>
@@ -701,7 +707,7 @@
                                 </ul>
                             </div>
                             <div class="cons">
-                                <h4>Cons</h4>
+                                <h4>Flaws but not dealbreakers</h4>
                                 <ul>
                                     <li>Higher price than basic round seats</li>
                                     <li>Plastic construction (not wood)</li>
@@ -724,9 +730,9 @@
             </div>
 
             <!-- Product 3: Best Budget -->
-            <div class="product-card">
-                <span class="product-badge" style="background: #4CAF50;">BEST BUDGET</span>
-                <div class="product-content">
+            <div class="product-section">
+                <span class="pick-badge" style="background: #4CAF50;">BEST BUDGET</span>
+                <div class="product-head">
                     <div class="product-gallery">
                         <img src="images/amazon-51ngGU234TL.webp" alt="Bemis 1500EC Lift-Off Wood Elongated Toilet Seat" class="gallery-main" loading="lazy" width="260" height="260">
                         <div class="gallery-thumbs">
@@ -753,7 +759,7 @@
 
                         <div class="pros-cons">
                             <div class="pros">
-                                <h4>Pros</h4>
+                                <h4>What we like</h4>
                                 <ul>
                                     <li>Unbeatable price under $20</li>
                                     <li>Wood feels warmer than plastic</li>
@@ -762,7 +768,7 @@
                                 </ul>
                             </div>
                             <div class="cons">
-                                <h4>Cons</h4>
+                                <h4>Flaws but not dealbreakers</h4>
                                 <ul>
                                     <li>No soft-close mechanism</li>
                                     <li>Heavier than plastic seats</li>
@@ -970,20 +976,4 @@
                         <span><strong style="color: #37474F;">Best Bathroom Vanities</strong><br><small>Storage &amp; style solutions</small></span>
                     </a>
                     <a href="https://best-shower-heads.com" target="_blank" rel="noopener" class="network-link">
-                        <span><strong style="color: #455A64;">Best Shower Heads</strong><br><small>Rainfall &amp; high-pressure picks</small></span>
-                    </a>
-                </div>
-            </div>
-
-        </article>
-    </main>
-
-    <footer id="site-footer"></footer>
-
-    <script src="components/site-components.js?v=5"></script>
-    <script>
-    document.querySelectorAll(".faq-question").forEach(function(q){q.addEventListener("click",function(){this.classList.toggle("open");this.nextElementSibling.classList.toggle("open")})});
-    document.querySelectorAll(".product-gallery").forEach(function(g){var m=g.querySelector(".gallery-main");if(!m)return;g.querySelectorAll(".gallery-thumb").forEach(function(t){t.addEventListener("click",function(){m.style.opacity="0";setTimeout(function(){m.src=t.getAttribute("data-full");m.alt=t.alt;m.style.opacity="1"},200);g.querySelectorAll(".gallery-thumb").forEach(function(x){x.classList.remove("active")});t.classList.add("active")})})});
-    </script>
-</body>
-</html>
+               

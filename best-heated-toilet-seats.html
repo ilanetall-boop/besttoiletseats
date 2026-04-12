@@ -27,17 +27,17 @@
         * { margin: 0; padding: 0; box-sizing: border-box; }
         html { scroll-behavior: smooth; }
         body { font-family: Georgia, 'Times New Roman', serif; line-height: 1.7; color: #333; background: #f8f9fa; }
-        h1, h2, h3 { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+        /* h1/h2/h3 inherit Georgia serif from body */
         .breadcrumb { background: #fff; padding: 15px 20px; font-size: 0.9rem; color: #666; border-bottom: 1px solid #e0e0e0; max-width: 1200px; margin: 0 auto; }
         .breadcrumb a { color: #FFB300; text-decoration: none; } .breadcrumb a:hover { text-decoration: underline; }
         main { max-width: 800px; margin: 0 auto; padding: 40px 20px; background: #fff; min-height: 100vh; }
         .article-header { margin-bottom: 2rem; } .article-header h1 { font-size: 2.2rem; color: #0D47A1; line-height: 1.3; margin-bottom: 1rem; }
         .article-meta { color: #666; font-size: 0.9rem; margin-bottom: 1rem; }
         .author-box { display: flex; align-items: center; gap: 12px; margin: 1rem 0; padding: 1rem; background: #f8f9fa; border-radius: 8px; }
-        .author-box img { width: 50px; height: 50px; border-radius: 50%; object-fit: cover; }
+        .author-box img{width:56px;height:56px; border-radius: 50%; object-fit: cover; }
         .author-box strong { color: #0D47A1; } .author-box p { font-size: 0.85rem; color: #666; margin: 0; }
         .hero-image { width: 100%; height: auto; border-radius: 12px; margin: 1.5rem 0; box-shadow: 0 4px 20px rgba(0,0,0,0.1); }
-        h2 { color: #1565C0; font-size: 1.6rem; margin: 2.5rem 0 1rem; border-bottom: 2px solid #FFB300; padding-bottom: 10px; }
+        h2 { color: #1565C0; font-size: 1.6rem; margin: 2.5rem 0 1rem; border-bottom: 2px solid #FFB300; }
         h3 { color: #0D47A1; font-size: 1.3rem; margin: 1.5rem 0 0.75rem; }
         p { margin: 1rem 0; } ul, ol { margin: 1rem 0; padding-left: 1.5rem; } li { margin: 0.5rem 0; }
         a { color: #FFB300; text-decoration: none; } a:hover { text-decoration: underline; }
@@ -52,9 +52,9 @@
         .quick-pick-content { display: flex; gap: 1.5rem; align-items: center; }
         .quick-pick-image { width: 140px; height: 140px; object-fit: contain; background: white; border-radius: 12px; padding: 10px; flex-shrink: 0; }
         .quick-pick-details h3 { color: white; margin-top: 0; font-size: 1.3rem; } .quick-pick-details .rating { opacity: 0.9; } .quick-pick-details .price { font-size: 1.6rem; font-weight: 700; } .quick-pick-details p { opacity: 0.95; margin: 0.5rem 0; font-size: 0.95rem; }
-        .product-card { background: #f8f9fa; border-radius: 12px; padding: 1.5rem; margin: 2rem 0; border: 1px solid #e0e0e0; }
-        .product-badge { background: #FFB300; color: #333; padding: 5px 12px; border-radius: 20px; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; display: inline-block; margin-bottom: 0.75rem; }
-        .product-content { display: grid; grid-template-columns: 180px 1fr; gap: 1.5rem; align-items: start; }
+        .product-section{ background: #f8f9fa; border-radius:8px; padding: 1.5rem; margin: 2rem 0; border: 1px solid #e0e0e0; }
+        .pick-badge{ background: #FFB300; color: #333; padding: 5px 12px; border-radius: 20px; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; display: inline-block; margin-bottom: 0.75rem; }
+        .product-head{ display: grid; grid-template-columns: 180px 1fr; gap: 1.5rem; align-items: start; }
         .product-image { width: 100%; height: 180px; object-fit: contain; background: white; border-radius: 8px; padding: 10px; }
         .product-name { font-size: 1.25rem; color: #0D47A1; margin-bottom: 0.5rem; }
         .product-rating { color: #666; margin-bottom: 0.3rem; } .product-price { font-size: 1.5rem; font-weight: 700; color: #1565C0; margin-bottom: 0.75rem; }
@@ -78,12 +78,24 @@
         .crosslink-banner { background: linear-gradient(135deg, #5D4037, #8D6E63); padding: 24px; border-radius: 16px; margin: 3rem 0; text-align: center; }
         .crosslink-banner p { color: white; font-size: 1.15rem; margin-bottom: 1rem; }
         .crosslink-banner a { background: white; color: #FF7043; padding: 12px 28px; border-radius: 8px; text-decoration: none; font-weight: 700; display: inline-block; }
-        @media (max-width: 768px) { .article-header h1 { font-size: 1.7rem; } .quick-pick-content { flex-direction: column; text-align: center; } .product-content { grid-template-columns: 1fr; } .product-image { max-width: 200px; margin: 0 auto; } .pros-cons { grid-template-columns: 1fr; } }
+        @media (max-width: 768px) { .article-header h1 { font-size: 1.7rem; } .quick-pick-content { flex-direction: column; text-align: center; } .product-head{ grid-template-columns: 1fr; } .product-image { max-width: 200px; margin: 0 auto; } .pros-cons { grid-template-columns: 1fr; } }
     
-        .things-to-know { background: #f0f7ff; border-left: 4px solid #1976D2; padding: 1.5rem; margin: 2rem 0; border-radius: 0 8px 8px 0; }
-        .things-to-know h2 { font-size: 1.2rem; color: #1565C0; margin: 0 0 1rem 0; border: none; padding: 0; }
+        .things-to-know{background:linear-gradient(135deg,#FFF8E1,#FFECB3); border-left:4px solid #FFB300; padding: 1.5rem; margin: 2rem 0; border-radius: 0 8px 8px 0; }
+        .things-to-know h2 { font-size: 1.2rem; color:#E65100;text-transform:uppercase;letter-spacing:0.05em; margin: 0 0 1rem 0; border: none; padding: 0; }
         .things-to-know li { margin-bottom: 0.75rem; }
         .how-we-picked, .how-we-tested, .the-competition, .why-trust-us { margin: 2.5rem 0; }
+    
+        .specs-table{width:100%;border-collapse:collapse;font-size:0.85rem;margin:0.75rem 0}
+        .specs-table td{padding:7px 10px;border-bottom:1px solid #e0e0e0}
+        .specs-table td:first-child{font-weight:600;color:var(--primary-dark);width:38%}
+    
+        .disclosure{font-size:0.8rem;color:#999;margin-top:4px}
+        .disclosure a{color:#999;text-decoration:underline}
+    
+        .author-avatar{width:56px;height:56px;border-radius:50%;overflow:hidden;flex-shrink:0}
+        .author-avatar img{width:100%;height:100%;object-fit:cover}
+        .author-info strong{color:var(--primary-dark);display:block}
+        .author-info span{font-size:0.85rem;color:#666}
     </style>
     <script type="application/ld+json">
     {
@@ -119,13 +131,16 @@
     <main><article>
         <div class="article-header">
             <h1>5 Best Heated Toilet Seats for Winter Comfort (2026)</h1>
-            <p class="article-meta"><strong>Updated:</strong> March 8, 2026 &bull; <strong>Reading time:</strong> 12 min</p>
-            <div class="author-box"><img src="images/ilane-tall-80x80.jpg" alt="Ilane Tall" onerror="this.style.display='none'"><div><strong>Ilane Tall</strong><p>Home & Bathroom Expert | Testing toilet seats and bidets since 2024</p></div></div>
+            <div class="article-meta">Updated <strong>March 8, 2026</strong></div>
+            <div class="author-box">
+                <div class="author-avatar"><img src="images/ilane-tall-80x80.jpg" alt="Ilane Tall" width="56" height="56"></div>
+                <div class="author-info"><strong>Ilane Tall</strong><span>Product Researcher, Best Toilet Seats</span></div>
+            </div>
         </div>
 
         <img src="images/hero-best-heated-toilet-seats.webp" alt="5 Best Heated Toilet Seats for Winter Comfort (2026)" width="1200" height="685" loading="eager" fetchpriority="high" decoding="sync" class="hero-image">
 
-        <p style="font-size: 0.8rem; color: #888; margin: 0.5rem 0 1.5rem; font-style: italic;">This article contains affiliate links. If you purchase through these links, we may earn a small commission at no extra cost to you. <a href="disclosure.html" style="color: #888;">Full disclosure</a>.</p>
+        <p class="disclosure"><a href="disclosure">Contains affiliate links (disclosure)</a></p>
 
         <div class="quick-answer">
             <h2>Quick Answer: Best Heated Toilet Seat?</h2>
@@ -214,17 +229,17 @@
 
         <h2 id="top-picks">Top 5 Heated Toilet Seats of 2026</h2>
 
-        <div class="product-card">
-            <span class="product-badge" style="background: #9C27B0; color: white;">Best Premium</span>
-            <div class="product-content">
+        <div class="product-section">
+            <span class="pick-badge" style="background: #9C27B0; color: white;">Best Premium</span>
+            <div class="product-head">
                                 <div class="product-details">
                     <h3 class="product-name">1. ALPHA BIDET UX Pearl Bidet Toilet Seat</h3>
                     <div class="product-rating">4.5/5 (639 reviews)</div>
                     <div class="product-price">$449.00</div>
                     <p class="best-for"><strong>Best For:</strong> Premium heated seat with full bidet features</p>
                     <div class="pros-cons">
-                        <div class="pros"><h4>Pros</h4><ul><li>Instant ceramic heater (no tank)</li><li>Stainless steel self-cleaning nozzle</li><li>Wireless remote control</li><li>Ultra-slim design (5.5" profile)</li></ul></div>
-                        <div class="cons"><h4>Cons</h4><ul><li>Premium price point</li><li>Elongated only</li></ul></div>
+                        <div class="pros"><h4>What we like</h4><ul><li>Instant ceramic heater (no tank)</li><li>Stainless steel self-cleaning nozzle</li><li>Wireless remote control</li><li>Ultra-slim design (5.5" profile)</li></ul></div>
+                        <div class="cons"><h4>Flaws but not dealbreakers</h4><ul><li>Premium price point</li><li>Elongated only</li></ul></div>
                     </div>
                     <p>The ALPHA BIDET UX Pearl is the gold standard for heated bidet seats. Its tankless instant heating system provides endless warm water -- no waiting for a tank to refill. The 3-level heated seat reaches comfort temperature in under 30 seconds, and the eco mode reduces standby power consumption by 70%.</p>
                     <a href="https://www.amazon.com/dp/B09VRFZ592?tag=besttoilet-seats-20" class="cta-button" target="_blank" rel="nofollow noopener sponsored">Check Price on Amazon</a>
@@ -232,9 +247,9 @@
             </div>
         </div>
 
-        <div class="product-card">
-            <span class="product-badge">Best Value</span>
-            <div class="product-content">
+        <div class="product-section">
+            <span class="pick-badge">Best Value</span>
+            <div class="product-head">
                 <img src="images/amazon-51C8syGnyCL.webp" alt="LEIVI Electric Bidet Toilet Seat" class="product-image" loading="lazy">
                 <div class="product-details">
                     <h3 class="product-name">2. LEIVI Electric Bidet Toilet Seat</h3>
@@ -242,8 +257,8 @@
                     <div class="product-price">$239.98</div>
                     <p class="best-for"><strong>Best For:</strong> Best heated seat under $250</p>
                     <div class="pros-cons">
-                        <div class="pros"><h4>Pros</h4><ul><li>Wireless remote included</li><li>Heated seat + warm water + dryer</li><li>Self-cleaning nozzle</li><li>Excellent value</li></ul></div>
-                        <div class="cons"><h4>Cons</h4><ul><li>Tank-based heating (limited warm water)</li><li>Slightly bulkier design</li></ul></div>
+                        <div class="pros"><h4>What we like</h4><ul><li>Wireless remote included</li><li>Heated seat + warm water + dryer</li><li>Self-cleaning nozzle</li><li>Excellent value</li></ul></div>
+                        <div class="cons"><h4>Flaws but not dealbreakers</h4><ul><li>Tank-based heating (limited warm water)</li><li>Slightly bulkier design</li></ul></div>
                     </div>
                     <p>The LEIVI delivers 90% of premium features at half the price. Its heated seat reaches 3 temperature levels, and the warm water bidet provides comfortable cleansing. The wireless remote makes it easy to adjust settings without reaching behind you.</p>
                     <a href="https://www.amazon.com/dp/B0B1B4ZWY4?tag=besttoilet-seats-20" class="cta-button" target="_blank" rel="nofollow noopener sponsored">Check Price on Amazon</a>
@@ -255,9 +270,9 @@
             </div>
         </div>
 
-        <div class="product-card">
-            <span class="product-badge" style="background: #607D8B; color: white;">Brand Leader</span>
-            <div class="product-content">
+        <div class="product-section">
+            <span class="pick-badge" style="background: #607D8B; color: white;">Brand Leader</span>
+            <div class="product-head">
                 <img src="images/amazon-61D7dM2KqGL.webp" alt="Brondell Swash SE400" class="product-image" loading="lazy">
                 <div class="product-details">
                     <h3 class="product-name">3. Brondell Swash SE400 Electric Bidet</h3>
@@ -265,8 +280,8 @@
                     <div class="product-price">$279.99</div>
                     <p class="best-for"><strong>Best For:</strong> Trusted brand with US-based support</p>
                     <div class="pros-cons">
-                        <div class="pros"><h4>Pros</h4><ul><li>Brondell brand quality</li><li>US-based customer support</li><li>Dual stainless nozzles</li><li>Warm air dryer</li></ul></div>
-                        <div class="cons"><h4>Cons</h4><ul><li>Side panel controls (no remote)</li><li>Slower heat-up time</li></ul></div>
+                        <div class="pros"><h4>What we like</h4><ul><li>Brondell brand quality</li><li>US-based customer support</li><li>Dual stainless nozzles</li><li>Warm air dryer</li></ul></div>
+                        <div class="cons"><h4>Flaws but not dealbreakers</h4><ul><li>Side panel controls (no remote)</li><li>Slower heat-up time</li></ul></div>
                     </div>
                     <p>Brondell is one of the most trusted names in bidet seats in North America. The Swash SE400 offers reliable heated seat technology with dual stainless steel nozzles for front and rear wash. The side-panel controls are intuitive if you prefer not to use a remote.</p>
                     <a href="https://www.amazon.com/dp/B074MLZR3Y?tag=besttoilet-seats-20" class="cta-button" target="_blank" rel="nofollow noopener sponsored">Check Price on Amazon</a>
@@ -281,9 +296,9 @@
             </div>
         </div>
 
-        <div class="product-card">
-            <span class="product-badge" style="background: #4CAF50; color: white;">Budget Pick</span>
-            <div class="product-content">
+        <div class="product-section">
+            <span class="pick-badge" style="background: #4CAF50; color: white;">Budget Pick</span>
+            <div class="product-head">
                 <img src="images/amazon-51lwDh8JQHL.webp" alt="Electric Heated Bidet Seat LED Display" class="product-image" loading="lazy">
                 <div class="product-details">
                     <h3 class="product-name">4. Electric Heated Bidet Toilet Seat with LED</h3>
@@ -291,8 +306,8 @@
                     <div class="product-price">$169.99</div>
                     <p class="best-for"><strong>Best For:</strong> Best heated seat under $200</p>
                     <div class="pros-cons">
-                        <div class="pros"><h4>Pros</h4><ul><li>Lowest price with heated seat</li><li>LED temperature display</li><li>Warm water wash</li><li>Night light</li></ul></div>
-                        <div class="cons"><h4>Cons</h4><ul><li>Less established brand</li><li>Smaller water tank</li></ul></div>
+                        <div class="pros"><h4>What we like</h4><ul><li>Lowest price with heated seat</li><li>LED temperature display</li><li>Warm water wash</li><li>Night light</li></ul></div>
+                        <div class="cons"><h4>Flaws but not dealbreakers</h4><ul><li>Less established brand</li><li>Smaller water tank</li></ul></div>
                     </div>
                     <p>This is the most affordable way to get a genuine heated toilet seat with bidet functionality. The LED display shows exact seat and water temperature, and the built-in night light prevents fumbling in the dark. At under $170, it's hard to beat for a first heated seat experience.</p>
                     <a href="https://www.amazon.com/dp/B0CY2BXZHR?tag=besttoilet-seats-20" class="cta-button" target="_blank" rel="nofollow noopener sponsored">Check Price on Amazon</a>
@@ -302,17 +317,17 @@
             </div>
         </div>
 
-        <div class="product-card">
-            <span class="product-badge" style="background: #FF9800; color: white;">Top of the Line</span>
-            <div class="product-content">
+        <div class="product-section">
+            <span class="pick-badge" style="background: #FF9800; color: white;">Top of the Line</span>
+            <div class="product-head">
                 <div class="product-details">
                     <h3 class="product-name">5. ALPHA BIDET JX2 Elongated Bidet Seat</h3>
                     <div class="product-rating">4.3/5 (2,686 reviews)</div>
                     <div class="product-price">$389.00</div>
                     <p class="best-for"><strong>Best For:</strong> Endless warm water with tankless design</p>
                     <div class="pros-cons">
-                        <div class="pros"><h4>Pros</h4><ul><li>Tankless endless warm water</li><li>LED night light</li><li>Slim modern design</li><li>2,600+ reviews</li></ul></div>
-                        <div class="cons"><h4>Cons</h4><ul><li>Higher price vs SE400</li><li>Remote sold separately on some models</li></ul></div>
+                        <div class="pros"><h4>What we like</h4><ul><li>Tankless endless warm water</li><li>LED night light</li><li>Slim modern design</li><li>2,600+ reviews</li></ul></div>
+                        <div class="cons"><h4>Flaws but not dealbreakers</h4><ul><li>Higher price vs SE400</li><li>Remote sold separately on some models</li></ul></div>
                     </div>
                     <p>The ALPHA JX2 features the same tankless heating technology as our #1 pick but at a lower price point. Its endless warm water system means you'll never run out mid-wash. The LED night light automatically illuminates the bowl in the dark -- a surprisingly useful feature.</p>
                     <a href="https://www.amazon.com/dp/B015GC6SAC?tag=besttoilet-seats-20" class="cta-button" target="_blank" rel="nofollow noopener sponsored">Check Price on Amazon</a>
@@ -438,15 +453,4 @@
                         <span style="font-size: 1.5rem;">🪞</span>
                         <span><strong style="color: #37474F;">Best Bathroom Vanities</strong><br><small style="color: #888;">Storage & style solutions</small></span>
                     </a>
-                    <a href="https://best-shower-heads.com" target="_blank" rel="noopener" style="display: flex; align-items: center; gap: 10px; padding: 12px 16px; background: white; border-radius: 10px; border: 1px solid #e0e0e0; text-decoration: none; color: #333; transition: all 0.2s;">
-                        <span style="font-size: 1.5rem;">💧</span>
-                        <span><strong style="color: #455A64;">Best Shower Heads</strong><br><small style="color: #888;">Rainfall & high-pressure picks</small></span>
-                    </a>
-                </div>
-            </div>
-
-        </article></main>
-    <footer id="site-footer"></footer>
-    <script src="components/site-components.js?v=5"></script>
-</body>
-</html>
+                    <a href="https://best-shower-heads.com" target="_blank" rel="noopener

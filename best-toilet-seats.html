@@ -13,19 +13,19 @@
     <link rel="canonical" href="https://besttoiletseats.com/best-toilet-seats">
     <script src="components/site-config.js?v=5"></script>
     <style>
-        :root{--primary:#1565C0;--primary-light:#42A5F5;--primary-dark:#0D47A1;--accent:#FFB300;--accent-dark:#FF8F00}
+        :root{--primary:#1565C0;--primary-light:#42A5F5;--primary-dark:#0D47A1;--accent:#FFB300;--accent-dark:#FF8F00}--bg-warm:#F3F8FF;--text:#222222;--text-light:#666666;--border:#DDEAF9;--white:#FFFFFF;
         *{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}
         body{font-family: Georgia, 'Times New Roman', serif;line-height:1.7;color:#333;background:#f8f9fa}
-        h1, h2, h3 { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+        /* h1/h2/h3 inherit Georgia serif from body */
         .breadcrumb{background:#fff;padding:15px 20px;font-size:.9rem;color:#666;border-bottom:1px solid #e0e0e0;max-width:1200px;margin:0 auto}
         .breadcrumb a{color:var(--accent);text-decoration:none}.breadcrumb a:hover{text-decoration:underline}
         main{max-width:800px;margin:0 auto;padding:40px 20px;background:#fff;min-height:100vh}
-        .article-header{margin-bottom:2rem}.article-header h1{font-size:2.2rem;color:var(--primary-dark);line-height:1.3;margin-bottom:1rem}
+        .article-header{margin-bottom:2rem}.article-header h1{font-size:2.2rem;color:var(--text);line-height:1.3;margin-bottom:1rem}
         .article-meta{color:#666;font-size:.9rem;margin-bottom:1rem}
         .author-box{display:flex;align-items:center;gap:12px;margin:1rem 0;padding:1rem;background:#f8f9fa;border-radius:8px}
-        .author-box img{width:80px;height:80px;border-radius:50%;object-fit:cover}
+        .author-box img{width:56px;height:56px;border-radius:50%;object-fit:cover}
         .author-box strong{color:var(--primary-dark)}.author-box p{font-size:.85rem;color:#666;margin:0}
-        h2{color:var(--primary);font-size:1.6rem;margin:2.5rem 0 1rem;border-bottom:2px solid var(--accent);padding-bottom:10px}
+        h2{color:var(--text);font-weight:normal;font-size:1.6rem;margin:2.5rem 0 1rem;}
         h3{color:var(--primary-dark);font-size:1.3rem;margin:1.5rem 0 .75rem}
         h4{color:var(--primary);font-size:1.1rem;margin:1.2rem 0 .5rem}
         p{margin:1rem 0}ul,ol{margin:1rem 0;padding-left:1.5rem}li{margin:.5rem 0}
@@ -33,7 +33,7 @@
         .quick-answer{background:linear-gradient(135deg,#FFF8E1,#FFECB3);border-left:4px solid #FFB300;padding:1.25rem;margin-bottom:2rem;border-radius:0 8px 8px 0}
         .quick-answer h2{font-size:1.1rem;color:#E65100;margin:0 0 .75rem 0;border:none;padding:0}.quick-answer p{margin:0}
         .toc{background:#f5f5f5;border-left:4px solid var(--accent);padding:20px 25px;margin:2rem 0;border-radius:0 8px 8px 0}
-        .toc h2{color:var(--primary);font-size:1.1rem;margin:0 0 15px 0;border:none;padding:0}
+        .toc h2{color:var(--text);font-weight:normal;font-size:1.1rem;margin:0 0 15px 0;border:none;padding:0}
         .toc ol{margin:0;padding-left:1.2rem}.toc li{margin:8px 0}.toc a{color:var(--accent);font-weight:500}
         .quick-pick-box{background:linear-gradient(135deg,var(--primary),var(--primary-light));border-radius:16px;padding:1.5rem;color:white;margin:2rem 0;position:relative}
         .quick-pick-label{background:var(--accent);padding:6px 16px;border-radius:20px;font-size:.85rem;font-weight:700;text-transform:uppercase;display:inline-block;margin-bottom:1rem}
@@ -43,9 +43,9 @@
         .quick-pick-details .rating{opacity:.9;margin-bottom:.3rem}
         .quick-pick-details .price{font-size:1.6rem;font-weight:700;margin-bottom:.5rem}
         .quick-pick-details p{opacity:.95;margin:.5rem 0;font-size:.95rem}
-        .product-card{background:#f8f9fa;border-radius:12px;padding:1.5rem;margin:2rem 0;border:1px solid #e0e0e0}
-        .product-badge{background:var(--accent);color:white;padding:5px 12px;border-radius:20px;font-size:.75rem;font-weight:700;text-transform:uppercase;display:inline-block;margin-bottom:.75rem}
-        .product-content{display:grid;grid-template-columns:auto 1fr;gap:1.5rem;align-items:start}
+        .product-section{background:#f8f9fa;border-radius:8px;padding:1.5rem;margin:2rem 0;border:1px solid #e0e0e0}
+        .pick-badge{background:var(--accent);color:white;padding:5px 12px;border-radius:20px;font-size:.75rem;font-weight:700;text-transform:uppercase;display:inline-block;margin-bottom:.75rem}
+        .product-head{display:grid;grid-template-columns:auto 1fr;gap:1.5rem;align-items:start}
         .product-image{width:200px;height:200px;object-fit:contain;background:white;border-radius:8px;padding:10px}
         .product-name{font-size:1.25rem;color:var(--primary-dark);margin-bottom:.5rem}
         .product-rating{color:#666;margin-bottom:.3rem}
@@ -55,11 +55,11 @@
         .pros h4,.cons h4{font-size:.85rem;text-transform:uppercase;margin-bottom:.5rem}
         .pros h4{color:#4CAF50}.cons h4{color:#E53935}
         .pros ul,.cons ul{list-style:none;padding:0;margin:0}
-        .pros li::before{content:"\1F44D "}.cons li::before{content:"\1F44E "}
+        .pros li::before{content:"\2714"}.cons li::before{content:"\2716"}
         .specs-table{width:100%;border-collapse:collapse;margin:.75rem 0;font-size:.85rem}
         .specs-table td{padding:6px 10px;border-bottom:1px solid #e0e0e0}
         .specs-table td:first-child{font-weight:600;color:var(--primary-dark);width:35%}
-        .cta-button{display:inline-block;background:var(--accent);color:white;padding:14px 28px;border-radius:8px;text-decoration:none;font-weight:600;transition:all .2s;margin-top:.5rem}
+        .cta-button{display:inline-block;background:#FFB300;color:white;padding:14px 28px;border-radius:8px;text-decoration:none;font-weight:600;transition:all .2s;margin-top:.5rem}
         .cta-button:hover{background:var(--accent-dark);transform:translateY(-2px);text-decoration:none;box-shadow:0 4px 12px rgba(255,179,0,.4)}
         .comparison-table{width:100%;border-collapse:collapse;margin:2rem 0;font-size:.85rem;background:white;border-radius:8px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,.08)}
         .comparison-table th,.comparison-table td{padding:10px 8px;text-align:left;border-bottom:1px solid #e0e0e0}
@@ -87,18 +87,26 @@
         .related-card:hover{border-color:var(--accent);box-shadow:0 4px 12px rgba(0,0,0,.08);text-decoration:none}
         .related-card h4{color:var(--primary-dark);font-size:.95rem;margin:0 0 6px 0}
         .related-card p{color:#666;font-size:.82rem;margin:0}
-        .things-to-know { background: #f0f7ff; border-left: 4px solid #1976D2; padding: 1.5rem; margin: 2rem 0; border-radius: 0 8px 8px 0; }
-        .things-to-know h2 { font-size: 1.2rem; color: #1565C0; margin: 0 0 1rem 0; border: none; padding: 0; }
+        .things-to-know{background:linear-gradient(135deg,#FFF8E1,#FFECB3); border-left:4px solid #FFB300; padding: 1.5rem; margin: 2rem 0; border-radius: 0 8px 8px 0; }
+        .things-to-know h2 { font-size: 1.2rem; color:#E65100;text-transform:uppercase;letter-spacing:0.05em; margin: 0 0 1rem 0; border: none; padding: 0; }
         .things-to-know li { margin-bottom: 0.75rem; }
         .how-we-picked, .how-we-tested, .the-competition, .why-trust-us { margin: 2.5rem 0; }
         .crosslink-banner{background:linear-gradient(135deg,#1565C0,#42A5F5);padding:24px;border-radius:16px;margin:3rem 0;text-align:center}
         .crosslink-banner p{color:white;font-size:1.15rem;margin-bottom:1rem}
         .crosslink-banner a{background:white;color:#FF8F00;padding:12px 28px;border-radius:8px;text-decoration:none;font-weight:700;display:inline-block;margin:4px}
         .crosslink-banner a:hover{transform:translateY(-2px);text-decoration:none}
-        @media(max-width:768px){.article-header h1{font-size:1.7rem}h2{font-size:1.4rem}.quick-pick-content{flex-direction:column;text-align:center}.quick-pick-image{margin:0 auto}.product-content{grid-template-columns:1fr}.product-image{max-width:200px;margin:0 auto}.pros-cons{grid-template-columns:1fr}.decision-grid{grid-template-columns:1fr}.related-grid{grid-template-columns:1fr}.comparison-table{font-size:.75rem}.comparison-table th,.comparison-table td{padding:8px 5px}}
+        @media(max-width:768px){.article-header h1{font-size:1.7rem}h2{font-size:1.4rem}.quick-pick-content{flex-direction:column;text-align:center}.quick-pick-image{margin:0 auto}.product-head{grid-template-columns:1fr}.product-image{max-width:200px;margin:0 auto}.pros-cons{grid-template-columns:1fr}.decision-grid{grid-template-columns:1fr}.related-grid{grid-template-columns:1fr}.comparison-table{font-size:.75rem}.comparison-table th,.comparison-table td{padding:8px 5px}}
     
 .product-gallery{text-align:center;min-width:200px}
-</style>
+
+        .disclosure{font-size:0.8rem;color:#999;margin-top:4px}
+        .disclosure a{color:#999;text-decoration:underline}
+    
+        .author-avatar{width:56px;height:56px;border-radius:50%;overflow:hidden;flex-shrink:0}
+        .author-avatar img{width:100%;height:100%;object-fit:cover}
+        .author-info strong{color:var(--primary-dark);display:block}
+        .author-info span{font-size:0.85rem;color:#666}
+    </style>
     <script type="application/ld+json">
 {
     "@context": "https://schema.org",
@@ -666,11 +674,11 @@
         <article style="border-top: 4px solid #FFB300;">
             <div class="article-header">
                 <h1>Best Toilet Seats of 2026: Expert Tested &amp; Reviewed</h1>
-                <p class="article-meta"><strong>Updated:</strong> March 5, 2026 &bull; <strong>Reading time:</strong> 18 min</p>
+                <div class="article-meta">Updated <strong>March 5, 2026</strong></div>
                 <div class="author-box">
-                    <img src="images/ilane-tall-80x80.jpg" alt="Ilane Tall" width="80" height="80" onerror="this.style.display='none'">
-                    <div><strong>Ilane Tall</strong><p>Product Researcher | Specializing in bathroom fixtures and home comfort</p></div>
-                </div>
+                <div class="author-avatar"><img src="images/ilane-tall-80x80.jpg" alt="Ilane Tall" width="56" height="56"></div>
+                <div class="author-info"><strong>Ilane Tall</strong><span>Product Researcher, Best Toilet Seats</span></div>
+            </div>
             </div>
 
             <img src="images/hero-best-toilet-seats.webp" alt="Best Toilet Seats in 2026" width="1200" height="685" loading="eager" fetchpriority="high" decoding="sync" class="hero-image">
@@ -804,9 +812,9 @@
             <h2 id="top-picks">The 7 Best Toilet Seats of 2026 (Detailed Reviews)</h2>
 
             <!-- PRODUCT 1: KOHLER Cachet -->
-            <div class="product-card" id="product-1">
-                <span class="product-badge">Best Overall</span>
-                <div class="product-content">
+            <div class="product-section" id="product-1">
+                <span class="pick-badge">Best Overall</span>
+                <div class="product-head">
                     <div class="product-gallery">
     <div class="gallery-thumbs">
                 <img src="images/amazon-51pfP-NtLAL.webp" data-full="images/amazon-51pfP-NtLAL.webp" class="gallery-thumb" alt="KOHLER Cachet ReadyLatch Elongated Toilet Seat - view 2" loading="lazy" width="48" height="48">
@@ -825,8 +833,8 @@
                         <p>What truly sets the Cachet apart is KOHLER's ReadyLatch system. Instead of fumbling with bolts, wingnuts, and wrenches under the bowl, you simply press the seat onto the mounting posts until it clicks. The entire installation takes under 3 minutes. Removal for deep cleaning is equally fast &mdash; one press of the release tabs and the seat lifts off completely. This is the kind of thoughtful engineering that separates a premium brand from the pack.</p>
                         <p>The seat itself is made from compression-molded polypropylene that feels substantial without being heavy. The contoured surface is comfortable for extended sitting, and the white finish resists yellowing &mdash; a common complaint with cheaper plastic seats. KOHLER also offers the Cachet in biscuit, almond, and ice grey to match your existing fixtures.</p>
                         <div class="pros-cons">
-                            <div class="pros"><h4>Pros</h4><ul><li>Whisper-quiet soft-close mechanism</li><li>ReadyLatch tool-free installation (under 3 min)</li><li>41,000+ positive reviews</li><li>Quick-release for easy deep cleaning</li><li>Color-matched options available</li></ul></div>
-                            <div class="cons"><h4>Cons</h4><ul><li>Premium price at $60</li><li>ReadyLatch only fits standard bolt patterns</li></ul></div>
+                            <div class="pros"><h4>What we like</h4><ul><li>Whisper-quiet soft-close mechanism</li><li>ReadyLatch tool-free installation (under 3 min)</li><li>41,000+ positive reviews</li><li>Quick-release for easy deep cleaning</li><li>Color-matched options available</li></ul></div>
+                            <div class="cons"><h4>Flaws but not dealbreakers</h4><ul><li>Premium price at $60</li><li>ReadyLatch only fits standard bolt patterns</li></ul></div>
                         </div>
                         <table class="specs-table"><tbody><tr><td>Shape</td><td>Elongated</td></tr><tr><td>Material</td><td>Compression-molded polypropylene</td></tr><tr><td>Soft-Close</td><td>Yes (Quiet-Close technology)</td></tr><tr><td>Quick-Release</td><td>Yes (ReadyLatch)</td></tr><tr><td>Color Options</td><td>White, Biscuit, Almond, Ice Grey</td></tr></tbody></table>
                         <a href="https://www.amazon.com/dp/B0B6XY834G?tag=besttoilet-seats-20" class="cta-button" target="_blank" rel="nofollow noopener sponsored">Check Price on Amazon</a>
@@ -835,9 +843,9 @@
             </div>
 
             <!-- PRODUCT 2: Bemis -->
-            <div class="product-card" id="product-2">
-                <span class="product-badge" style="background:#4CAF50;">Best Budget</span>
-                <div class="product-content">
+            <div class="product-section" id="product-2">
+                <span class="pick-badge" style="background:#4CAF50;">Best Budget</span>
+                <div class="product-head">
                     <div class="product-gallery">
         <img src="images/amazon-51ngGU234TL.webp" alt="Bemis 1500EC Lift-Off Wood Elongated Toilet Seat" class="gallery-main" loading="lazy" width="280" height="280">
     <div class="gallery-thumbs">
@@ -858,8 +866,8 @@
                         <p>The enameled wood construction gives the 1500EC a warmer feel than plastic &mdash; literally. Wood does not conduct heat away from your body the way plastic and thermoset do, so it never feels ice-cold on winter mornings. The enamel coating creates a smooth, stain-resistant surface that cleans easily with standard bathroom cleaners. Bemis's Lift-Off hinges allow one-hand removal for deep cleaning: just twist the hinge caps and lift.</p>
                         <p>The trade-off? No soft-close. This is a traditional seat that will slam if you let it drop. For $18.56, that is an entirely reasonable compromise &mdash; especially in guest bathrooms or rental properties where you need a reliable seat at the lowest possible cost. If you want soft-close on a budget, step up to the <a href="#product-4">KOHLER Brevia at $30.81</a>.</p>
                         <div class="pros-cons">
-                            <div class="pros"><h4>Pros</h4><ul><li>Incredible value at under $19</li><li>40,000+ verified reviews</li><li>Warm enameled wood construction</li><li>Lift-Off hinges for easy cleaning</li><li>Made in the USA (Bemis, est. 1901)</li></ul></div>
-                            <div class="cons"><h4>Cons</h4><ul><li>No soft-close mechanism</li><li>Enamel can chip if the seat is dropped repeatedly</li></ul></div>
+                            <div class="pros"><h4>What we like</h4><ul><li>Incredible value at under $19</li><li>40,000+ verified reviews</li><li>Warm enameled wood construction</li><li>Lift-Off hinges for easy cleaning</li><li>Made in the USA (Bemis, est. 1901)</li></ul></div>
+                            <div class="cons"><h4>Flaws but not dealbreakers</h4><ul><li>No soft-close mechanism</li><li>Enamel can chip if the seat is dropped repeatedly</li></ul></div>
                         </div>
                         <table class="specs-table"><tbody><tr><td>Shape</td><td>Elongated</td></tr><tr><td>Material</td><td>Enameled wood</td></tr><tr><td>Soft-Close</td><td>No</td></tr><tr><td>Quick-Release</td><td>Yes (Lift-Off hinges)</td></tr><tr><td>Color Options</td><td>White, Bone, Biscuit</td></tr></tbody></table>
                         <a href="https://www.amazon.com/dp/B005MTSTS4?tag=besttoilet-seats-20" class="cta-button" target="_blank" rel="nofollow noopener sponsored">Check Price on Amazon</a>
@@ -868,9 +876,9 @@
             </div>
 
             <!-- PRODUCT 3: Bath Royale -->
-            <div class="product-card" id="product-3">
-                <span class="product-badge" style="background:#7B1FA2;">Best Premium</span>
-                <div class="product-content">
+            <div class="product-section" id="product-3">
+                <span class="pick-badge" style="background:#7B1FA2;">Best Premium</span>
+                <div class="product-head">
                     <div class="product-gallery">
     <div class="gallery-thumbs">
                 <img src="images/amazon-41iV5mxpi6L.webp" data-full="images/amazon-41iV5mxpi6L.webp" class="gallery-thumb" alt="Bath Royale Slow Close Toilet Seat BR501 - view 3" loading="lazy" width="48" height="48">
@@ -888,8 +896,8 @@
                         <p>The soft-close mechanism is the smoothest we tested, taking approximately 6 seconds to close from fully open &mdash; consistently, every single time, across 1,000+ test cycles. The stainless steel hinges are the standout detail: where most seats use plastic or zinc-alloy hardware that degrades over time, Bath Royale uses actual stainless steel with a micro-lift design that stays tight. In our wobble tests, the BR501 scored a perfect 10 &mdash; zero lateral movement at any point during the test period.</p>
                         <p>At $69.32, it costs more than most seats on this list, but the combination of Duroplast material and stainless steel hardware means this seat will easily last 10+ years. Amortized over its lifespan, it may actually be cheaper than replacing a budget seat every 3-4 years.</p>
                         <div class="pros-cons">
-                            <div class="pros"><h4>Pros</h4><ul><li>Premium Duroplast construction (scratch/stain-proof)</li><li>Stainless steel hinges (zero wobble)</li><li>Highest-rated soft-close in our tests</li><li>4.6-star average rating</li><li>10+ year expected lifespan</li></ul></div>
-                            <div class="cons"><h4>Cons</h4><ul><li>Higher price point at ~$70</li><li>Fewer color options than KOHLER</li></ul></div>
+                            <div class="pros"><h4>What we like</h4><ul><li>Premium Duroplast construction (scratch/stain-proof)</li><li>Stainless steel hinges (zero wobble)</li><li>Highest-rated soft-close in our tests</li><li>4.6-star average rating</li><li>10+ year expected lifespan</li></ul></div>
+                            <div class="cons"><h4>Flaws but not dealbreakers</h4><ul><li>Higher price point at ~$70</li><li>Fewer color options than KOHLER</li></ul></div>
                         </div>
                         <table class="specs-table"><tbody><tr><td>Shape</td><td>Elongated</td></tr><tr><td>Material</td><td>Duroplast (thermoset plastic)</td></tr><tr><td>Soft-Close</td><td>Yes (premium dampers)</td></tr><tr><td>Quick-Release</td><td>Yes (micro-lift hinges)</td></tr><tr><td>Hinge Material</td><td>Stainless steel</td></tr></tbody></table>
                         <a href="https://www.amazon.com/dp/B08SMNZBDS?tag=besttoilet-seats-20" class="cta-button" target="_blank" rel="nofollow noopener sponsored">Check Price on Amazon</a>
@@ -898,9 +906,9 @@
             </div>
 
             <!-- PRODUCT 4: KOHLER Brevia -->
-            <div class="product-card" id="product-4">
-                <span class="product-badge" style="background:#0097A7;">Best Value</span>
-                <div class="product-content">
+            <div class="product-section" id="product-4">
+                <span class="pick-badge" style="background:#0097A7;">Best Value</span>
+                <div class="product-head">
                     <div class="product-gallery">
     <img src="images/amazon-41q6kgJK2JL.webp" alt="KOHLER Brevia Slow Close Elongated Toilet Seat" class="gallery-main" loading="lazy" width="280" height="280">
     <div class="gallery-thumbs">
@@ -921,8 +929,8 @@
                         <p>The Brevia uses KOHLER's Q3 Advantage hinges, which are a step below the ReadyLatch system but still feature quick-release functionality. Installation requires basic tools (a wrench for the bolts), but the hardware is metal-reinforced and stayed tight throughout our entire testing period. This is where you feel the cost savings compared to the Cachet: the installation is slower and the hinges are a bit less refined, but the end result &mdash; a stable, silent, easy-to-clean seat &mdash; is nearly identical.</p>
                         <p>If soft-close is your priority and you have a strict budget, the Brevia is the smart choice. You get genuine KOHLER engineering, a reliable soft-close, and quick-release cleaning capability for about $30. That is exceptional value by any measure.</p>
                         <div class="pros-cons">
-                            <div class="pros"><h4>Pros</h4><ul><li>Genuine KOHLER Quiet-Close at $30</li><li>Quick-release for easy cleaning</li><li>10,000+ positive reviews</li><li>Available in round and elongated</li></ul></div>
-                            <div class="cons"><h4>Cons</h4><ul><li>Requires tools for installation (not tool-free)</li><li>Thinner profile than premium KOHLER seats</li></ul></div>
+                            <div class="pros"><h4>What we like</h4><ul><li>Genuine KOHLER Quiet-Close at $30</li><li>Quick-release for easy cleaning</li><li>10,000+ positive reviews</li><li>Available in round and elongated</li></ul></div>
+                            <div class="cons"><h4>Flaws but not dealbreakers</h4><ul><li>Requires tools for installation (not tool-free)</li><li>Thinner profile than premium KOHLER seats</li></ul></div>
                         </div>
                         <table class="specs-table"><tbody><tr><td>Shape</td><td>Elongated</td></tr><tr><td>Material</td><td>Polypropylene</td></tr><tr><td>Soft-Close</td><td>Yes (Quiet-Close technology)</td></tr><tr><td>Quick-Release</td><td>Yes (Q3 Advantage hinges)</td></tr><tr><td>Color Options</td><td>White, Biscuit</td></tr></tbody></table>
                         <div class="info-box"><strong>Related:</strong> Wondering how the Brevia compares to the Cachet? Both use KOHLER's Quiet-Close technology, but the Cachet adds ReadyLatch tool-free installation and a thicker seat profile. See our <a href="/best-soft-close-toilet-seats.html">soft-close toilet seat comparison</a> for a full breakdown.</div>
@@ -945,9 +953,9 @@
             </div>
 
             <!-- PRODUCT 5: Brondell Ecoseat -->
-            <div class="product-card" id="product-5">
-                <span class="product-badge" style="background:#00897B;">Best Bidet Seat</span>
-                <div class="product-content">
+            <div class="product-section" id="product-5">
+                <span class="pick-badge" style="background:#00897B;">Best Bidet Seat</span>
+                <div class="product-head">
                     <div class="product-gallery">
         <img src="images/amazon-51cD1n2rw3L.webp" alt="Brondell Swash Ecoseat Non-Electric Bidet" class="gallery-main" loading="lazy" width="280" height="280">
     <div class="gallery-thumbs">
@@ -966,8 +974,8 @@
                         <p>The dual retractable nozzles provide both posterior and feminine wash with adjustable water pressure. The nozzle guard ensures hygiene by retracting and self-cleaning after each use. In our tests, the water pressure range was sufficient for comfortable, effective cleaning at every setting. The slim-profile design sits flush against the toilet bowl, so the seat height increase is minimal &mdash; unlike bulkier electric models that can raise the seating position by an inch or more.</p>
                         <p>For households looking to reduce toilet paper consumption (the average American family uses 100+ rolls per year), the Ecoseat pays for itself within months. Brondell estimates a 75% reduction in toilet paper usage, which aligns with our testing experience. Beyond the environmental benefit, users consistently report feeling cleaner and more hygienic. For a deeper dive into bidet options, see our <a href="/best-bidet-toilet-seats.html">complete bidet toilet seat guide</a>.</p>
                         <div class="pros-cons">
-                            <div class="pros"><h4>Pros</h4><ul><li>No electricity required</li><li>Dual nozzles (posterior + feminine wash)</li><li>75% toilet paper reduction</li><li>Self-cleaning nozzle guard</li><li>10,000+ verified reviews</li></ul></div>
-                            <div class="cons"><h4>Cons</h4><ul><li>Cold water only (no heated wash)</li><li>Higher price than standard seats</li></ul></div>
+                            <div class="pros"><h4>What we like</h4><ul><li>No electricity required</li><li>Dual nozzles (posterior + feminine wash)</li><li>75% toilet paper reduction</li><li>Self-cleaning nozzle guard</li><li>10,000+ verified reviews</li></ul></div>
+                            <div class="cons"><h4>Flaws but not dealbreakers</h4><ul><li>Cold water only (no heated wash)</li><li>Higher price than standard seats</li></ul></div>
                         </div>
                         <table class="specs-table"><tbody><tr><td>Shape</td><td>Elongated</td></tr><tr><td>Type</td><td>Non-electric bidet seat</td></tr><tr><td>Nozzles</td><td>Dual retractable (posterior + feminine)</td></tr><tr><td>Water Source</td><td>Cold water supply line (T-adapter included)</td></tr><tr><td>Soft-Close</td><td>Yes</td></tr></tbody></table>
                         <a href="https://www.amazon.com/dp/B0815CP9G5?tag=besttoilet-seats-20" class="cta-button" target="_blank" rel="nofollow noopener sponsored">Check Price on Amazon</a>
@@ -987,9 +995,9 @@
             </div>
 
             <!-- PRODUCT 6: KOHLER Hyten -->
-            <div class="product-card" id="product-6">
-                <span class="product-badge" style="background:#E65100;">Best Elevated</span>
-                <div class="product-content">
+            <div class="product-section" id="product-6">
+                <span class="pick-badge" style="background:#E65100;">Best Elevated</span>
+                <div class="product-head">
                     <div class="product-gallery">
     <img src="images/amazon-31TfiWfkz9L.webp" alt="KOHLER Hyten Elevated Soft Close Elongated Toilet Seat" class="gallery-main" loading="lazy" width="280" height="280">
     <div class="gallery-thumbs">
@@ -1010,8 +1018,8 @@
                         <p>What makes the Hyten exceptional is that it looks and functions like a normal toilet seat. Most <a href="/best-raised-toilet-seats-for-seniors.html">raised toilet seats for seniors</a> are clearly medical devices &mdash; bulky, white, institutional. The Hyten is a sleek, modern seat with KOHLER's Quiet-Close soft-close technology, ReadyLatch tool-free installation, and the same refined aesthetic as any other KOHLER product. Guests in your bathroom would never know it is an elevated seat.</p>
                         <p>The 4.6-star average across 8,655 reviews makes the Hyten the highest-rated product on this list. Users consistently praise how it maintains dignity while providing genuine accessibility improvement. For elderly family members who resist "medical equipment" in their bathroom, the Hyten is the answer &mdash; it provides the height benefit they need without the stigma they want to avoid.</p>
                         <div class="pros-cons">
-                            <div class="pros"><h4>Pros</h4><ul><li>+1 inch elevation reduces knee/hip strain</li><li>Looks like a standard seat (no medical appearance)</li><li>4.6 stars &mdash; highest-rated on this list</li><li>KOHLER Quiet-Close + ReadyLatch included</li><li>Ideal for aging-in-place bathroom design</li></ul></div>
-                            <div class="cons"><h4>Cons</h4><ul><li>Only adds ~1 inch (may not be enough for some users)</li><li>Premium price at $75</li></ul></div>
+                            <div class="pros"><h4>What we like</h4><ul><li>+1 inch elevation reduces knee/hip strain</li><li>Looks like a standard seat (no medical appearance)</li><li>4.6 stars &mdash; highest-rated on this list</li><li>KOHLER Quiet-Close + ReadyLatch included</li><li>Ideal for aging-in-place bathroom design</li></ul></div>
+                            <div class="cons"><h4>Flaws but not dealbreakers</h4><ul><li>Only adds ~1 inch (may not be enough for some users)</li><li>Premium price at $75</li></ul></div>
                         </div>
                         <table class="specs-table"><tbody><tr><td>Shape</td><td>Elongated</td></tr><tr><td>Material</td><td>Polypropylene</td></tr><tr><td>Height Added</td><td>~1 inch elevation</td></tr><tr><td>Soft-Close</td><td>Yes (Quiet-Close technology)</td></tr><tr><td>Quick-Release</td><td>Yes (ReadyLatch)</td></tr></tbody></table>
                         <div class="info-box"><strong>Related:</strong> Need more than 1 inch of elevation? See our <a href="/best-raised-toilet-seats-for-seniors.html">best raised toilet seats for seniors</a> guide, which includes seats adding 2-5 inches with safety handles.</div>
@@ -1034,9 +1042,9 @@
             </div>
 
             <!-- PRODUCT 7: Mayfair Linden -->
-            <div class="product-card" id="product-7">
-                <span class="product-badge" style="background:#5D4037;">Best Wood Seat</span>
-                <div class="product-content">
+            <div class="product-section" id="product-7">
+                <span class="pick-badge" style="background:#5D4037;">Best Wood Seat</span>
+                <div class="product-head">
                     <div class="product-gallery">
         <img src="images/amazon-613J+gkclGL.webp" alt="Mayfair Linden Slow Close Toilet Seat" class="gallery-main" loading="lazy" width="280" height="280">
     <div class="gallery-thumbs">
@@ -1055,8 +1063,8 @@
                         <p>Wood toilet seats offer a tactile advantage that plastic never will: warmth. Wood does not conduct heat the way plastic does, so it never gives you that jarring cold shock on winter mornings. The Linden's enameled finish is smooth, stain-resistant, and easy to wipe clean. After six months of testing, the enamel showed no chips, cracks, or yellowing.</p>
                         <p>The STA-TITE fastening system is another highlight. Mayfair engineered this system specifically to solve the universal problem of toilet seats working loose over time. The system uses a combination of a tightening nut and a stabilizing washer that grip the porcelain firmly. In our wobble tests, the Linden stayed tighter than most plastic seats at every interval check. At $33.49 with 28,500+ reviews, this is the definitive wood toilet seat.</p>
                         <div class="pros-cons">
-                            <div class="pros"><h4>Pros</h4><ul><li>Warm wood feel (no cold shock)</li><li>Rare combo: wood + slow-close</li><li>STA-TITE fastening prevents loosening</li><li>28,500+ positive reviews</li><li>Excellent price for a premium wood seat</li></ul></div>
-                            <div class="cons"><h4>Cons</h4><ul><li>Heavier than plastic seats (~4 lbs)</li><li>Enamel can chip with heavy impact</li></ul></div>
+                            <div class="pros"><h4>What we like</h4><ul><li>Warm wood feel (no cold shock)</li><li>Rare combo: wood + slow-close</li><li>STA-TITE fastening prevents loosening</li><li>28,500+ positive reviews</li><li>Excellent price for a premium wood seat</li></ul></div>
+                            <div class="cons"><h4>Flaws but not dealbreakers</h4><ul><li>Heavier than plastic seats (~4 lbs)</li><li>Enamel can chip with heavy impact</li></ul></div>
                         </div>
                         <table class="specs-table"><tbody><tr><td>Shape</td><td>Elongated</td></tr><tr><td>Material</td><td>Enameled wood</td></tr><tr><td>Soft-Close</td><td>Yes (Whisper Close)</td></tr><tr><td>Fastening</td><td>STA-TITE system</td></tr><tr><td>Weight</td><td>~4 lbs</td></tr></tbody></table>
                         <a href="https://www.amazon.com/dp/B076KWV7GJ?tag=besttoilet-seats-20" class="cta-button" target="_blank" rel="nofollow noopener sponsored">Check Price on Amazon</a>
@@ -1202,13 +1210,4 @@
 document.querySelectorAll('.product-gallery').forEach(function(g){
     var m=g.querySelector('.gallery-main');
     g.querySelectorAll('.gallery-thumb').forEach(function(t){
-        t.addEventListener('click',function(){
-            m.style.opacity='0';
-            setTimeout(function(){m.src=t.getAttribute('data-full');m.alt=t.alt;m.style.opacity='1'},200);
-            g.querySelectorAll('.gallery-thumb').forEach(function(x){x.classList.remove('active')});
-            t.classList.add('active');
-        });
-    });
-});
-</script>
-</body></html>
+ 

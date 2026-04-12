@@ -24,14 +24,14 @@
         .breadcrumb a:hover { text-decoration: underline; }
         main { max-width: 800px; margin: 0 auto; padding: 40px 20px; background: #fff; min-height: 100vh; }
         .article-header { margin-bottom: 2rem; }
-        .article-header h1 { font-size: 2.2rem; color: var(--primary-dark); line-height: 1.3; margin-bottom: 1rem; }
+        .article-header h1{ font-size: 2.2rem; color:var(--text); line-height: 1.3; margin-bottom: 1rem; }
         .article-meta { color: #666; font-size: 0.9rem; margin-bottom: 1rem; }
         .author-box { display: flex; align-items: center; gap: 12px; margin: 1rem 0; padding: 1rem; background: #f8f9fa; border-radius: 8px; }
-        .author-box img { width: 50px; height: 50px; border-radius: 50%; object-fit: cover; }
+        .author-box img{width:56px;height:56px; border-radius: 50%; object-fit: cover; }
         .author-box strong { color: var(--primary-dark); }
         .author-box p { font-size: 0.85rem; color: #666; margin: 0; }
         .hero-image { width: 100%; height: auto; border-radius: 12px; margin: 1.5rem 0; box-shadow: 0 4px 20px rgba(0,0,0,0.1); }
-        h2 { color: var(--primary); font-size: 1.6rem; margin: 2.5rem 0 1rem; border-bottom: 2px solid var(--accent); padding-bottom: 10px; }
+        h2 { color:var(--text);font-weight:normal; font-size: 1.6rem; margin: 2.5rem 0 1rem; }
         h3 { color: var(--primary-dark); font-size: 1.3rem; margin: 1.5rem 0 0.75rem; }
         h4 { color: var(--primary); font-size: 1.1rem; margin: 1.2rem 0 0.5rem; }
         p { margin: 1rem 0; }
@@ -44,7 +44,7 @@
         .quick-answer h2 { font-size: 1.1rem; color: #2E7D32; margin: 0 0 0.75rem 0; border: none; padding: 0; }
         .quick-answer p { margin: 0; }
         .toc { background: #f5f5f5; border-left: 4px solid var(--accent); padding: 20px 25px; margin: 2rem 0; border-radius: 0 8px 8px 0; }
-        .toc h2 { color: var(--primary); font-size: 1.1rem; margin: 0 0 15px 0; border: none; padding: 0; }
+        .toc h2 { color:var(--text);font-weight:normal; font-size: 1.1rem; margin: 0 0 15px 0; border: none; padding: 0; }
         .toc ol { margin: 0; padding-left: 1.2rem; }
         .toc li { margin: 8px 0; }
         .toc a { color: var(--accent); font-weight: 500; }
@@ -56,9 +56,9 @@
         .quick-pick-details .rating { opacity: 0.9; margin-bottom: 0.3rem; }
         .quick-pick-details .price { font-size: 1.6rem; font-weight: 700; margin-bottom: 0.5rem; }
         .quick-pick-details p { opacity: 0.95; margin: 0.5rem 0; font-size: 0.95rem; }
-        .product-card { background: #f8f9fa; border-radius: 12px; padding: 1.5rem; margin: 2rem 0; border: 1px solid #e0e0e0; }
-        .product-badge { background: var(--accent); color: white; padding: 5px 12px; border-radius: 20px; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; display: inline-block; margin-bottom: 0.75rem; }
-        .product-content { display: grid; grid-template-columns: 180px 1fr; gap: 1.5rem; align-items: start; }
+        .product-section{ background: #f8f9fa; border-radius:8px; padding: 1.5rem; margin: 2rem 0; border: 1px solid #e0e0e0; }
+        .pick-badge{ background: var(--accent); color: white; padding: 5px 12px; border-radius: 20px; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; display: inline-block; margin-bottom: 0.75rem; }
+        .product-head{ display: grid; grid-template-columns: 180px 1fr; gap: 1.5rem; align-items: start; }
         .product-image { width: 100%; height: 180px; object-fit: contain; background: white; border-radius: 8px; padding: 10px; }
         .product-name { font-size: 1.25rem; color: var(--primary-dark); margin-bottom: 0.5rem; }
         .product-rating { color: #666; margin-bottom: 0.3rem; }
@@ -72,9 +72,9 @@
         .pros h4 { color: #4CAF50; }
         .cons h4 { color: #E53935; }
         .pros ul, .cons ul { list-style: none; padding: 0; margin: 0; }
-        .pros li::before { content: "\1F44D "; }
-        .cons li::before { content: "\1F44E "; }
-        .cta-button { display: inline-block; background: var(--accent); color: white; padding: 14px 28px; border-radius: 8px; text-decoration: none; font-weight: 600; transition: all 0.2s; margin-top: 0.5rem; }
+        .pros li::before{content:"\2714"; }
+        .cons li::before{content:"\2716"; }
+        .cta-button { display: inline-block; background:#FFB300; color: white; padding: 14px 28px; border-radius: 8px; text-decoration: none; font-weight: 600; transition: all 0.2s; margin-top: 0.5rem; }
         .cta-button:hover { background: var(--accent-dark); transform: translateY(-2px); text-decoration: none; box-shadow: 0 4px 12px rgba(255,109,0,0.4); }
         .comparison-table { width: 100%; border-collapse: collapse; margin: 2rem 0; font-size: 0.9rem; background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
         .comparison-table th, .comparison-table td { padding: 12px; text-align: left; border-bottom: 1px solid #e0e0e0; }
@@ -90,7 +90,14 @@
         .related-articles { background: #f8f9fa; padding: 1.5rem; border-radius: 12px; margin: 2rem 0; }
         .related-articles h3 { color: var(--primary); margin: 0 0 1rem 0; font-size: 1.1rem; }
         .related-articles ul { margin: 0; padding-left: 1.25rem; }
-        @media (max-width: 768px) { .product-content { grid-template-columns: 1fr; } .pros-cons { grid-template-columns: 1fr; } .quick-pick-content { flex-direction: column; text-align: center; } .article-header h1 { font-size: 1.6rem; } table, .comparison-table { display: block!important; overflow-x: auto!important; -webkit-overflow-scrolling: touch; max-width: 100vw!important; } }
+        @media (max-width: 768px) { .product-head{ grid-template-columns: 1fr; } .pros-cons { grid-template-columns: 1fr; } .quick-pick-content { flex-direction: column; text-align: center; } .article-header h1 { font-size: 1.6rem; } table, .comparison-table { display: block!important; overflow-x: auto!important; -webkit-overflow-scrolling: touch; max-width: 100vw!important; } }
+    
+        .specs-table{width:100%;border-collapse:collapse;font-size:0.85rem;margin:0.75rem 0}
+        .specs-table td{padding:7px 10px;border-bottom:1px solid #e0e0e0}
+        .specs-table td:first-child{font-weight:600;color:var(--primary-dark);width:38%}
+    
+        .disclosure{font-size:0.8rem;color:#999;margin-top:4px}
+        .disclosure a{color:#999;text-decoration:underline}
     </style>
     <script type="application/ld+json">
     {
@@ -171,9 +178,9 @@
 
         <h2 id="top-picks">Our 6 Best Slow Close Elongated Toilet Seats</h2>
 
-        <div class="product-card">
-            <div class="product-badge">Best Overall</div>
-            <div class="product-content">
+        <div class="product-section">
+            <div class="pick-badge">Best Overall</div>
+            <div class="product-head">
                 <img src="images/hero-best-slow-close-elongated-toilet-seats.jpg" alt="KOHLER K-4636-0 Cachet Elongated Toilet Seat" class="product-image" loading="lazy">
                 <div>
                     <h3 class="product-name">1. KOHLER K-4636-0 Cachet Quiet-Close Elongated Seat</h3>
@@ -190,17 +197,17 @@
                 </div>
             </div>
             <div class="pros-cons">
-                <div class="pros"><h4>Pros</h4><ul><li>Quietest closing mechanism we tested</li><li>Quick-release makes cleaning effortless</li><li>KOHLER quality and warranty</li><li>24,000+ reviews confirm longevity</li></ul></div>
-                <div class="cons"><h4>Cons</h4><ul><li>Higher price than budget options</li><li>White only in base model</li><li>Polypropylene is lighter than wood</li></ul></div>
+                <div class="pros"><h4>What we like</h4><ul><li>Quietest closing mechanism we tested</li><li>Quick-release makes cleaning effortless</li><li>KOHLER quality and warranty</li><li>24,000+ reviews confirm longevity</li></ul></div>
+                <div class="cons"><h4>Flaws but not dealbreakers</h4><ul><li>Higher price than budget options</li><li>White only in base model</li><li>Polypropylene is lighter than wood</li></ul></div>
             </div>
             <p>KOHLER's Cachet seat represents the gold standard in slow close toilet seats. The proprietary Quiet-Close mechanism is the smoothest we tested — the lid descends so slowly and silently that you genuinely cannot hear it close from two feet away. The quick-release feature lets you pop the entire seat off with one hand for deep cleaning around the hinges, which is a game-changer for bathroom hygiene.</p>
             <p>The solid polypropylene construction resists chipping, cracking, and staining better than wood seats. The Grip-Tight bumpers keep the seat from shifting side to side during use. At $38.99, it costs more than budget alternatives, but the KOHLER name means reliable warranty support and replacement parts availability for years to come.</p>
             <a href="https://www.amazon.com/dp/B0015A1YHW?tag=besttoilet-seats-20" class="cta-button" rel="nofollow noopener sponsored" target="_blank">Check Price on Amazon</a>
         </div>
 
-        <div class="product-card">
-            <div class="product-badge">Best Value</div>
-            <div class="product-content">
+        <div class="product-section">
+            <div class="pick-badge">Best Value</div>
+            <div class="product-head">
                 <img src="images/hero-best-slow-close-elongated-toilet-seats.jpg" alt="BEMIS 1500EC 000 Elongated Toilet Seat" class="product-image" loading="lazy">
                 <div>
                     <h3 class="product-name">2. BEMIS 1500EC 000 Molded Wood Elongated Seat</h3>
@@ -217,17 +224,17 @@
                 </div>
             </div>
             <div class="pros-cons">
-                <div class="pros"><h4>Pros</h4><ul><li>31,000+ reviews — most reviewed slow close seat</li><li>STA-TITE bolts never loosen</li><li>Made in USA quality</li><li>Under $30 price point</li></ul></div>
-                <div class="cons"><h4>Cons</h4><ul><li>Molded wood heavier than plastic</li><li>Paint can chip after years of use</li><li>Not as whisper-quiet as KOHLER</li></ul></div>
+                <div class="pros"><h4>What we like</h4><ul><li>31,000+ reviews — most reviewed slow close seat</li><li>STA-TITE bolts never loosen</li><li>Made in USA quality</li><li>Under $30 price point</li></ul></div>
+                <div class="cons"><h4>Flaws but not dealbreakers</h4><ul><li>Molded wood heavier than plastic</li><li>Paint can chip after years of use</li><li>Not as whisper-quiet as KOHLER</li></ul></div>
             </div>
             <p>BEMIS has been making toilet seats in the USA since 1901, and the 1500EC is their best-selling slow close model for good reason. The Whisper-Close mechanism is smooth and reliable, and the proprietary STA-TITE bolt system means the seat will never loosen from the bowl — a common frustration with cheaper seats that need retightening every few months.</p>
             <p>The molded wood construction gives this seat a more substantial feel than plastic alternatives, and the high-gloss finish cleans easily. At $28.99, it offers the best combination of proven reliability and affordable pricing. With 31,000+ reviews, it is the most validated slow close seat on Amazon.</p>
             <a href="https://www.amazon.com/dp/B003UQ0EQ0?tag=besttoilet-seats-20" class="cta-button" rel="nofollow noopener sponsored" target="_blank">Check Price on Amazon</a>
         </div>
 
-        <div class="product-card">
-            <div class="product-badge">Best Quick-Release</div>
-            <div class="product-content">
+        <div class="product-section">
+            <div class="pick-badge">Best Quick-Release</div>
+            <div class="product-head">
                 <img src="images/hero-best-slow-close-elongated-toilet-seats.jpg" alt="MAYFAIR 1898ERA Elongated Toilet Seat" class="product-image" loading="lazy">
                 <div>
                     <h3 class="product-name">3. MAYFAIR 1898ERA NextStep2 Elongated Seat with Built-In Potty Seat</h3>
@@ -244,17 +251,17 @@
                 </div>
             </div>
             <div class="pros-cons">
-                <div class="pros"><h4>Pros</h4><ul><li>Brilliant 2-in-1 design saves money</li><li>Child seat magnetically secures</li><li>Both lids are slow-close</li><li>Removes need for a separate potty seat</li></ul></div>
-                <div class="cons"><h4>Cons</h4><ul><li>Higher price for the dual-seat design</li><li>Slightly thicker profile than standard</li><li>Child seat outgrown in 2-3 years</li></ul></div>
+                <div class="pros"><h4>What we like</h4><ul><li>Brilliant 2-in-1 design saves money</li><li>Child seat magnetically secures</li><li>Both lids are slow-close</li><li>Removes need for a separate potty seat</li></ul></div>
+                <div class="cons"><h4>Flaws but not dealbreakers</h4><ul><li>Higher price for the dual-seat design</li><li>Slightly thicker profile than standard</li><li>Child seat outgrown in 2-3 years</li></ul></div>
             </div>
             <p>For families with toddlers in potty training, the MAYFAIR NextStep2 is a genius solution. A smaller child-sized seat is built right into the adult lid — flip it down for the toddler, flip it up for adults. Both the adult and child lids feature slow-close mechanisms, so there is zero slamming risk from tiny hands.</p>
             <p>The magnetic hold keeps the child seat securely in place when not in use, and the STA-TITE system prevents loosening. At $49.99 it costs more, but it replaces a standard seat plus a separate potty seat — saving both money and bathroom clutter. For more family-friendly options, see our <a href="best-potty-training-seats-for-toddlers">Best Potty Training Seats</a> guide.</p>
             <a href="https://www.amazon.com/dp/B01ALS2RVW?tag=besttoilet-seats-20" class="cta-button" rel="nofollow noopener sponsored" target="_blank">Check Price on Amazon</a>
         </div>
 
-        <div class="product-card">
-            <div class="product-badge">Best Budget</div>
-            <div class="product-content">
+        <div class="product-section">
+            <div class="pick-badge">Best Budget</div>
+            <div class="product-head">
                 <img src="images/hero-best-slow-close-elongated-toilet-seats.jpg" alt="Bath Royale MasterSuite Elongated Toilet Seat" class="product-image" loading="lazy">
                 <div>
                     <h3 class="product-name">4. Bath Royale MasterSuite Elongated Toilet Seat</h3>
@@ -271,17 +278,17 @@
                 </div>
             </div>
             <div class="pros-cons">
-                <div class="pros"><h4>Pros</h4><ul><li>Stainless steel hardware resists rust</li><li>Contoured design adds comfort</li><li>Quick-release plus slow-close combo</li><li>High-quality polypropylene material</li></ul></div>
-                <div class="cons"><h4>Cons</h4><ul><li>Smaller brand recognition</li><li>Fewer color options than KOHLER</li><li>Newer to market than BEMIS/KOHLER</li></ul></div>
+                <div class="pros"><h4>What we like</h4><ul><li>Stainless steel hardware resists rust</li><li>Contoured design adds comfort</li><li>Quick-release plus slow-close combo</li><li>High-quality polypropylene material</li></ul></div>
+                <div class="cons"><h4>Flaws but not dealbreakers</h4><ul><li>Smaller brand recognition</li><li>Fewer color options than KOHLER</li><li>Newer to market than BEMIS/KOHLER</li></ul></div>
             </div>
             <p>Bath Royale has positioned their MasterSuite seat as the KOHLER competitor that costs less without cutting corners. The Precision Quiet-Close mechanism rivals KOHLER's smoothness, and the stainless steel hardware is a genuine upgrade over the plastic bolts found on many competitors. The contoured seat shape provides ergonomic support during longer sits.</p>
             <p>The quick-release mechanism requires just one button press to remove the entire seat for cleaning — matching KOHLER's convenience at a lower price point. At $34.99, it bridges the gap between BEMIS value and KOHLER premium quality.</p>
             <a href="https://www.amazon.com/dp/B01C9L6VGK?tag=besttoilet-seats-20" class="cta-button" rel="nofollow noopener sponsored" target="_blank">Check Price on Amazon</a>
         </div>
 
-        <div class="product-card">
-            <div class="product-badge">Best Heavy-Duty</div>
-            <div class="product-content">
+        <div class="product-section">
+            <div class="pick-badge">Best Heavy-Duty</div>
+            <div class="product-head">
                 <img src="images/hero-best-slow-close-elongated-toilet-seats.jpg" alt="BEMIS 7900TDGSL Heavy-Duty Toilet Seat" class="product-image" loading="lazy">
                 <div>
                     <h3 class="product-name">5. BEMIS 7900TDGSL Heavy-Duty Slow Close Elongated Seat</h3>
@@ -298,17 +305,17 @@
                 </div>
             </div>
             <div class="pros-cons">
-                <div class="pros"><h4>Pros</h4><ul><li>1000 lb capacity — strongest in category</li><li>Commercial-grade for heavy use</li><li>Still includes slow-close function</li><li>Wider seat area for comfort</li></ul></div>
-                <div class="cons"><h4>Cons</h4><ul><li>Higher price point at $54.99</li><li>Heavier than standard seats</li><li>Bulkier hinge design</li></ul></div>
+                <div class="pros"><h4>What we like</h4><ul><li>1000 lb capacity — strongest in category</li><li>Commercial-grade for heavy use</li><li>Still includes slow-close function</li><li>Wider seat area for comfort</li></ul></div>
+                <div class="cons"><h4>Flaws but not dealbreakers</h4><ul><li>Higher price point at $54.99</li><li>Heavier than standard seats</li><li>Bulkier hinge design</li></ul></div>
             </div>
             <p>Most standard toilet seats support 250-300 lbs. The BEMIS 7900TDGSL is rated for <strong>1,000 lbs</strong> — making it the strongest slow close elongated seat we could find. The extra-wide reinforced hinges distribute weight more evenly, and the commercial-grade construction is designed for high-traffic environments like offices and public restrooms.</p>
             <p>Despite the heavy-duty build, BEMIS includes their Whisper-Close mechanism and STA-TITE bolts. The seat is slightly wider than standard for added comfort. At $54.99, it costs more, but for households needing extra support or for commercial settings, it is an investment in both safety and quiet operation. For more options, see our <a href="best-toilet-seats-for-heavy-people">Best Toilet Seats for Heavy People</a> guide.</p>
             <a href="https://www.amazon.com/dp/B08B3VXHXK?tag=besttoilet-seats-20" class="cta-button" rel="nofollow noopener sponsored" target="_blank">Check Price on Amazon</a>
         </div>
 
-        <div class="product-card">
-            <div class="product-badge">Best Design</div>
-            <div class="product-content">
+        <div class="product-section">
+            <div class="pick-badge">Best Design</div>
+            <div class="product-head">
                 <img src="images/hero-best-slow-close-elongated-toilet-seats.jpg" alt="BEMIS 7B1200SLOWT Elongated Toilet Seat" class="product-image" loading="lazy">
                 <div>
                     <h3 class="product-name">6. BEMIS 7B1200SLOWT Elongated Slow Close Seat</h3>
@@ -325,8 +332,8 @@
                 </div>
             </div>
             <div class="pros-cons">
-                <div class="pros"><h4>Pros</h4><ul><li>Under $25 — cheapest reliable slow close</li><li>10+ colors to match any toilet</li><li>18,000+ reviews prove reliability</li><li>Simple, proven design</li></ul></div>
-                <div class="cons"><h4>Cons</h4><ul><li>No quick-release hinges</li><li>Plastic hinges less durable than metal</li><li>Closing is slower to activate than premium</li></ul></div>
+                <div class="pros"><h4>What we like</h4><ul><li>Under $25 — cheapest reliable slow close</li><li>10+ colors to match any toilet</li><li>18,000+ reviews prove reliability</li><li>Simple, proven design</li></ul></div>
+                <div class="cons"><h4>Flaws but not dealbreakers</h4><ul><li>No quick-release hinges</li><li>Plastic hinges less durable than metal</li><li>Closing is slower to activate than premium</li></ul></div>
             </div>
             <p>If you want slow close function at the absolute lowest price from a trusted brand, the BEMIS 7B1200SLOWT is your answer at just $24.99. The enameled wood construction is solid and durable, and the slow close mechanism — while not as refined as KOHLER's — reliably prevents slamming for years of daily use.</p>
             <p>The standout feature is the 10+ color options, including bone, biscuit, and almond — colors that match older toilets where white would look wrong. Made in the USA with BEMIS's quality standards, this is the seat we recommend when you need multiple slow close seats across different bathrooms without exceeding your budget. For our full entry-level comparison, check <a href="best-elongated-toilet-seats">Best Elongated Toilet Seats</a>.</p>

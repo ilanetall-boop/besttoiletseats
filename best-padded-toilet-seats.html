@@ -13,24 +13,24 @@
     <link rel="canonical" href="https://besttoiletseats.com/best-padded-toilet-seats">
     <script src="components/site-config.js?v=5"></script>
     <style>
-        :root { --primary: #1565C0; --primary-light: #42A5F5; --primary-dark: #0D47A1; --accent: #FFB300; --accent-dark: #FF8F00; }
+        :root { --primary: #1565C0; --primary-light: #42A5F5; --primary-dark: #0D47A1; --accent: #FFB300; --accent-dark: #FF8F00;--bg-warm:#F3F8FF;--text:#222222;--text-light:#666666;--border:#DDEAF9;--white:#FFFFFF; }
         * { margin: 0; padding: 0; box-sizing: border-box; }
         html { scroll-behavior: smooth; }
         body { font-family: Georgia, 'Times New Roman', serif; line-height: 1.7; color: #333; background: #f8f9fa; }
-        h1, h2, h3 { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+        /* h1/h2/h3 inherit Georgia serif from body */
         .breadcrumb { background: #fff; padding: 15px 20px; font-size: 0.9rem; color: #666; border-bottom: 1px solid #e0e0e0; max-width: 1200px; margin: 0 auto; }
         .breadcrumb a { color: var(--accent); text-decoration: none; }
         .breadcrumb a:hover { text-decoration: underline; }
         main { max-width: 800px; margin: 0 auto; padding: 40px 20px; background: #fff; min-height: 100vh; }
         .article-header { margin-bottom: 2rem; }
-        .article-header h1 { font-size: 2.2rem; color: var(--primary-dark); line-height: 1.3; margin-bottom: 1rem; }
+        .article-header h1{ font-size: 2.2rem; color:var(--text); line-height: 1.3; margin-bottom: 1rem; }
         .article-meta { color: #666; font-size: 0.9rem; margin-bottom: 1rem; }
         .author-box { display: flex; align-items: center; gap: 12px; margin: 1rem 0; padding: 1rem; background: #f8f9fa; border-radius: 8px; }
-        .author-box img { width: 80px; height: 80px; border-radius: 50%; object-fit: cover; }
+        .author-box img{width:56px;height:56px; border-radius: 50%; object-fit: cover; }
         .author-box strong { color: var(--primary-dark); }
         .author-box p { font-size: 0.85rem; color: #666; margin: 0; }
         .hero-image { width: 100%; height: auto; border-radius: 12px; margin-bottom: 2rem; display: block; }
-        h2 { color: var(--primary); font-size: 1.6rem; margin: 2.5rem 0 1rem; border-bottom: 2px solid var(--accent); padding-bottom: 10px; }
+        h2 { color:var(--text);font-weight:normal; font-size: 1.6rem; margin: 2.5rem 0 1rem; }
         h3 { color: var(--primary-dark); font-size: 1.3rem; margin: 1.5rem 0 0.75rem; }
         h4 { color: var(--primary); font-size: 1.1rem; margin: 1.2rem 0 0.5rem; }
         p { margin: 1rem 0; } ul, ol { margin: 1rem 0; padding-left: 1.5rem; } li { margin: 0.5rem 0; }
@@ -40,7 +40,7 @@
         .quick-answer h2 { font-size: 1.1rem; color: #E65100; margin: 0 0 0.75rem 0; border: none; padding: 0; }
         .quick-answer p { margin: 0; }
         .toc { background: #f5f5f5; border-left: 4px solid var(--accent); padding: 20px 25px; margin: 2rem 0; border-radius: 0 8px 8px 0; }
-        .toc h2 { color: var(--primary); font-size: 1.1rem; margin: 0 0 15px 0; border: none; padding: 0; }
+        .toc h2 { color:var(--text);font-weight:normal; font-size: 1.1rem; margin: 0 0 15px 0; border: none; padding: 0; }
         .toc ol { margin: 0; padding-left: 1.2rem; } .toc li { margin: 8px 0; } .toc a { color: var(--accent); font-weight: 500; }
         .quick-pick-box { background: linear-gradient(135deg, var(--primary), var(--primary-light)); border-radius: 16px; padding: 1.5rem; color: white; margin: 2rem 0; }
         .quick-pick-label { background: var(--accent); padding: 6px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 700; text-transform: uppercase; display: inline-block; margin-bottom: 1rem; }
@@ -50,9 +50,9 @@
         .quick-pick-details .rating { opacity: 0.9; margin-bottom: 0.3rem; }
         .quick-pick-details .price { font-size: 1.6rem; font-weight: 700; margin-bottom: 0.5rem; }
         .quick-pick-details p { opacity: 0.95; margin: 0.5rem 0; font-size: 0.95rem; }
-        .product-card { background: #f8f9fa; border-radius: 12px; padding: 1.5rem; margin: 2rem 0; border: 1px solid #e0e0e0; }
-        .product-badge { background: var(--accent); color: white; padding: 5px 12px; border-radius: 20px; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; display: inline-block; margin-bottom: 0.75rem; }
-        .product-content { display: grid; grid-template-columns: auto 1fr; gap: 1.5rem; align-items: start; }
+        .product-section{ background: #f8f9fa; border-radius:8px; padding: 1.5rem; margin: 2rem 0; border: 1px solid #e0e0e0; }
+        .pick-badge{ background: var(--accent); color: white; padding: 5px 12px; border-radius: 20px; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; display: inline-block; margin-bottom: 0.75rem; }
+        .product-head{ display: grid; grid-template-columns: auto 1fr; gap: 1.5rem; align-items: start; }
         .product-gallery { text-align: center; min-width: 200px; }
         .gallery-main { width: 280px; height: 280px; object-fit: contain; background: white; border-radius: 8px; padding: 10px; }
         .gallery-thumbs { display: flex; gap: 6px; justify-content: center; margin-top: 8px; flex-wrap: wrap; }
@@ -69,11 +69,11 @@
         .pros h4, .cons h4 { font-size: 0.85rem; text-transform: uppercase; margin-bottom: 0.5rem; }
         .pros h4 { color: #4CAF50; } .cons h4 { color: #E53935; }
         .pros ul, .cons ul { list-style: none; padding: 0; margin: 0; }
-        .pros li::before { content: "\1F44D "; } .cons li::before { content: "\1F44E "; }
+        .pros li::before{content:"\2714"; } .cons li::before{content:"\2716"; }
         .specs-table { width: 100%; border-collapse: collapse; margin: 0.75rem 0; font-size: 0.85rem; }
         .specs-table td { padding: 6px 10px; border-bottom: 1px solid #e0e0e0; }
         .specs-table td:first-child { font-weight: 600; color: var(--primary-dark); width: 35%; }
-        .cta-button { display: inline-block; background: var(--accent); color: white; padding: 14px 28px; border-radius: 8px; text-decoration: none; font-weight: 600; transition: all 0.2s; margin-top: 0.5rem; }
+        .cta-button { display: inline-block; background:#FFB300; color: white; padding: 14px 28px; border-radius: 8px; text-decoration: none; font-weight: 600; transition: all 0.2s; margin-top: 0.5rem; }
         .cta-button:hover { background: var(--accent-dark); transform: translateY(-2px); text-decoration: none; box-shadow: 0 4px 12px rgba(255, 179, 0, 0.4); }
         .comparison-table { width: 100%; border-collapse: collapse; margin: 2rem 0; font-size: 0.85rem; background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
         .comparison-table th, .comparison-table td { padding: 10px 8px; text-align: left; border-bottom: 1px solid #e0e0e0; }
@@ -107,12 +107,20 @@
         .cost-table th { background: #E3F2FD; color: var(--primary-dark); font-weight: 600; }
         .cost-table tr:nth-child(even) { background: #f8f9fa; }
         .ftc-disclaimer { background: #f5f5f5; border: 1px solid #e0e0e0; border-radius: 8px; padding: 1rem 1.25rem; margin: 2rem 0; font-size: 0.82rem; color: #666; }
-        @media (max-width: 768px) { .article-header h1 { font-size: 1.7rem; } h2 { font-size: 1.4rem; } .quick-pick-content { flex-direction: column; text-align: center; } .quick-pick-image { margin: 0 auto; } .product-content { grid-template-columns: 1fr; } .gallery-main { max-width: 200px; margin: 0 auto; } .pros-cons { grid-template-columns: 1fr; } .decision-grid { grid-template-columns: 1fr; } .related-grid { grid-template-columns: 1fr; } .comparison-table { font-size: 0.75rem; } .comparison-table th, .comparison-table td { padding: 8px 5px; } }
+        @media (max-width: 768px) { .article-header h1 { font-size: 1.7rem; } h2 { font-size: 1.4rem; } .quick-pick-content { flex-direction: column; text-align: center; } .quick-pick-image { margin: 0 auto; } .product-head{ grid-template-columns: 1fr; } .gallery-main { max-width: 200px; margin: 0 auto; } .pros-cons { grid-template-columns: 1fr; } .decision-grid { grid-template-columns: 1fr; } .related-grid { grid-template-columns: 1fr; } .comparison-table { font-size: 0.75rem; } .comparison-table th, .comparison-table td { padding: 8px 5px; } }
     
-        .things-to-know { background: #f0f7ff; border-left: 4px solid #1976D2; padding: 1.5rem; margin: 2rem 0; border-radius: 0 8px 8px 0; }
-        .things-to-know h2 { font-size: 1.2rem; color: #1565C0; margin: 0 0 1rem 0; border: none; padding: 0; }
+        .things-to-know{background:linear-gradient(135deg,#FFF8E1,#FFECB3); border-left:4px solid #FFB300; padding: 1.5rem; margin: 2rem 0; border-radius: 0 8px 8px 0; }
+        .things-to-know h2 { font-size: 1.2rem; color:#E65100;text-transform:uppercase;letter-spacing:0.05em; margin: 0 0 1rem 0; border: none; padding: 0; }
         .things-to-know li { margin-bottom: 0.75rem; }
         .how-we-picked, .how-we-tested, .the-competition, .why-trust-us { margin: 2.5rem 0; }
+    
+        .disclosure{font-size:0.8rem;color:#999;margin-top:4px}
+        .disclosure a{color:#999;text-decoration:underline}
+    
+        .author-avatar{width:56px;height:56px;border-radius:50%;overflow:hidden;flex-shrink:0}
+        .author-avatar img{width:100%;height:100%;object-fit:cover}
+        .author-info strong{color:var(--primary-dark);display:block}
+        .author-info span{font-size:0.85rem;color:#666}
     </style>
     <script type="application/ld+json">
 {
@@ -551,11 +559,11 @@
         <article style="border-top: 4px solid #FF7043;">
             <div class="article-header">
                 <h1>5 Best Padded Toilet Seats for Extra Comfort (2026)</h1>
-                <p class="article-meta"><strong>Updated:</strong> March 10, 2026 &bull; <strong>Reading time:</strong> 14 min</p>
+                <div class="article-meta">Updated <strong>March 10, 2026</strong></div>
                 <div class="author-box">
-                    <img src="images/ilane-tall-80x80.jpg" alt="Ilane Tall" width="80" height="80" onerror="this.style.display='none'">
-                    <div><strong>Ilane Tall</strong><p>Product Researcher | Specializing in bathroom fixtures and toilet accessories</p></div>
-                </div>
+                <div class="author-avatar"><img src="images/ilane-tall-80x80.jpg" alt="Ilane Tall" width="56" height="56"></div>
+                <div class="author-info"><strong>Ilane Tall</strong><span>Product Researcher, Best Toilet Seats</span></div>
+            </div>
             </div>
             <img src="images/hero-best-padded-toilet-seats.webp" alt="5 Best Padded Toilet Seats for Extra Comfort (2026)" width="1200" height="685" loading="eager" fetchpriority="high" decoding="sync" class="hero-image">
 
@@ -636,7 +644,7 @@
             <h2 id="top-picks">The 5 Best Padded Toilet Seats (Detailed Reviews)</h2>
 
             <!-- Product 1: Mayfair Padded Elongated -->
-            <div class="product-card" id="mayfair-padded-elongated"><span class="product-badge">Best Overall</span><div class="product-content"><div class="product-gallery">
+            <div class="product-section" id="mayfair-padded-elongated"><span class="pick-badge">Best Overall</span><div class="product-head"><div class="product-gallery">
                 <div class="gallery-thumbs">
                     <img src="images/amazon-71nXguvwd+L.webp" data-full="images/amazon-71nXguvwd+L.webp" class="gallery-thumb" alt="Mayfair Padded Toilet Seat Elongated - view 2" loading="lazy" width="48" height="48">
                     <img src="images/amazon-71qh5JNnLXL.webp" data-full="images/amazon-71qh5JNnLXL.webp" class="gallery-thumb" alt="Mayfair Padded Toilet Seat Elongated - view 3" loading="lazy" width="48" height="48">
@@ -656,12 +664,12 @@
                     <li>Lightweight at 3.5 lbs for easy installation and removal</li>
                 </ul>
                 <div class="pros-cons">
-                    <div class="pros"><h4>Pros</h4><ul>
+                    <div class="pros"><h4>What we like</h4><ul>
                         <li>Excellent cushioning that retains shape after months of use</li>
                         <li>Vinyl seams are well-sealed &mdash; no moisture seepage in our tests</li>
                         <li>Affordable enough to replace annually for hygiene</li>
                     </ul></div>
-                    <div class="cons"><h4>Cons</h4><ul>
+                    <div class="cons"><h4>Flaws but not dealbreakers</h4><ul>
                         <li>Plastic hinges are functional but not premium-feeling</li>
                         <li>Only available in white</li>
                     </ul></div>
@@ -674,7 +682,7 @@
             </div></div></div>
 
             <!-- Product 2: Mayfair Padded Round -->
-            <div class="product-card" id="mayfair-padded-round"><span class="product-badge">Best Round Shape</span><div class="product-content"><div class="product-gallery">
+            <div class="product-section" id="mayfair-padded-round"><span class="pick-badge">Best Round Shape</span><div class="product-head"><div class="product-gallery">
                 <img src="images/amazon-61+clwCT92L.webp" alt="Mayfair Padded Toilet Seat Round" class="gallery-main" loading="lazy" width="280" height="280">
                 <div class="gallery-thumbs">
                     
@@ -696,12 +704,12 @@
                     <li>Easy 10-minute installation with included hardware</li>
                 </ul>
                 <div class="pros-cons">
-                    <div class="pros"><h4>Pros</h4><ul>
+                    <div class="pros"><h4>What we like</h4><ul>
                         <li>Identical comfort and quality to the elongated version</li>
                         <li>Slightly lower price than the elongated model</li>
                         <li>Perfect fit for older round-front toilets</li>
                     </ul></div>
-                    <div class="cons"><h4>Cons</h4><ul>
+                    <div class="cons"><h4>Flaws but not dealbreakers</h4><ul>
                         <li>Only fits round bowls &mdash; verify your toilet shape before ordering</li>
                         <li>Plastic hinges (same as elongated model)</li>
                     </ul></div>
@@ -723,7 +731,7 @@
             </div></div></div>
 
             <!-- Product 3: Mayfair Chrome Hinges Elongated -->
-            <div class="product-card" id="mayfair-chrome-elongated"><span class="product-badge">Best Premium</span><div class="product-content"><div class="product-gallery">
+            <div class="product-section" id="mayfair-chrome-elongated"><span class="pick-badge">Best Premium</span><div class="product-head"><div class="product-gallery">
                 <img src="images/amazon-51Bk6wjmjXL.webp" alt="Mayfair Chrome Hinges Padded Elongated Toilet Seat" class="gallery-main" loading="lazy" width="280" height="280">
                 <div class="gallery-thumbs">
                     
@@ -745,12 +753,12 @@
                     <li>Premium look that elevates basic bathroom aesthetics</li>
                 </ul>
                 <div class="pros-cons">
-                    <div class="pros"><h4>Pros</h4><ul>
+                    <div class="pros"><h4>What we like</h4><ul>
                         <li>Chrome hinges last significantly longer than plastic</li>
                         <li>More stable mounting &mdash; less wobble over time</li>
                         <li>Looks more polished than plastic-hinge models</li>
                     </ul></div>
-                    <div class="cons"><h4>Cons</h4><ul>
+                    <div class="cons"><h4>Flaws but not dealbreakers</h4><ul>
                         <li>Chrome hardware requires occasional polishing to prevent water spots</li>
                         <li>Slightly more complex installation than plastic-hinge version</li>
                     </ul></div>
@@ -771,7 +779,7 @@
             </div></div></div>
 
             <!-- Product 4: Mayfair Chrome Hinges Round -->
-            <div class="product-card" id="mayfair-chrome-round"><span class="product-badge">Best Budget Round</span><div class="product-content"><div class="product-gallery">
+            <div class="product-section" id="mayfair-chrome-round"><span class="pick-badge">Best Budget Round</span><div class="product-head"><div class="product-gallery">
                 <img src="images/amazon-41dMR8vOiZL.webp" alt="Mayfair Chrome Hinges Padded Round Toilet Seat" class="gallery-main" loading="lazy" width="280" height="280">
                 <div class="gallery-thumbs">
                     
@@ -793,12 +801,12 @@
                     <li>Secure mounting with metal bolt-down system</li>
                 </ul>
                 <div class="pros-cons">
-                    <div class="pros"><h4>Pros</h4><ul>
+                    <div class="pros"><h4>What we like</h4><ul>
                         <li>Best value in our roundup &mdash; chrome hinges at nearly the same price as plastic</li>
                         <li>Highest customer satisfaction rating (4.3 stars)</li>
                         <li>Excellent stability on round bowls</li>
                     </ul></div>
-                    <div class="cons"><h4>Cons</h4><ul>
+                    <div class="cons"><h4>Flaws but not dealbreakers</h4><ul>
                         <li>Only fits round bowls</li>
                         <li>Chrome requires occasional wiping to prevent water spots</li>
                     </ul></div>
@@ -819,7 +827,7 @@
             </div></div></div>
 
             <!-- Product 5: Soundfuse Padded Raised -->
-            <div class="product-card" id="soundfuse-padded-raised"><span class="product-badge">Best for Elderly &amp; Post-Surgery</span><div class="product-content"><div class="product-gallery">
+            <div class="product-section" id="soundfuse-padded-raised"><span class="pick-badge">Best for Elderly &amp; Post-Surgery</span><div class="product-head"><div class="product-gallery">
                 <img src="images/amazon-715ByVTToYL.webp" alt="Soundfuse Padded Raised Toilet Seat with Handles" class="gallery-main" loading="lazy" width="280" height="280">
                 <div class="gallery-thumbs">
                     
@@ -841,12 +849,12 @@
                     <li>Lowest price in our roundup at just $22.99</li>
                 </ul>
                 <div class="pros-cons">
-                    <div class="pros"><h4>Pros</h4><ul>
+                    <div class="pros"><h4>What we like</h4><ul>
                         <li>Combines raised height + padding + handles in one affordable unit</li>
                         <li>No tools required &mdash; clamps directly onto existing bowl</li>
                         <li>Ideal for post-surgery and elderly use</li>
                     </ul></div>
-                    <div class="cons"><h4>Cons</h4><ul>
+                    <div class="cons"><h4>Flaws but not dealbreakers</h4><ul>
                         <li>Not a permanent toilet seat replacement &mdash; sits on top of existing seat</li>
                         <li>Bulkier profile may not suit every bathroom aesthetic</li>
                     </ul></div>
@@ -1089,12 +1097,4 @@
             <!-- Crosslink Banner -->
             <div class="crosslink-banner">
                 <p>Looking for more bathroom upgrades? Check out our sister site:</p>
-                <a href="https://bestbathrugs.com" target="_blank" rel="noopener">Best Bath Rugs &rarr;</a>
-            </div>
-
-        </article>
-    </main>
-    <footer id="site-footer"></footer>
-    <script src="components/site-components.js?v=5"></script>
-</body>
-</html>
+                <a href="https
