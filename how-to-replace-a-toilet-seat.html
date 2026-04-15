@@ -32,7 +32,7 @@
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         html, body { overflow-x: hidden; scroll-behavior: smooth; }
-        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.7; color: #333; background: #f8f9fa; }
+        body { font-family: Georgia, 'Times New Roman', serif; line-height: 1.7; color: #333; background: #FAF9F7; }
         .breadcrumb { background: #fff; padding: 15px 20px; font-size: 0.9rem; color: #666; border-bottom: 1px solid #e0e0e0; max-width: 1200px; margin: 0 auto; }
         .breadcrumb a { color: var(--accent); text-decoration: none; }
         main { max-width: 800px; margin: 0 auto; padding: 40px 20px; background: #fff; min-height: 100vh; }
@@ -87,7 +87,7 @@
         .cons li { padding-left: 20px; position: relative; margin: 3px 0; }
         .cons li::before { content: "\2716"; position: absolute; left: 0; color: #E53935; font-size: 0.8rem; }
         .cta-button { display: inline-block; background: var(--accent); color: white; padding: 13px 26px; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 0.95rem; transition: all 0.2s; margin-top: 0.75rem; }
-        .cta-button:hover { background: var(--accent-dark); transform: translateY(-2px); text-decoration: none; box-shadow: 0 4px 12px rgba(255,179,0,0.4); }
+        .cta-button:hover { background: var(--accent-dark); transform: translateY(-2px); text-decoration: none; box-shadow: 0 4px 12px rgba(255,112,67,0.4); }
         .specs-table { width: 100%; border-collapse: collapse; margin: 0.75rem 0; font-size: 0.85rem; }
         .specs-table td { padding: 7px 10px; border-bottom: 1px solid #e0e0e0; }
         .specs-table td:first-child { font-weight: 600; color: var(--primary-dark); width: 38%; }
@@ -111,7 +111,7 @@
         .competition-item strong { color: var(--primary-dark); }
 
         /* ─── BTS-specific classes (not in BBR) ─── */
-        .quick-answer { background: linear-gradient(135deg, #E3F2FD, #BBDEFB); border-left: 4px solid var(--primary); padding: 1.25rem; margin-bottom: 2rem; border-radius: 0 8px 8px 0; }
+        .quick-answer { background: linear-gradient(135deg, #FBF7F5, #F0EBE8); border-left: 4px solid var(--accent); padding: 1.25rem; margin-bottom: 2rem; border-radius: 0 8px 8px 0; }
         .quick-answer h2 { font-size: 1.1rem; color: var(--primary-dark); margin: 0 0 0.75rem 0; border: none; padding: 0; }
         .quick-answer p { margin: 0.5rem 0; }
         .toc { background: #f5f5f5; border-left: 4px solid var(--accent); padding: 20px 25px; margin: 2rem 0; border-radius: 0 8px 8px 0; }
@@ -119,29 +119,29 @@
         .toc ol { margin: 0; padding-left: 1.2rem; }
         .toc li { margin: 8px 0; }
         .toc a { color: var(--accent); font-weight: 500; }
-        .quick-pick-box { background: linear-gradient(135deg, var(--primary), var(--primary-light)); border-radius: 16px; padding: 1.5rem; color: white; margin: 2rem 0; position: relative; }
-        .quick-pick-label { background: var(--accent); padding: 6px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 700; text-transform: uppercase; display: inline-block; margin-bottom: 1rem; color: #333; }
+        .quick-pick-box { background: #FBF7F5; border: 1px solid #E8E0DC; border-left: 4px solid var(--accent); border-radius: 0 12px 12px 0; padding: 1.5rem; color: #333; margin: 2rem 0; position: relative; }
+        .quick-pick-label { background: var(--accent); padding: 6px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 700; text-transform: uppercase; display: inline-block; margin-bottom: 1rem; color: white; }
         .quick-pick-content { display: flex; gap: 1.5rem; align-items: center; }
         .quick-pick-image { width: 140px; height: 140px; object-fit: contain; background: white; border-radius: 12px; padding: 10px; flex-shrink: 0; }
-        .quick-pick-details h3 { color: white; margin-top: 0; font-size: 1.3rem; }
-        .quick-pick-details .rating { opacity: 0.9; margin-bottom: 0.3rem; }
-        .quick-pick-details .price { font-size: 1.6rem; font-weight: 700; margin-bottom: 0.5rem; }
-        .quick-pick-details p { opacity: 0.95; margin: 0.5rem 0; font-size: 0.95rem; }
+        .quick-pick-details h3 { color: var(--primary-dark); margin-top: 0; font-size: 1.3rem; }
+        .quick-pick-details .rating { color: #666; margin-bottom: 0.3rem; }
+        .quick-pick-details .price { font-size: 1.6rem; font-weight: 700; margin-bottom: 0.5rem; color: var(--primary); }
+        .quick-pick-details p { color: #555; margin: 0.5rem 0; font-size: 0.95rem; }
         .product-image { width: 200px; height: 200px; object-fit: contain; background: white; border-radius: 8px; padding: 10px; }
         .product-features { list-style: none; padding: 0; margin: 0.75rem 0; }
         .product-features li { padding: 4px 0 4px 24px; position: relative; }
         .product-features li::before { content: "\2714"; position: absolute; left: 0; color: #4CAF50; }
-        .info-box { background: #E3F2FD; border-left: 4px solid #2196F3; padding: 1rem 1.25rem; margin: 1.5rem 0; border-radius: 0 8px 8px 0; }
+        .info-box { background: #FBF7F5; border-left: 4px solid var(--primary-light); padding: 1rem 1.25rem; margin: 1.5rem 0; border-radius: 0 8px 8px 0; }
         .info-box.warning { background: #FFF3E0; border-color: #FF9800; }
         .info-box.tip { background: linear-gradient(135deg, #E8F5E9, #C8E6C9); border-color: #4CAF50; }
-        .verdict-box { background: linear-gradient(135deg, #E3F2FD, #BBDEFB); border: 2px solid var(--primary); border-radius: 12px; padding: 1.5rem; margin: 2rem 0; }
+        .verdict-box { background: linear-gradient(135deg, #FBF7F5, #F0EBE8); border: 2px solid var(--accent); border-radius: 12px; padding: 1.5rem; margin: 2rem 0; }
         .verdict-box h3 { color: var(--primary-dark); margin-top: 0; }
         .related-articles { background: #f8f9fa; padding: 1.5rem; border-radius: 12px; margin: 2rem 0; }
         .related-articles h3 { color: var(--primary); margin: 0 0 1rem 0; font-size: 1.1rem; }
         .related-articles ul { margin: 0; padding-left: 1.25rem; }
         .faq-section { margin: 2.5rem 0; }
         .how-we-picked, .how-we-tested, .the-competition, .why-trust-us { margin: 2.5rem 0; }
-        .crosslink-banner { background: linear-gradient(135deg, var(--primary-dark), var(--primary)); padding: 24px; border-radius: 16px; margin: 3rem 0; text-align: center; }
+        .crosslink-banner { background: linear-gradient(135deg, #3E2723, var(--primary-dark)); padding: 24px; border-radius: 16px; margin: 3rem 0; text-align: center; }
         .crosslink-banner p { color: white; font-size: 1.15rem; margin-bottom: 1rem; }
         .crosslink-banner a { background: white; color: var(--accent); padding: 12px 28px; border-radius: 8px; text-decoration: none; font-weight: 700; display: inline-block; }
         .crosslink-banner a:hover { transform: translateY(-2px); text-decoration: none; }

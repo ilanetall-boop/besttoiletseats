@@ -11,11 +11,11 @@ window.SITE_CONFIG = {
   affiliateTag: "besttoilet-seats-20",
   gaId: "G-SG6BLKK4C1",
   colors: {
-    primary: "#1565C0",
-    primaryLight: "#42A5F5",
-    primaryDark: "#0D47A1",
-    accent: "#FFB300",
-    accentDark: "#FF8F00"
+    primary: "#37474F",
+    primaryLight: "#607D8B",
+    primaryDark: "#263238",
+    accent: "#FF7043",
+    accentDark: "#E64A19"
   },
   nav: [
     { label: "Home", href: "/" },
