@@ -1,20 +1,20 @@
 <svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
   <!-- Circular Background -->
-  <circle cx="100" cy="100" r="90" fill="#1565C0" opacity="0.9" />
+  <circle cx="100" cy="100" r="90" fill="#37474F" opacity="0.9" />
 
   <!-- Toilet Seat (oval shape, top view) -->
-  <ellipse cx="100" cy="88" rx="45" ry="38" fill="#E3F2FD" stroke="#0D47A1" stroke-width="2.5" />
-  <ellipse cx="100" cy="88" rx="32" ry="25" fill="#1565C0" stroke="#0D47A1" stroke-width="1.5" />
+  <ellipse cx="100" cy="88" rx="45" ry="38" fill="#ECEFF1" stroke="#263238" stroke-width="2.5" />
+  <ellipse cx="100" cy="88" rx="32" ry="25" fill="#37474F" stroke="#263238" stroke-width="1.5" />
 
   <!-- Seat Lid Hinge -->
-  <rect x="88" y="50" width="24" height="6" rx="3" fill="#E3F2FD" stroke="#0D47A1" stroke-width="1" />
+  <rect x="88" y="50" width="24" height="6" rx="3" fill="#ECEFF1" stroke="#263238" stroke-width="1" />
 
   <!-- Checkmark (quality/best) -->
-  <circle cx="145" cy="60" r="18" fill="#FFB300" />
+  <circle cx="145" cy="60" r="18" fill="#FF7043" />
   <path d="M136 60 L142 66 L155 53" stroke="white" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" fill="none" />
 
   <!-- Star accent -->
-  <polygon points="55,55 58,48 61,55 68,55 63,60 65,67 58,63 51,67 53,60 48,55" fill="#FFB300" opacity="0.8" />
+  <polygon points="55,55 58,48 61,55 68,55 63,60 65,67 58,63 51,67 53,60 48,55" fill="#FF7043" opacity="0.8" />
 
   <!-- Text "BEST TOILET SEATS" -->
   <text x="100" y="142" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="white" text-anchor="middle">BEST TOILET</text>
