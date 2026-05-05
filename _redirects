@@ -94,3 +94,41 @@
 /best-toilet-seats-for-renters.html /best-toilet-seats-for-renters.html 200
 /best-antimicrobial-toilet-seats/ /best-antimicrobial-toilet-seats.html 200
 /best-antimicrobial-toilet-seats.html /best-antimicrobial-toilet-seats.html 200
+/best-toilet-seats-with-handles/ /best-toilet-seats-with-handles.html 200
+/best-toilet-seats-with-handles.html /best-toilet-seats-with-handles.html 200
+/best-elongated-bidet-toilet-seats/ /best-elongated-bidet-toilet-seats.html 200
+/best-elongated-bidet-toilet-seats.html /best-elongated-bidet-toilet-seats.html 200
+/best-self-cleaning-bidet-toilet-seats/ /best-self-cleaning-bidet-toilet-seats.html 200
+/best-self-cleaning-bidet-toilet-seats.html /best-self-cleaning-bidet-toilet-seats.html 200
+/duroplast-toilet-seat-vs-wood/ /duroplast-toilet-seat-vs-wood.html 200
+/duroplast-toilet-seat-vs-wood.html /duroplast-toilet-seat-vs-wood.html 200
+/toilet-seat-hinges-replacement/ /toilet-seat-hinges-replacement.html 200
+/toilet-seat-hinges-replacement.html /toilet-seat-hinges-replacement.html 200
+/how-to-clean-toilet-seat-hinges/ /how-to-clean-toilet-seat-hinges.html 200
+/how-to-clean-toilet-seat-hinges.html /how-to-clean-toilet-seat-hinges.html 200
+
+# P0 cleanup 2026-05-05 — duplicate orphans 301 to canonical
+/plastic-vs-wood-toilet-seats /plastic-vs-wood-toilet-seat 301
+/plastic-vs-wood-toilet-seats.html /plastic-vs-wood-toilet-seat 301
+/best-smart-toilet-seats-with-remote /best-smart-toilet-seats-remote 301
+/best-smart-toilet-seats-with-remote.html /best-smart-toilet-seats-remote 301
+/best-night-light-toilet-seats /best-toilet-seats-with-night-light 301
+/best-night-light-toilet-seats.html /best-toilet-seats-with-night-light 301
+
+# P0 cleanup 2026-05-05 — placeholder draft orphans 301 to most relevant canonical (CF Pages does not support 410 in _redirects)
+/best-quick-release-toilet-seats /best-soft-close-toilet-seats 301
+/best-quick-release-toilet-seats.html /best-soft-close-toilet-seats 301
+/best-self-cleaning-toilet-seats /best-self-cleaning-bidet-toilet-seats 301
+/best-self-cleaning-toilet-seats.html /best-self-cleaning-bidet-toilet-seats 301
+/best-toilet-seats-for-elderly /best-raised-toilet-seats-for-seniors 301
+/best-toilet-seats-for-elderly.html /best-raised-toilet-seats-for-seniors 301
+/best-toilet-seats-for-kids-and-adults /best-potty-training-seats-for-toddlers 301
+/best-toilet-seats-for-kids-and-adults.html /best-potty-training-seats-for-toddlers 301
+/best-toilet-seats-for-small-bathrooms /best-round-toilet-seats 301
+/best-toilet-seats-for-small-bathrooms.html /best-round-toilet-seats 301
+/how-to-fix-loose-toilet-seat /toilet-seat-wont-stay-up-fix 301
+/how-to-fix-loose-toilet-seat.html /toilet-seat-wont-stay-up-fix 301
+/how-to-remove-yellow-stains-from-toilet-seat /toilet-seat-buying-guide 301
+/how-to-remove-yellow-stains-from-toilet-seat.html /toilet-seat-buying-guide 301
+/best-slow-close-elongated-toilet-seats /best-soft-close-toilet-seats 301
+/best-slow-close-elongated-toilet-seats.html /best-soft-close-toilet-seats 301
