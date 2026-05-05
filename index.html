@@ -123,6 +123,7 @@
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"Blog","name":"Best Toilet Seats","description":"Expert reviews, buying guides, and comparisons for toilet seats — tested by Ilane Tall.","url":"https://besttoiletseats.com","author":{"@type":"Person","name":"Ilane Tall","url":"https://besttoiletseats.com/about"}}
   </script>
+    <link rel="stylesheet" href="components/wirecutter-standard.css?v=20260425">
 </head>
 <body>
   <header id="site-header"></header>
@@ -305,7 +306,7 @@
     function formatDate(d){const dt=new Date(d+'T00:00:00');return dt.toLocaleDateString('en-US',{month:'short',year:'numeric'});}
     function getTagClass(c){return({'Reviews':'tag-reviews','Guides':'tag-guides','Comparisons':'tag-comparisons','Top Lists':'tag-top-lists'})[c]||'tag-guides';}
     function filterMatch(cat,f){if(f==='all')return true;return cat===f;}
-    function articleCard(a){return`<article class="article-card"><a href="${a.slug}"><img src="${a.image}" alt="${a.title}" width="400" height="175" loading="lazy" decoding="async"></a><div class="article-card-body"><div class="article-card-meta"><span class="tag ${getTagClass(a.category)}">${a.category||'Article'}</span><span class="article-card-date">${formatDate(a.publishDate)}</span></div><h3 class="article-card-title"><a href="${a.slug}">${a.title}</a></h3><p class="article-card-summary">${a.summary}</p><a href="${a.slug}" class="read-more">Read article &rarr;</a></div></article>`;}
+    function articleCard(a){return`<article class="article-card"><img src="${a.image}" alt="${a.title}" width="400" height="175" loading="lazy" decoding="async"><div class="article-card-body"><div class="article-card-meta"><span class="tag ${getTagClass(a.category)}">${a.category||'Article'}</span><span class="article-card-date">${formatDate(a.publishDate)}</span></div><h3 class="article-card-title">${a.title}</h3><p class="article-card-summary">${a.summary}</p>Read article &rarr;</div></article>`;}
     let allArticles=[];
     function renderArticles(cat){const g=document.getElementById('articles-grid');const v=allArticles.filter(a=>filterMatch(a.category,cat)).slice(0,6);g.innerHTML=v.length?v.map(articleCard).join(''):'<div class="no-results">No articles in this category yet.</div>';}
     function setupFilters(){document.querySelectorAll('.filter-btn').forEach(b=>b.addEventListener('click',function(){document.querySelectorAll('.filter-btn').forEach(x=>x.classList.remove('active'));this.classList.add('active');renderArticles(this.dataset.category);}));}

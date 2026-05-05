@@ -289,6 +289,7 @@
       .newsletter-form { flex-direction: column; }
     }
   </style>
+    <link rel="stylesheet" href="components/wirecutter-standard.css?v=20260425">
 </head>
 <body>
   <header id="site-header"></header>
@@ -363,7 +364,7 @@
         var dateStr = formatDate(article.publishDate);
         return '<article class="article-card">' +
           '<a href="' + article.slug + '">' +
-            '<img src="' + (article.image || 'images/placeholder.webp') + '" alt="' + article.title + '" loading="lazy" onerror="this.style.display=\'none\'">' +
+            '<img src="' + (article.image || 'images/hero-best-toilet-seats.webp') + '" alt="' + article.title + '" loading="lazy" onerror="this.onerror=null;this.src=\'images/hero-best-toilet-seats.webp\'">' +
           '</a>' +
           '<div class="article-card-body">' +
             '<div class="article-card-meta">' +
