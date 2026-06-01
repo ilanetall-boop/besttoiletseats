@@ -35,8 +35,8 @@
   var page = path.split('/').pop().replace(/\.html$/, '') || 'index';
 
   function isActive(href) {
-    // "index" matches "", "/" and "index"
-    if (href === 'index') return page === 'index' || page === '' || path === '/';
+    // Home matches "", "/" and legacy "index" paths.
+    if (href === '/' || href === 'index') return page === 'index' || page === '' || path === '/';
     return page === href || page.toLowerCase() === href.toLowerCase();
   }
 
@@ -102,8 +102,6 @@
     '  #site-header nav li{border-top:1px solid var(--border,#e5e5e5)}',
     '  #site-header nav a{display:block;padding:.75rem 0}',
     '  #site-header .header-content{flex-wrap:wrap}',
-    '  table,.comparison-table{display:block!important;overflow-x:auto!important;-webkit-overflow-scrolling:touch;max-width:100vw!important}',
-    '  .specs-grid,.product-specs{overflow-x:auto;max-width:100vw}',
     '}'
   ].join('\n');
 
@@ -126,10 +124,10 @@
       '<div class="hf-container">' +
         '<div class="header-content">' +
           '<div class="logo-section">' +
-            '<a href="index">' +
+            '<a href="/">' +
               '<img src="' + config.logo + '" alt="' + config.name + ' Logo" width="56" height="56">' +
               '<div>' +
-                '<div class="site-title" style="font-size:1.5em;font-weight:700;margin:0">' + config.name + '</div>' +
+                '<h1>' + config.name + '</h1>' +
                 '<p>' + config.tagline + '</p>' +
               '</div>' +
             '</a>' +
@@ -154,11 +152,6 @@
       });
     }
   }
-
-  // ---------------------------------------------------------------------------
-  // Affiliate disclosure — now inline in author byline, no auto-injection
-  // Removed 2026-04-01: was creating duplicate disclosure blocks
-  // ---------------------------------------------------------------------------
 
   // ---------------------------------------------------------------------------
   // Inject footer

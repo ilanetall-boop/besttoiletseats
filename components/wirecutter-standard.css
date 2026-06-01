@@ -1,0 +1,381 @@
+/*
+ * Shared editorial layout for the blog network.
+ * Goal: one sober product-review architecture across all blogs while keeping
+ * each site's colors from components/site-config.js.
+ */
+
+:root {
+  --wc-page: #f7f5f2;
+  --wc-paper: #fff;
+  --wc-ink: #1f1f1f;
+  --wc-muted: #5d646b;
+  --wc-border: #ddd8cf;
+  --wc-soft: #f2eee8;
+  --wc-width: 1120px;
+  --wc-article: 790px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--wc-page);
+  color: var(--wc-ink);
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.62;
+  overflow-x: hidden;
+}
+
+body > main,
+main {
+  width: min(var(--wc-article), calc(100% - 32px));
+  margin: 0 auto;
+  padding: 34px 0 56px;
+  background: transparent;
+}
+
+article {
+  display: block;
+}
+
+.breadcrumb {
+  width: min(var(--wc-width), calc(100% - 32px));
+  margin: 0 auto;
+  padding: 14px 0;
+  color: var(--wc-muted);
+  font-size: 0.88rem;
+  background: transparent;
+  border: 0;
+}
+
+.breadcrumb a {
+  color: var(--primary-dark, #1f1f1f);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+.article-header,
+.page-header,
+.hero,
+.site-hero {
+  margin: 0 0 26px;
+}
+
+h1 {
+  max-width: 920px;
+  margin: 0 0 14px;
+  color: var(--wc-ink);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(2rem, 4vw, 3.35rem);
+  line-height: 1.05;
+  letter-spacing: 0;
+}
+
+h2 {
+  margin: 44px 0 14px;
+  padding: 0;
+  color: var(--wc-ink);
+  border: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.45rem, 2.5vw, 2rem);
+  line-height: 1.16;
+  letter-spacing: 0;
+}
+
+h3 {
+  margin: 26px 0 10px;
+  color: var(--wc-ink);
+  font-size: 1.15rem;
+  line-height: 1.28;
+  letter-spacing: 0;
+}
+
+p,
+li {
+  font-size: 1rem;
+}
+
+a {
+  color: var(--primary-dark, #1f1f1f);
+  text-decoration-color: var(--accent, #c9552c);
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 3px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.article-meta,
+.byline,
+.disclosure {
+  color: var(--wc-muted);
+  font-size: 0.93rem;
+}
+
+.author-box {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin: 18px 0 22px;
+  padding: 14px 0;
+  background: transparent;
+  border-top: 1px solid var(--wc-border);
+  border-bottom: 1px solid var(--wc-border);
+  border-radius: 0;
+}
+
+.author-box img,
+.author-avatar img {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.hero-image,
+.article-hero img,
+img.hero {
+  display: block;
+  width: 100%;
+  margin: 24px 0 28px;
+  border-radius: 0;
+  border: 1px solid var(--wc-border);
+  background: var(--wc-paper);
+  box-shadow: none;
+}
+
+.quick-answer,
+.things-to-know,
+.toc,
+.info-box,
+.quick-pick-box {
+  margin: 26px 0;
+  padding: 18px 20px;
+  background: var(--wc-soft);
+  border: 1px solid var(--wc-border);
+  border-left: 5px solid var(--accent, #c9552c);
+  border-radius: 0;
+  color: var(--wc-ink);
+}
+
+.quick-answer h2,
+.toc h2,
+.things-to-know h2 {
+  margin: 0 0 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  line-height: 1.2;
+}
+
+.product-section,
+.product-card,
+.pick-card {
+  margin: 34px 0;
+  padding: 22px;
+  background: var(--wc-paper);
+  border: 1px solid var(--wc-border);
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.product-head,
+.product-content {
+  display: grid;
+  grid-template-columns: minmax(180px, 250px) 1fr;
+  gap: 22px;
+  align-items: start;
+}
+
+.product-name {
+  color: var(--wc-ink);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.45rem;
+  line-height: 1.18;
+}
+
+.product-meta,
+.product-rating,
+.best-for-line,
+.best-for {
+  color: var(--wc-muted);
+}
+
+.product-price {
+  color: var(--wc-ink);
+  font-weight: 700;
+}
+
+.pick-badge,
+.product-badge,
+.quick-pick-label {
+  display: inline-block;
+  margin-bottom: 12px;
+  padding: 4px 8px;
+  background: var(--wc-ink);
+  color: #fff;
+  border-radius: 0;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.product-gallery,
+.product-image {
+  background: #fff;
+}
+
+.gallery-main,
+.product-main-img,
+.product-image {
+  border: 1px solid var(--wc-border);
+  border-radius: 0;
+  object-fit: contain;
+}
+
+.gallery-thumb {
+  border-radius: 0 !important;
+}
+
+.pros-cons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  margin: 20px 0;
+}
+
+.pros,
+.cons {
+  padding: 14px;
+  background: var(--wc-soft);
+  border: 1px solid var(--wc-border);
+}
+
+.cta-button,
+a.cta-button,
+button.cta-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 11px 18px;
+  background: var(--accent, #c9552c);
+  color: #fff;
+  border: 1px solid var(--accent, #c9552c);
+  border-radius: 0;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: none;
+}
+
+.cta-button:hover,
+a.cta-button:hover {
+  filter: brightness(0.94);
+  text-decoration: none;
+  transform: none;
+}
+
+.table-wrapper,
+div[style*="overflow-x"] {
+  overflow-x: auto;
+}
+
+table,
+.comparison-table,
+.specs-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 22px 0;
+  background: var(--wc-paper);
+  border: 1px solid var(--wc-border);
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 0.92rem;
+}
+
+th,
+td,
+.comparison-table th,
+.comparison-table td,
+.specs-table td {
+  padding: 11px 12px;
+  border-bottom: 1px solid var(--wc-border);
+  text-align: left;
+  vertical-align: top;
+}
+
+th,
+.comparison-table th {
+  background: var(--wc-soft);
+  color: var(--wc-ink);
+  font-weight: 700;
+}
+
+.related-grid,
+.articles-grid,
+.network-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 18px;
+}
+
+.related-card,
+.article-card,
+.network-card {
+  background: var(--wc-paper);
+  border: 1px solid var(--wc-border);
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.crosslink-banner,
+.network-banner {
+  border-radius: 0;
+}
+
+#site-header {
+  border-bottom: 2px solid var(--wc-ink) !important;
+  box-shadow: none !important;
+}
+
+#site-footer {
+  margin-top: 48px;
+}
+
+@media (max-width: 760px) {
+  body > main,
+  main,
+  .breadcrumb {
+    width: min(100% - 24px, var(--wc-article));
+  }
+
+  body > main,
+  main {
+    padding-top: 24px;
+  }
+
+  .product-head,
+  .product-content,
+  .pros-cons {
+    grid-template-columns: 1fr;
+  }
+
+  .product-section,
+  .product-card,
+  .quick-answer,
+  .things-to-know,
+  .toc,
+  .info-box,
+  .quick-pick-box {
+    padding: 16px;
+  }
+}
