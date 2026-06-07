@@ -1,0 +1,14 @@
+
+
+# === Secrets — never commit ===
+*.env
+*.env.*
+!.env.example
+*secret*.json
+*credential*.json
+client_secret*
+service-account*
+*.pem
+*.key
+*.p12
+*.pfx
