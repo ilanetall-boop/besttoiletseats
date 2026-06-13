@@ -279,3 +279,39 @@
     }
   });
 })();
+
+/* ── Amazon affiliate click tracking → GA4 (amazon_click) ──────────────────
+ * Fires a custom GA4 event whenever a visitor clicks an Amazon affiliate link,
+ * so on-page click-through can be measured per article and per button position.
+ * The gtag base (ga_id per blog) is already loaded by the page. No-ops if gtag
+ * is unavailable; wrapped in try/catch so it can never break the page. */
+(function () {
+  if (typeof document === 'undefined') return;
+  function isAmazon(href) {
+    return /(^|\.)amazon\.[a-z.]+\//i.test(href) || /amzn\.to\//i.test(href);
+  }
+  function asinFrom(href) {
+    var m = String(href || '').match(/\/(?:dp|gp\/product)\/([A-Z0-9]{10})/i);
+    return m ? m[1].toUpperCase() : '';
+  }
+  document.addEventListener('click', function (ev) {
+    try {
+      var a = ev.target && ev.target.closest ? ev.target.closest('a[href]') : null;
+      if (!a) return;
+      var href = a.getAttribute('href') || '';
+      if (!isAmazon(href)) return;
+      if (typeof window.gtag !== 'function') return;
+      var links = Array.prototype.slice.call(document.querySelectorAll('a[href]'))
+        .filter(function (x) { return isAmazon(x.getAttribute('href') || ''); });
+      var pos = links.indexOf(a);
+      window.gtag('event', 'amazon_click', {
+        link_url: href.slice(0, 200),
+        link_text: (a.textContent || '').trim().slice(0, 80),
+        asin: asinFrom(href),
+        position: pos >= 0 ? pos + 1 : 0,
+        page_path: location.pathname,
+        transport_type: 'beacon'
+      });
+    } catch (e) { /* never break the page */ }
+  }, true);
+})();
