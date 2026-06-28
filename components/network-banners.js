@@ -111,7 +111,7 @@
     el.className = 'network-banner';
     el.href = url;
     el.target = '_blank';
-    el.rel = 'noopener';
+    el.rel = 'noopener nofollow';
     el.setAttribute('data-network', banner.id);
 
     el.innerHTML = [

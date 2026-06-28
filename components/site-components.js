@@ -167,7 +167,7 @@
     }).join('');
 
     var networkLinks = config.footer.network.map(function (l) {
-      return '<li><a href="' + l.href + '" target="_blank" rel="noopener">' + l.label + '</a></li>';
+      return '<li><a href="' + l.href + '" target="_blank" rel="noopener nofollow">' + l.label + '</a></li>';
     }).join('');
 
     footer.innerHTML =
