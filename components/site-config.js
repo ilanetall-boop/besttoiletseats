@@ -47,7 +47,8 @@ window.SITE_CONFIG = {
       { label: "Best Bath Towels", href: "https://www.best-bath-towels.com" },
       { label: "Best Towel Warmers", href: "https://www.best-towel-warmers.com" },
       { label: "Best Bathroom Faucets", href: "https://www.best-bathroom-faucets.com" },
-      { label: "Best Bathroom Storage", href: "https://www.bestbathroomstorage.com" }
+      { label: "Best Bathroom Storage", href: "https://www.bestbathroomstorage.com" },
+      { label: "Best One Piece Toilets", href: "https://best-one-piece-toilets.com" }
     ]
   },
   networkBanners: [
