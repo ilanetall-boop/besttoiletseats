@@ -35,8 +35,8 @@
   var page = path.split('/').pop().replace(/\.html$/, '') || 'index';
 
   function isActive(href) {
-    // Home matches "", "/" and legacy "index" paths.
-    if (href === '/' || href === 'index') return page === 'index' || page === '' || path === '/';
+    // "index" matches "", "/" and "index"
+    if (href === 'index') return page === 'index' || page === '' || path === '/';
     return page === href || page.toLowerCase() === href.toLowerCase();
   }
 
@@ -124,7 +124,7 @@
       '<div class="hf-container">' +
         '<div class="header-content">' +
           '<div class="logo-section">' +
-            '<a href="/">' +
+            '<a href="index">' +
               '<img src="' + config.logo + '" alt="' + config.name + ' Logo" width="56" height="56">' +
               '<div>' +
                 '<h1>' + config.name + '</h1>' +
@@ -191,6 +191,9 @@
           '</div>' +
         '</div>' +
         '<div class="footer-bottom">' +
+          // Amazon Operating Agreement: the Associates statement must appear on pages
+          // carrying affiliate links (the disclosure page alone is not enough) — audit 08-03.
+          '<p>As an Amazon Associate we earn from qualifying purchases.</p>' +
           '<p>&copy; ' + new Date().getFullYear() + ' ' + config.name + ' - All rights reserved</p>' +
         '</div>' +
       '</div>';
