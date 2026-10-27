@@ -12,3 +12,6 @@ service-account*
 *.key
 *.p12
 *.pfx
+
+# copies de travail : jamais en ligne (servies en 200, doublons des vraies pages)
+_backups/
